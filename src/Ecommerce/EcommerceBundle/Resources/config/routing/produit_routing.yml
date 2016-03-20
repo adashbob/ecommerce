@@ -1,0 +1,7 @@
+produit_produits:
+    path:     /
+    defaults: { _controller: EcommerceBundle:Produit:produits }
+
+produit_presentation:
+    path:     /presentation
+    defaults: { _controller: EcommerceBundle:Produit:presentation }
