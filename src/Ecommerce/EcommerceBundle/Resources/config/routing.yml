@@ -1,0 +1,17 @@
+#ecommerce_first:
+#    path:     /first.{_format}
+#    defaults: { _controller: EcommerceBundle:Default:first, _format: html }
+#    requirements:
+#        _format: html
+
+ecommerce_panier:
+    resource: "@EcommerceBundle/Resources/config/routing/panier_routing.yml"
+    prefix:   /panier
+
+ecommerce_produit:
+    resource: "@EcommerceBundle/Resources/config/routing/produit_routing.yml"
+    prefix:   /produit
+
+
+
+

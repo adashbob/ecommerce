@@ -1,0 +1,40 @@
+parameters:
+    produit_name: produit
+    produit_type.class: Ecommerce\EcommerceBundle\Form\Type\ProduitType
+    produit_entity.class: Ecommerce\EcommerceBundle\Entity\Produit
+    produit_handler.class: Ecommerce\EcommerceBundle\Form\Handler\ProduitHandler
+    ecommerce_manager.class: Ecommerce\EcommerceBundle\Services\ProduitManager
+    base_handler.class: BaseHandler
+
+
+services:
+    base_form:
+        class: Form
+        abstract: true
+        factory: ["@form.factory", createNamed]
+
+    produit_form:
+        parent: base_form
+        arguments:
+            - "%produit_name%"
+            - "%produit_type.class%"
+            - "@produit_entity"
+
+    produit_entity:
+        class: "%produit_entity.class%"
+
+    base_handler:
+        abstract: true
+        calls:
+            - [setRequest, ['@request_stack']]
+            - [setSecurity, ['@security.token_storage']]
+
+    produit_handler:
+        class: "%produit_handler.class%"
+        parent: base_handler
+        arguments: ["@produit_form", "@ecommerce_manager"]
+
+    ecommerce_manager:
+        class: "%ecommerce_manager.class%"
+        arguments: ["@doctrine.orm.entity_manager"]
+
