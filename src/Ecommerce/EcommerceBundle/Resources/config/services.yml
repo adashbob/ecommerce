@@ -3,7 +3,8 @@ parameters:
     produit_type.class: Ecommerce\EcommerceBundle\Form\Type\ProduitType
     produit_entity.class: Ecommerce\EcommerceBundle\Entity\Produit
     produit_handler.class: Ecommerce\EcommerceBundle\Form\Handler\ProduitHandler
-    ecommerce_manager.class: Ecommerce\EcommerceBundle\Services\ProduitManager
+    produit_manager.class: Ecommerce\EcommerceBundle\Services\ProduitManager
+    produit_repository.class: Ecommerce\EcommerceBundle\Repository\ProduitRepository
     base_handler.class: BaseHandler
 
 
@@ -32,9 +33,15 @@ services:
     produit_handler:
         class: "%produit_handler.class%"
         parent: base_handler
-        arguments: ["@produit_form", "@ecommerce_manager"]
+        arguments: ["@produit_form", "@produit_manager"]
 
     ecommerce_manager:
-        class: "%ecommerce_manager.class%"
-        arguments: ["@doctrine.orm.entity_manager"]
+        abstract: true
+        calls:
+            - [setEntityManager, ['@doctrine.orm.entity_manager']]
+            - [setRepository, ["%produit_repository.class%"]]
+
+    produit_manager:
+        class: "%produit_manager.class%"
+        arguments: ['@doctrine.orm.entity_manager']
 

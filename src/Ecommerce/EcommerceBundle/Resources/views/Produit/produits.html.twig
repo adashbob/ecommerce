@@ -15,20 +15,20 @@
                 {% render(controller('EcommerceBundle:Panier:menu')) %}#}
             </div>
 
-            {#<div class="span9">
+            <div class="span9">
                 {% if produits|length != 0 %}
                     <ul class="thumbnails">
                         {% for produit in produits %}
                             <li class="span3">
                                 <div class="thumbnail">
-                                    <img src="{{ produit.image.AssetPath|imagine_filter('produitThumb') }}" alt="{{ produit.image.name }}" width="300" height="150">
+                                    {#<img src="{{ produit.image.AssetPath|imagine_filter('produitThumb') }}" alt="{{ produit.image.name }}" width="300" height="150">#}
                                     <div class="caption">
-                                        <h4>{{ produit.nom }}</h4>
-                                        <p>{{ produit.prix|tva(produit.tva.multiplicate) }} €</p>
-                                        <a class="btn btn-primary" href="{{ path('presentation', { 'id' : produit.id }) }}">Plus d'infos</a>
-                                        {% if panier[produit.id] is not defined %}
+                                        <h4>{{ produit.name }}</h4>
+                                        <p>{{ produit.price }} €</p>
+                                        <a class="btn btn-primary" href="#">Plus d'infos</a>
+                                        {#{% if panier[produit.id] is not defined %}
                                             <a class="btn btn-success" href="{{ path('ajouter', { 'id' : produit.id }) }}">Ajouter au panier</a>
-                                        {% endif %}
+                                        {% endif %}#}
                                     </div>
                                 </div>
                             </li>
@@ -36,13 +36,13 @@
                     </ul>
 
                     <div class="navigation">
-                        {{ knp_pagination_render(produits) }}
+                        {#{{ knp_pagination_render(produits) }}#}
                     </div>
 
                 {% else %}
                     Aucun produit
                 {% endif %}
-            </div>#}
+            </div>
         </div>
     </div>
 {% endblock %}
