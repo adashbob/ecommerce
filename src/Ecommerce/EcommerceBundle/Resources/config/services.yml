@@ -7,8 +7,15 @@ parameters:
     produit_repository.class: Ecommerce\EcommerceBundle\Repository\ProduitRepository
     base_handler.class: BaseHandler
 
-
 services:
+    ecommerce_manager:
+        abstract: true
+        factory: ["@doctrine.orm.entity_manager", getRepository]
+
+    produit_manager:
+        class: "%produit_manager.class%"
+        arguments: ['@doctrine.orm.entity_manager']
+
     base_form:
         class: Form
         abstract: true
@@ -35,13 +42,5 @@ services:
         parent: base_handler
         arguments: ["@produit_form", "@produit_manager"]
 
-    ecommerce_manager:
-        abstract: true
-        calls:
-            - [setEntityManager, ['@doctrine.orm.entity_manager']]
-            - [setRepository, ["%produit_repository.class%"]]
 
-    produit_manager:
-        class: "%produit_manager.class%"
-        arguments: ['@doctrine.orm.entity_manager']
 

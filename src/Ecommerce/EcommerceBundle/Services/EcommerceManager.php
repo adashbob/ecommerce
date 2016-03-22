@@ -4,19 +4,24 @@
 namespace Ecommerce\EcommerceBundle\Services;
 
 
-use Doctrine\ORM\EntityManager;
+use Ecommerce\EcommerceBundle\Entity\BaseEntity;
 
 abstract class EcommerceManager
 {
-    protected $em;
-    protected $repository;
 
-    public function setEntityManager(EntityManager $em){
-        $this->em = $em;
+    public function doPersist(BaseEntity $entity)
+    {
+        $this->doFlush($entity);
+        return $entity;
     }
 
-    public function setRepository($repository)
+    public function doFlush(BaseEntity $entity)
     {
-        $this->repository = $repository;
+        $this->em->persist($entity);
+        $this->em->flush();
+    }
+
+    public function getAll(){
+        return $this->repository->findAll();
     }
 }
