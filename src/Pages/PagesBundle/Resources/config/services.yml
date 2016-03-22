@@ -1,4 +1,42 @@
+parameters:
+    page_name: page
+    page_type.class: Pages\PagesBundle\Form\Type\PageType
+    page_entity.class: Pages\PagesBundle\Entity\Page
+    page_handler.class: Pages\PagesBundle\Form\Handler\PageHandler
+    page_manager.class: Pages\PagesBundle\Services\PageManager
+    page_repository.class: Pages\PagesBundle\Repository\PageRepository
+    base_handler.class: Pages\PagesBundle\Form\Handler\BaseHandler
+
 services:
-#    pages.example:
-#        class: PagesBundle\Example
-#        arguments: ["@service_id", "plain_value", %parameter%]
+    page_manager:
+        class: "%page_manager.class%"
+        arguments: ['@doctrine.orm.entity_manager']
+
+    base_form:
+        class: Form
+        abstract: true
+        factory: ["@form.factory", createNamed]
+
+    page_form:
+        parent: base_form
+        arguments:
+            - "%page_name%"
+            - "%page_type.class%"
+            - "@page_entity"
+
+    page_entity:
+        class: "%page_entity.class%"
+
+    base_handler:
+        abstract: true
+        calls:
+            - [setRequest, ['@request_stack']]
+            - [setSecurity, ['@security.token_storage']]
+
+    page_handler:
+        class: "%page_handler.class%"
+        parent: base_handler
+        arguments: ["@page_form", "@page_manager"]
+
+
+

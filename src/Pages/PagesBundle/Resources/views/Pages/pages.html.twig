@@ -3,10 +3,13 @@
 {% block body %}
     <div class="container">
         <div class="row">
-            <h1>{{ page.titre }}</h1>
-            <div class="span12">
-                {{ page.contenu|raw }}
-            </div>
+            {% for page in pages %}
+                <h1>{{ page.titre }}</h1>
+                <div class="span12">
+                    {{ page.contenu|raw }}
+                </div>
+                <hr>
+            {% endfor %}
         </div>
     </div>
 {% endblock %}

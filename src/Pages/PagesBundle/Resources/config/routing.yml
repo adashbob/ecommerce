@@ -1,7 +1,15 @@
-page:
-    path:     /page/{id}
-    defaults: { _controller: PagesBundle:Pages:page }
+page_show:
+    path:     /show/{id}
+    defaults: { _controller: PagesBundle:Pages:show }
 
-menu:
+page_menu:
     path:     /menu
     defaults: { _controller: PagesBundle:Pages:menu }
+
+page_all:
+    path:     /pages
+    defaults: { _controller: PagesBundle:Pages:pages }
+
+page_create:
+    path:     /create
+    defaults: { _controller: PagesBundle:Pages:create }

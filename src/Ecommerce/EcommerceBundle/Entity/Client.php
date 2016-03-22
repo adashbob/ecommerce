@@ -76,6 +76,13 @@ class Client implements BaseEntity
      */
     private $complement;
 
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="pays", type="string", length=255)
+     */
+    private $pays;
+
 
     /**
      * Get id
@@ -277,5 +284,29 @@ class Client implements BaseEntity
     public function getUser()
     {
         return $this->user;
+    }
+
+    /**
+     * Set pays
+     *
+     * @param string $pays
+     *
+     * @return Client
+     */
+    public function setPays($pays)
+    {
+        $this->pays = $pays;
+
+        return $this;
+    }
+
+    /**
+     * Get pays
+     *
+     * @return string
+     */
+    public function getPays()
+    {
+        return $this->pays;
     }
 }

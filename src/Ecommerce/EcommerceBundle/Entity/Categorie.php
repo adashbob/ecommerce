@@ -22,16 +22,17 @@ class Categorie implements BaseEntity
     private $id;
 
     /**
+     * @ORM\OneToOne(targetEntity="Ecommerce\EcommerceBundle\Entity\Media", cascade={"persist", "remove"})
+     */
+    private $image;
+
+    /**
      * @var string
      *
      * @ORM\Column(name="name", type="string", length=125)
      */
     private $name;
 
-    /**
-     * @ORM\OneToOne(targetEntity="Ecommerce\EcommerceBundle\Entity\Media", cascade={"persist", "remove"})
-     */
-    private $image;
 
     /**
      * Get id

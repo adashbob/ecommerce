@@ -3,10 +3,10 @@
 namespace Ecommerce\EcommerceBundle\Services;
 
 
-class TvaManager extends EcommerceManager
+class CommandeManager extends EcommerceManager
 {
 
-    public function getTva($id)
+    public function getCommande($id)
     {
         return $this->repository->find($id);
     }

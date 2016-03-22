@@ -1,20 +1,25 @@
-parameters:
-    produit_name: produit
-    produit_type.class: Ecommerce\EcommerceBundle\Form\Type\ProduitType
-    produit_entity.class: Ecommerce\EcommerceBundle\Entity\Produit
-    produit_handler.class: Ecommerce\EcommerceBundle\Form\Handler\ProduitHandler
-    produit_manager.class: Ecommerce\EcommerceBundle\Services\ProduitManager
-    produit_repository.class: Ecommerce\EcommerceBundle\Repository\ProduitRepository
-    base_handler.class: BaseHandler
+imports:
+    - { resource: parameters.yml }
+
 
 services:
     ecommerce_manager:
         abstract: true
-        factory: ["@doctrine.orm.entity_manager", getRepository]
+        calls:
+            - [setEntityManager, ['@doctrine.orm.entity_manager']]
+            - [setRepository, [EcommerceBundle:Categorie]]
 
     produit_manager:
         class: "%produit_manager.class%"
-        arguments: ['@doctrine.orm.entity_manager']
+        parent: ecommerce_manager
+        calls:
+            - [setRepository, ["%produit_repository%"]]
+
+    categorie_manager:
+        class: "%categorie_manager.class%"
+        parent: ecommerce_manager
+        calls:
+            - [setRepository, ["%categorie_repository%"]]
 
     base_form:
         class: Form

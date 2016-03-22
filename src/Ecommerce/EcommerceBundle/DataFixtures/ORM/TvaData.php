@@ -7,10 +7,9 @@ namespace Ecommerce\EcommerceBundle\DataFixtures\ORM;
 use Doctrine\Common\DataFixtures\AbstractFixture;
 use Doctrine\Common\DataFixtures\OrderedFixtureInterface;
 use Doctrine\Common\Persistence\ObjectManager;
-use Ecommerce\EcommerceBundle\Entity\Categorie;
-use Ecommerce\EcommerceBundle\Entity\Media;
+use Ecommerce\EcommerceBundle\Entity\Tva;
 
-class CategorieData extends AbstractFixture implements OrderedFixtureInterface
+class TvaData extends AbstractFixture implements OrderedFixtureInterface
 {
 
     /**
@@ -20,23 +19,22 @@ class CategorieData extends AbstractFixture implements OrderedFixtureInterface
      */
     public function load(ObjectManager $manager)
     {
-        $categorie = new Categorie();
-        $categorie->setName('Fruit');
-        $categorie->setImage($this->getReference('media2'));
+        $tva1 = new Tva();
+        $tva1->setMultiplicate('0.982');
+        $tva1->setName('TVA 1.75%');
+        $tva1->setValue('1.75');
+        $manager->persist($tva1);
 
-        $this->addReference('categorie1', $categorie);
+        $tva2 = new Tva();
+        $tva2->setMultiplicate('0.833');
+        $tva2->setName('TVA 20%');
+        $tva2->setValue('20');
+        $manager->persist($tva2);
 
-        $categorie2 = new Categorie();
-        $categorie2->setName('Legumes');
-        $categorie2->setImage($this->getReference('media2'));
+        $manager->flush();
 
-        $this->addReference('categorie12', $categorie2);
-
-        $categorie3 = new Categorie();
-        $categorie3->setName('Fruit fraîche');
-        $categorie3->setImage($this->getReference('media4'));
-
-        $this->addReference('categorie3', $categorie3);
+        $this->addReference('tva1', $tva1);
+        $this->addReference('tva2', $tva2);
     }
 
     /**
@@ -46,6 +44,6 @@ class CategorieData extends AbstractFixture implements OrderedFixtureInterface
      */
     public function getOrder()
     {
-        return 2;
+        return 3;
     }
 }

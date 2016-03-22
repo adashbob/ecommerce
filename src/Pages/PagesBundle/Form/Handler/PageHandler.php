@@ -1,20 +1,20 @@
 <?php
 
-namespace Ecommerce\EcommerceBundle\Form\Handler;
+namespace Pages\PagesBundle\Form\Handler;
 
+use Pages\PagesBundle\Services\PageManager;
 use Symfony\Component\Form\Form;
-use Ecommerce\EcommerceBundle\Services\ProduitManager;
 use Symfony\Component\Security\Core\Authentication\Token\Storage\TokenStorage;
 
-class ProduitHandler extends BaseHandler
+class PageHandler extends BaseHandler
 {
     protected $form;
-    protected $produit;
-    protected $produitManager;
+    protected $page;
+    protected $pageManager;
 
-    public function __construct(Form $form,  ProduitManager $produitManager){
+    public function __construct(Form $form,  PageManager $pageManager){
         $this->form = $form;
-        $this->produitManager = $produitManager;
+        $this->pageManager = $pageManager;
     }
 
 
@@ -31,8 +31,8 @@ class ProduitHandler extends BaseHandler
     }
 
     public function onSuccess(){
-        $produit = $this->form->getData();
-        $this->produit = $this->produitManager->doPersist($produit);
+        $page = $this->form->getData();
+        $this->page = $this->pageManager->doPersist($page);
     }
 
     public function getFrom(){

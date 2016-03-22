@@ -35,6 +35,13 @@ class Media implements BaseEntity
      */
     private $alt;
 
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="name", type="string", length=125)
+     */
+    private $name;
+
 
     /**
      * Get id
@@ -92,5 +99,29 @@ class Media implements BaseEntity
     public function getAlt()
     {
         return $this->alt;
+    }
+
+    /**
+     * Set name
+     *
+     * @param string $name
+     *
+     * @return Media
+     */
+    public function setName($name)
+    {
+        $this->name = $name;
+
+        return $this;
+    }
+
+    /**
+     * Get name
+     *
+     * @return string
+     */
+    public function getName()
+    {
+        return $this->name;
     }
 }

@@ -7,9 +7,9 @@ namespace Ecommerce\EcommerceBundle\DataFixtures\ORM;
 use Doctrine\Common\DataFixtures\AbstractFixture;
 use Doctrine\Common\DataFixtures\OrderedFixtureInterface;
 use Doctrine\Common\Persistence\ObjectManager;
-use Ecommerce\EcommerceBundle\Entity\Media;
+use Ecommerce\EcommerceBundle\Entity\Categorie;
 
-class MediaData extends AbstractFixture implements OrderedFixtureInterface
+class CategorieData extends AbstractFixture implements OrderedFixtureInterface
 {
 
     /**
@@ -19,38 +19,20 @@ class MediaData extends AbstractFixture implements OrderedFixtureInterface
      */
     public function load(ObjectManager $manager)
     {
-        $media1 = new Media();
-        $media1->setAlt('fruit');
-        $media1->setPath('/var/www/Ecommerce-0.30/uploads/b876f70906264390e54636e76e48ca3234a24922.jpg');
-        $manager->persist($media1);
+        $categorie1 = new Categorie();
+        $categorie1->setName('Légumes');
+        $categorie1->setImage($this->getReference('media3'));
+        $manager->persist($categorie1);
+
+        $categorie2 = new Categorie();
+        $categorie2->setName('fruits');
+        $categorie2->setImage($this->getReference('media4'));
+        $manager->persist($categorie2);
+
         $manager->flush();
 
-        $this->addReference('media1', $media1);
-
-        $media2 = new Media();
-        $media2->setAlt('orange');
-        $media2->setPath('/var/www/Ecommerce-0.30/uploads/bc76f70906264390e54636e76e48ca3234a24998.jpg');
-        $manager->persist($media2);
-        $manager->flush();
-
-        $this->addReference('media2', $media2);
-
-        $media3 = new Media();
-        $media3->setAlt('pima');
-        $media3->setPath('/var/www/Ecommerce-0.30/uploads/b876f70906264390e54636e76e48ca3234a24444.jpg');
-        $manager->persist($media3);
-        $manager->flush();
-
-        $this->addReference('media3', $media3);
-
-        $media4 = new Media();
-        $media4->setAlt('fraise');
-        $media4->setPath('/var/www/Ecommerce-0.30/uploads/bc76f70906264390e54636e76e48ca3234a24999.jpg');
-        $manager->persist($media4);
-        $manager->flush();
-
-        $this->addReference('media4', $media4);
-
+        $this->addReference('categorie1', $categorie1);
+        $this->addReference('categorie2', $categorie2);
     }
 
     /**
@@ -60,6 +42,6 @@ class MediaData extends AbstractFixture implements OrderedFixtureInterface
      */
     public function getOrder()
     {
-        return 1;
+        return 2;
     }
 }

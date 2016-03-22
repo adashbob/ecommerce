@@ -3,10 +3,10 @@
 namespace Ecommerce\EcommerceBundle\Services;
 
 
-class CategorieManager extends EcommerceManager
+class TvaManager extends EcommerceManager
 {
 
-    public function getCategorie($id)
+    public function getTva($id)
     {
         return $this->repository->find($id);
     }

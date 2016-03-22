@@ -2,20 +2,11 @@
 
 namespace Ecommerce\EcommerceBundle\Services;
 
-use Doctrine\ORM\EntityManager;
 
-class ProduitManager extends EcommerceManager
+class CategorieManager extends EcommerceManager
 {
-    protected $repository;
-    protected $em;
 
-    public function __construct(EntityManager $em){
-        $this->em = $em;
-        $this->repository = $em->getRepository('EcommerceBundle:Produit');
-    }
-
-
-    public function getProduit($id)
+    public function getCategorie($id)
     {
         return $this->repository->find($id);
     }

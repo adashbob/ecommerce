@@ -1,0 +1,14 @@
+parameters:
+    base_handler.class: BaseHandler
+
+    produit_name: produit
+    produit_type.class: Ecommerce\EcommerceBundle\Form\Type\ProduitType
+    produit_entity.class: Ecommerce\EcommerceBundle\Entity\Produit
+    produit_handler.class: Ecommerce\EcommerceBundle\Form\Handler\ProduitHandler
+    produit_manager.class: Ecommerce\EcommerceBundle\Services\ProduitManager
+    produit_repository: EcommerceBundle:Produit
+
+    categorie_name: categorie
+    categorie_entity.class: Ecommerce\EcommerceBundle\Entity\Categorie
+    categorie_manager.class: Ecommerce\EcommerceBundle\Services\CategorieManager
+    categorie_repository: EcommerceBundle:Categorie

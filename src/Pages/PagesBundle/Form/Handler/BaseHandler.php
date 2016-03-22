@@ -1,6 +1,6 @@
 <?php
 
-namespace Ecommerce\EcommerceBundle\Form\Handler;
+namespace Pages\PagesBundle\Form\Handler;
 
 use Symfony\Component\HttpFoundation\RequestStack;
 use Symfony\Component\Security\Core\Authentication\Token\Storage\TokenStorage;
