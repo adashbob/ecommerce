@@ -1,0 +1,8 @@
+categorie_menu:
+    path:     /menu
+    defaults: { _controller: EcommerceBundle:Categorie:menu }
+
+categorie_produits:
+    path:     /produits/{id}
+    defaults: { _controller: EcommerceBundle:Categorie:categorieProduits }
+

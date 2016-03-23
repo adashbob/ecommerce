@@ -1,7 +1,7 @@
 {% extends ":layout:layout.html.twig" %}
 
-{% block titre %}{#{{ produit.nom }}#}{% endblock %}
-{% block description %}{#{{ produit.description }}#}{% endblock %}
+{% block titre %}{{ produit.name }}{% endblock %}
+{% block description %}{{ produit.description }}{% endblock %}
 
 {% block body %}
     <div class="container">
@@ -13,19 +13,17 @@
             </div>
 
             <div class="span9">
-                <h3>Liste des produits</h3>
-                {{ form(form) }}
-                {#<div class="row">
+                <div class="row">
                     <div class="span5">
-                        <img src="{{ produit.image.AssetPath|imagine_filter('produit') }}" alt="{{ produit.image.name }}" width="470" height="310">
+                        <img src="{{ asset(produit.image.path) }}" alt="{{ produit.image.name }}" width="470" height="310">
                     </div>
 
                     <div class="span4">
-                        <h4>{{ produit.nom }}</h4>
-                        <h5>{{ produit.categorie.nom }}</h5>
+                        <h4>{{ produit.name }}</h4>
+                        <h5>{{ produit.categorie.name }}</h5>
                         <p>{{ produit.description }}</p>
-                        <h4>{{ produit.prix|tva(produit.tva.multiplicate) }} €</h4>
-                        {% if panier[produit.id] is not defined %}
+                        <h4>{{ produit.price }} €</h4>
+                        {#{% if panier[produit.id] is not defined %}
                             <form action="{{ path('ajouter', { 'id' : produit.id }) }}" method="get">
                                 <select name="qte" class="span1">
                                     {% for i in 1..10 %}
@@ -41,9 +39,9 @@
                             <div>
                                 <a href="{{ path('panier') }}" class="btn btn-primary">Le produit est déjà dans votre panier</a>
                             </div>
-                        {% endif %}
+                        {% endif %}#}
                     </div>
-                </div>#}
+                </div>
             </div>
         </div>
     </div>

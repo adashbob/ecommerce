@@ -3,5 +3,9 @@ produit_produits:
     defaults: { _controller: EcommerceBundle:Produit:produits }
 
 produit_presentation:
-    path:     /presentation
+    path:     /presentation/{id}
     defaults: { _controller: EcommerceBundle:Produit:presentation }
+
+produit_recherche:
+    path:     /traiterRecherche/
+    defaults: { _controller: EcommerceBundle:Produit:traiterRecherche }

@@ -40,6 +40,11 @@ abstract class EcommerceManager
         return $entity;
     }
 
+    public function getRepository()
+    {
+        return $this->repository;
+    }
+
     /**
      * @param BaseEntity $entity
      */

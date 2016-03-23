@@ -34,7 +34,7 @@ class Produit implements BaseEntity
     private $tva;
 
     /**
-     * @ORM\ManyToOne(targetEntity="Ecommerce\EcommerceBundle\Entity\Categorie", cascade={"persist", "remove"})
+     * @ORM\ManyToOne(targetEntity="Ecommerce\EcommerceBundle\Entity\Categorie", inversedBy="produits", cascade={"persist", "remove"})
      * @ORM\JoinColumn(nullable=false)
      */
     private $categorie;

@@ -5,14 +5,13 @@
         <div class="row">
 
             <div class="span3">
-                <h3>Authentification</h3>
                 {% include ':includes/navigation.html.twig' %}
-                {#{% if is_granted('IS_AUTHENTICATED_FULLY') %}
-                    {% include 'UtilisateursBundle:Default:modulesUsed/utilisateursConnecte.html.twig' %}
+                {% if is_granted('IS_AUTHENTICATED_FULLY') %}
+                    {{ include('@User/Default/utilisateurConnecte.html.twig') }}
                 {% else %}
-                    {% include 'UtilisateursBundle:Default:modulesUsed/utilisateurs.html.twig' %}
+                    {{ include('@User/Default/connexion.html.twig') }}
                 {% endif %}
-                {% render(controller('EcommerceBundle:Panier:menu')) %}#}
+                {#{% render(controller('EcommerceBundle:Panier:menu')) %}#}
             </div>
 
             <div class="span9">
@@ -21,11 +20,11 @@
                         {% for produit in produits %}
                             <li class="span3">
                                 <div class="thumbnail">
-                                    {#<img src="{{ produit.image.AssetPath|imagine_filter('produitThumb') }}" alt="{{ produit.image.name }}" width="300" height="150">#}
+                                    <img src="{{ asset(produit.image.path) }}" alt="{{ produit.image.name }}" width="300" height="150">
                                     <div class="caption">
                                         <h4>{{ produit.name }}</h4>
                                         <p>{{ produit.price }} €</p>
-                                        <a class="btn btn-primary" href="#">Plus d'infos</a>
+                                        <a class="btn btn-primary" href="{{ path('produit_presentation', {'id': produit.id}) }}">Plus d'infos</a>
                                         {#{% if panier[produit.id] is not defined %}
                                             <a class="btn btn-success" href="{{ path('ajouter', { 'id' : produit.id }) }}">Ajouter au panier</a>
                                         {% endif %}#}

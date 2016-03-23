@@ -33,6 +33,20 @@ class Categorie implements BaseEntity
      */
     private $name;
 
+    /**
+     * @var
+     *
+     * @ORM\OneToMany(targetEntity="Ecommerce\EcommerceBundle\Entity\Produit", mappedBy="categorie")
+     * @ORM\JoinColumn(nullable=true)
+     */
+    private $produits;
+
+
+    public function __construct()
+    {
+        $this->produits = new \Doctrine\Common\Collections\ArrayCollection();
+    }
+
 
     /**
      * Get id
@@ -90,5 +104,40 @@ class Categorie implements BaseEntity
     public function getImage()
     {
         return $this->image;
+    }
+
+
+    /**
+     * Add produit
+     *
+     * @param \Ecommerce\EcommerceBundle\Entity\Produit $produit
+     *
+     * @return Categorie
+     */
+    public function addProduit(\Ecommerce\EcommerceBundle\Entity\Produit $produit)
+    {
+        $this->produits[] = $produit;
+
+        return $this;
+    }
+
+    /**
+     * Remove produit
+     *
+     * @param \Ecommerce\EcommerceBundle\Entity\Produit $produit
+     */
+    public function removeProduit(\Ecommerce\EcommerceBundle\Entity\Produit $produit)
+    {
+        $this->produits->removeElement($produit);
+    }
+
+    /**
+     * Get produits
+     *
+     * @return \Doctrine\Common\Collections\Collection
+     */
+    public function getProduits()
+    {
+        return $this->produits;
     }
 }

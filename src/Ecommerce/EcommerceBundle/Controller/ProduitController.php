@@ -2,33 +2,73 @@
 
 namespace Ecommerce\EcommerceBundle\Controller;
 
+use Ecommerce\EcommerceBundle\Form\Type\RechercheType;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Symfony\Component\HttpFoundation\Request;
 
 class ProduitController extends Controller
 {
+    /**
+     * @return \Symfony\Component\HttpFoundation\Response
+     */
     public function produitsAction()
     {
-        $produits = $this->get('produit_manager')->getAll();
         return $this->render('@Ecommerce/Produit/produits.html.twig', array(
-            'produits' => $produits
+            'produits' => $this->get('produit_manager')->getAll()
         ));
     }
 
-    public function presentationAction()
+    /**
+     * @param $id
+     * @return \Symfony\Component\HttpFoundation\Response
+     */
+    public function presentationAction($id)
     {
-        $produitHandler = $this->get('produit_handler');
+        $produit = $this->get('produit_manager')->getProduit($id);
 
-        if($produitHandler->process()){
-            return $this->redirectToRoute('produit_produits');
+        if(!$produit){
+            throw $this->createNotFoundException('Le produit n\'existe pas');
         }
         return $this->render('@Ecommerce/Produit/presentation.html.twig', array(
-            'form' => $produitHandler->createView()
+            'produit' => $produit
         ));
     }
 
+    /**
+     * @return \Symfony\Component\HttpFoundation\Response
+     */
     public function rechercheAction()
     {
-        return $this->render('@Ecommerce/Produit/_recherche.html.twig');
+        $form = $this->createForm(RechercheType::class);
+        return $this->renderSearchView($form);
     }
+
+    /**
+     * @param Request $request
+     * @return \Symfony\Component\HttpFoundation\Response
+     */
+    public function traiterRechercheAction(Request $request)
+    {
+        $form = $form = $this->createForm(RechercheType::class);
+        $form->handleRequest($request);
+        if($request->isMethod('post') && $form->isValid()){
+            $produits = $this->get('produit_manager')->getRepository()->recherche($form->getData()['recherche']);
+            return $this->render('@Ecommerce/Produit/produits.html.twig', array('produits' => $produits));
+        }
+
+        return $this->renderSearchView($form);
+    }
+
+    /**
+     * @param $form
+     * @return \Symfony\Component\HttpFoundation\Response
+     */
+    private function renderSearchView($form){
+        return $this->render('@Ecommerce/Produit/_recherche.html.twig', array(
+            'form' => $form->createView()
+        ));
+    }
+
+
 
 }
