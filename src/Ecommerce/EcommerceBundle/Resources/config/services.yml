@@ -1,7 +1,7 @@
 imports:
     - { resource: parameters.yml }
 
-
+services:
 services:
     ecommerce_manager:
         abstract: true
@@ -26,6 +26,12 @@ services:
         abstract: true
         factory: ["@form.factory", createNamed]
 
+    base_handler:
+        abstract: true
+        calls:
+            - [setRequest, ['@request_stack']]
+            - [setSecurity, ['@security.token_storage']]
+
     produit_form:
         parent: base_form
         arguments:
@@ -36,16 +42,25 @@ services:
     produit_entity:
         class: "%produit_entity.class%"
 
-    base_handler:
-        abstract: true
-        calls:
-            - [setRequest, ['@request_stack']]
-            - [setSecurity, ['@security.token_storage']]
-
     produit_handler:
         class: "%produit_handler.class%"
         parent: base_handler
         arguments: ["@produit_form", "@produit_manager"]
+
+    categorie_form:
+        parent: base_form
+        arguments:
+            - "%categorie_name%"
+            - "%categorie_type.class%"
+            - "@categorie_entity"
+
+    categorie_entity:
+        class: "%produit_entity.class%"
+
+    categorie_handler:
+        class: "%categorie_handler.class%"
+        parent: base_handler
+        arguments: ["@categorie_form", "@categorie_manager"]
 
 
 

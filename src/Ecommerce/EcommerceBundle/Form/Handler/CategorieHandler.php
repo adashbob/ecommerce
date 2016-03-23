@@ -2,19 +2,19 @@
 
 namespace Ecommerce\EcommerceBundle\Form\Handler;
 
+use Ecommerce\EcommerceBundle\Services\CategorieManager;
 use Symfony\Component\Form\Form;
-use Ecommerce\EcommerceBundle\Services\ProduitManager;
 use Symfony\Component\Security\Core\Authentication\Token\Storage\TokenStorage;
 
-class ProduitHandler extends BaseHandler
+class CategorieHandler extends BaseHandler
 {
     protected $form;
-    protected $produit;
-    protected $produitManager;
+    protected $categorie;
+    protected $categorieManager;
 
-    public function __construct(Form $form,  ProduitManager $produitManager){
+    public function __construct(Form $form,  CategorieManager $categorieManager){
         $this->form = $form;
-        $this->produitManager = $produitManager;
+        $this->categorieManager = $categorieManager;
     }
 
 
@@ -31,8 +31,8 @@ class ProduitHandler extends BaseHandler
     }
 
     public function onSuccess(){
-        $produit = $this->form->getData();
-        $this->produit = $this->produitManager->doPersist($produit);
+        $categorie = $this->form->getData();
+        $this->categorie = $this->categorieManager->doPersist($categorie);
     }
 
 

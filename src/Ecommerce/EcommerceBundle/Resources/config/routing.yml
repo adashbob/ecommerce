@@ -15,3 +15,7 @@ ecommerce_produit:
 
 
 
+
+menu:
+    path:     /menu
+    defaults: { _controller: EcommerceBundle:Categorie:menu }
