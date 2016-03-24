@@ -62,5 +62,11 @@ services:
         parent: base_handler
         arguments: ["@categorie_form", "@categorie_manager"]
 
+    tva_extension:
+        class: "%tva_extension.class%"
+        arguments: ['@twig']
+        tags:
+            - {name: twig.extension }
+
 
 

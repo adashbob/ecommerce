@@ -12,14 +12,14 @@ class ProduitRepository extends \Doctrine\ORM\EntityRepository
 {
     public function recherche($name)
     {
-        $query = $this->createQueryBuilder('p')
-            ->where('p.name like :name')
+        $query = $this->createQueryBuilder('p');
+        $nameLike = $query->expr()->like('p.name', ':name');
+        $query->where($nameLike)
             ->andWhere('p.available = 1')
             ->orderBy('p.name')
-            ->setParameter('name', $name)
-            ->getQuery()
+            ->setParameter('name', sprintf('%%%s%%', $name))
         ;
 
-        return $query->getResult();
+        return $query->getQuery()->getResult();
     }
 }

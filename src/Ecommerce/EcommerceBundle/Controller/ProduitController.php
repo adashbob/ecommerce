@@ -14,7 +14,7 @@ class ProduitController extends Controller
     public function produitsAction()
     {
         return $this->render('@Ecommerce/Produit/produits.html.twig', array(
-            'produits' => $this->get('produit_manager')->getAll()
+            'produits' => $this->get('produit_manager')->getAvailableProducts()
         ));
     }
 
@@ -25,7 +25,6 @@ class ProduitController extends Controller
     public function presentationAction($id)
     {
         $produit = $this->get('produit_manager')->getProduit($id);
-
         if(!$produit){
             throw $this->createNotFoundException('Le produit n\'existe pas');
         }
@@ -40,7 +39,7 @@ class ProduitController extends Controller
     public function rechercheAction()
     {
         $form = $this->createForm(RechercheType::class);
-        return $this->renderSearchView($form);
+        return $this->renderViewSearch($form);
     }
 
     /**
@@ -50,20 +49,21 @@ class ProduitController extends Controller
     public function traiterRechercheAction(Request $request)
     {
         $form = $form = $this->createForm(RechercheType::class);
+
         $form->handleRequest($request);
         if($request->isMethod('post') && $form->isValid()){
-            $produits = $this->get('produit_manager')->getRepository()->recherche($form->getData()['recherche']);
+            $produits = $this->get('produit_manager')->getRepository()->recherche($form['recherche']->getData());
             return $this->render('@Ecommerce/Produit/produits.html.twig', array('produits' => $produits));
         }
 
-        return $this->renderSearchView($form);
+        return $this->renderViewSearch($form);
     }
 
     /**
      * @param $form
      * @return \Symfony\Component\HttpFoundation\Response
      */
-    private function renderSearchView($form){
+    private function renderViewSearch($form){
         return $this->render('@Ecommerce/Produit/_recherche.html.twig', array(
             'form' => $form->createView()
         ));

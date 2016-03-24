@@ -16,3 +16,5 @@ parameters:
     categorie_type.class: Ecommerce\EcommerceBundle\Form\Type\CategorieType
     categorie_handler.class: Ecommerce\EcommerceBundle\Form\Handler\CategorieHandler
 
+    tva_extension.class: Ecommerce\EcommerceBundle\Twig\Extension\TvaExtension
+

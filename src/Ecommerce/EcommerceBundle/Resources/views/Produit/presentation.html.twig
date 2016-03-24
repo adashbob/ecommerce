@@ -22,7 +22,7 @@
                         <h4>{{ produit.name }}</h4>
                         <h5>{{ produit.categorie.name }}</h5>
                         <p>{{ produit.description }}</p>
-                        <h4>{{ produit.price }} €</h4>
+                        <h4>{{ produit.price | tva(produit.tva.multiplicate)}} €</h4>
                         {#{% if panier[produit.id] is not defined %}
                             <form action="{{ path('ajouter', { 'id' : produit.id }) }}" method="get">
                                 <select name="qte" class="span1">
