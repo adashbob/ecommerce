@@ -18,17 +18,6 @@ class CategorieHandler extends BaseHandler
     }
 
 
-    public function process(){
-        $this->form->handleRequest($this->request);
-
-        if($this->request->isMethod('post') && $this->form->isValid()){
-            $this->onSuccess();
-            return true;
-        }
-        else{
-            return false;
-        }
-    }
 
     public function onSuccess(){
         $categorie = $this->form->getData();

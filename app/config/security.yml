@@ -19,7 +19,10 @@ security:
                 csrf_token_generator: security.csrf.token_manager
                 default_target_path: /produit
 
-            logout:       true
+            logout:
+                  path: /logout
+                  target: /produit
+
             anonymous:    true
 
     access_control:

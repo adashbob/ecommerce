@@ -22,7 +22,7 @@ class Client implements BaseEntity
     private $id;
 
     /**
-     * @ORM\ManyToOne(targetEntity="UserBundle\Entity\User")
+     * @ORM\ManyToOne(targetEntity="UserBundle\Entity\User", inversedBy="adresses")
      * @ORM\JoinColumn(nullable=false)
      */
     private $user;

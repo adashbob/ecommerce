@@ -6,12 +6,6 @@
 
             <div class="span3">
                 {% include ':includes/navigation.html.twig' %}
-                {% if is_granted('IS_AUTHENTICATED_FULLY') %}
-                    {{ include('@User/Default/utilisateurConnecte.html.twig') }}
-                {% else %}
-                    {{ include('@User/Default/connexion.html.twig') }}
-                {% endif %}
-                {#{% render(controller('EcommerceBundle:Panier:menu')) %}#}
             </div>
 
             <div class="span9">
@@ -23,11 +17,11 @@
                                     <img src="{{ asset(produit.image.path) }}" alt="{{ produit.image.name }}" width="300" height="150">
                                     <div class="caption">
                                         <h4>{{ produit.name }}</h4>
-                                        <p>{{ produit.price }} €</p>
+                                        <p>{{ produit.price | tva(produit.tva.multiplicate)}} €</p>
                                         <a class="btn btn-primary" href="{{ path('produit_presentation', {'id': produit.id}) }}">Plus d'infos</a>
-                                        {#{% if panier[produit.id] is not defined %}
-                                            <a class="btn btn-success" href="{{ path('ajouter', { 'id' : produit.id }) }}">Ajouter au panier</a>
-                                        {% endif %}#}
+                                        {% if panier[produit.id] is not defined %}
+                                            <a class="btn btn-success" href="{{ path('panier_ajouter_produit', { 'id' : produit.id }) }}">Ajouter au panier</a>
+                                        {% endif %}
                                     </div>
                                 </div>
                             </li>

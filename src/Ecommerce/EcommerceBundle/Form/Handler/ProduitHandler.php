@@ -17,24 +17,8 @@ class ProduitHandler extends BaseHandler
         $this->produitManager = $produitManager;
     }
 
-
-    public function process(){
-        $this->form->handleRequest($this->request);
-
-        if($this->request->isMethod('post') && $this->form->isValid()){
-            $this->onSuccess();
-            return true;
-        }
-        else{
-            return false;
-        }
-    }
-
     public function onSuccess(){
         $produit = $this->form->getData();
         $this->produit = $this->produitManager->doPersist($produit);
     }
-
-
-
 }

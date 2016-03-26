@@ -40,5 +40,18 @@ abstract class BaseHandler
         return $this->form->createView();
     }
 
+    public function process(){
+        $this->form->handleRequest($this->request);
+
+        if($this->request->isMethod('post') && $this->form->isValid()){
+            $this->onSuccess();
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
+
+    public abstract function onSuccess();
 
 }

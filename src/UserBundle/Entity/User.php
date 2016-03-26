@@ -28,11 +28,18 @@ class User extends BaseUser
      */
     private $commandes;
 
+    /**
+     * @ORM\OneToMany(targetEntity="Ecommerce\EcommerceBundle\Entity\Client", mappedBy="user", cascade={"remove"})
+     * @ORM\JoinColumn(nullable=true)
+     */
+    private $adresses;
+
 
     public function __construct()
     {
         parent::__construct();
         $this->commandes = new \Doctrine\Common\Collections\ArrayCollection();
+        $this->adresses = new \Doctrine\Common\Collections\ArrayCollection();
     }
 
     /**
@@ -77,5 +84,42 @@ class User extends BaseUser
     public function getCommandes()
     {
         return $this->commandes;
+    }
+
+
+
+
+    /**
+     * Add adress
+     *
+     * @param \Ecommerce\EcommerceBundle\Entity\Client $adress
+     *
+     * @return User
+     */
+    public function addAdresses(\Ecommerce\EcommerceBundle\Entity\Client $adress)
+    {
+        $this->adresses[] = $adress;
+
+        return $this;
+    }
+
+    /**
+     * Remove adress
+     *
+     * @param \Ecommerce\EcommerceBundle\Entity\Client $adress
+     */
+    public function removeAdresses(\Ecommerce\EcommerceBundle\Entity\Client $adress)
+    {
+        $this->adresses->removeElement($adress);
+    }
+
+    /**
+     * Get adresses
+     *
+     * @return \Doctrine\Common\Collections\Collection
+     */
+    public function getAdresses()
+    {
+        return $this->adresses;
     }
 }

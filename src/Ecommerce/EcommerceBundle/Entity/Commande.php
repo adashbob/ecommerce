@@ -48,6 +48,13 @@ class Commande implements BaseEntity
      */
     private $reference;
 
+    /**
+     * @var array
+     *
+     * @ORM\Column(name="commande", type="array")
+     */
+    private $commande;
+
 
     /**
      * Get id
@@ -153,5 +160,29 @@ class Commande implements BaseEntity
     public function getUser()
     {
         return $this->user;
+    }
+
+    /**
+     * Set commande
+     *
+     * @param array $commande
+     *
+     * @return Commande
+     */
+    public function setCommande($commande)
+    {
+        $this->commande = $commande;
+
+        return $this;
+    }
+
+    /**
+     * Get commande
+     *
+     * @return array
+     */
+    public function getCommande()
+    {
+        return $this->commande;
     }
 }

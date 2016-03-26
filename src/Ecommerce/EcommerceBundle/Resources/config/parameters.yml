@@ -16,5 +16,24 @@ parameters:
     categorie_type.class: Ecommerce\EcommerceBundle\Form\Type\CategorieType
     categorie_handler.class: Ecommerce\EcommerceBundle\Form\Handler\CategorieHandler
 
+    client_name: client
+    client_entity.class: Ecommerce\EcommerceBundle\Entity\Client
+    client_manager.class: Ecommerce\EcommerceBundle\Services\ClientManager
+    client_repository: EcommerceBundle:Client
+    client_type.class: Ecommerce\EcommerceBundle\Form\Type\ClientType
+    client_handler.class: Ecommerce\EcommerceBundle\Form\Handler\ClientHandler
+
+    commande_name: commande
+    commande_entity.class: Ecommerce\EcommerceBundle\Entity\Commande
+    commande_manager.class: Ecommerce\EcommerceBundle\Services\CommandeManager
+    commande_repository: EcommerceBundle:Commande
+    commande_type.class: Ecommerce\EcommerceBundle\Form\Type\CommandeType
+    commande_handler.class: Ecommerce\EcommerceBundle\Form\Handler\CommandeHandler
+
     tva_extension.class: Ecommerce\EcommerceBundle\Twig\Extension\TvaExtension
+    montant_tva_extension.class: Ecommerce\EcommerceBundle\Twig\Extension\MontantTvaExtension
+    redirection_listener.class: Ecommerce\EcommerceBundle\Listener\RedirectionListener
+
+
+    panier.class: Ecommerce\EcommerceBundle\Services\Panier
 

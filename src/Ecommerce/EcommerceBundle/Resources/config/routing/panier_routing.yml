@@ -9,3 +9,11 @@ panier_livraison:
 panier_validation:
     path:     /validation
     defaults: { _controller: EcommerceBundle:Panier:validation }
+
+panier_ajouter_produit:
+    path:     /ajouter/{id}
+    defaults: { _controller: EcommerceBundle:Panier:ajouterProduit}
+
+panier_supprimer_produit:
+    path:     /supprimer/{id}
+    defaults: { _controller: EcommerceBundle:Panier:supprimerProduit}

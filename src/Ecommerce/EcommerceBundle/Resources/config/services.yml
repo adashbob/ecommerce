@@ -15,11 +15,23 @@ services:
         calls:
             - [setRepository, ["%produit_repository%"]]
 
+    client_manager:
+        class: "%client_manager.class%"
+        parent: ecommerce_manager
+        calls:
+            - [setRepository, ["%client_repository%"]]
+
     categorie_manager:
         class: "%categorie_manager.class%"
         parent: ecommerce_manager
         calls:
             - [setRepository, ["%categorie_repository%"]]
+
+    commande_manager:
+        class: "%commande_manager.class%"
+        parent: ecommerce_manager
+        calls:
+            - [setRepository, ["%commande_repository%"]]
 
     base_form:
         class: Form
@@ -62,11 +74,65 @@ services:
         parent: base_handler
         arguments: ["@categorie_form", "@categorie_manager"]
 
+
+    client_form:
+        parent: base_form
+        arguments:
+            - "%client_name%"
+            - "%client_type.class%"
+            - "@client_entity"
+
+    client_entity:
+        class: "%client_entity.class%"
+
+    client_handler:
+        class: "%client_handler.class%"
+        parent: base_handler
+        arguments: ["@client_form", "@client_manager"]
+
+    commande_form:
+        parent: base_form
+        arguments:
+            - "%commande_name%"
+            - "%commande_type.class%"
+            - "@commande_entity"
+
+    commande_entity:
+        class: "%commande_entity.class%"
+
+    commande_handler:
+        class: "%commande_handler.class%"
+        parent: base_handler
+        arguments: ["@commande_form", "@commande_manager"]
+
+
+    base_twig_extension:
+        abstract: true
+        calls:
+            - [setTwigEvironment, ['@twig']]
+
     tva_extension:
         class: "%tva_extension.class%"
-        arguments: ['@twig']
+        parent: base_twig_extension
         tags:
             - {name: twig.extension }
+
+    montant_tva_extension:
+        class: "%montant_tva_extension.class%"
+        parent: base_twig_extension
+        tags:
+            - {name: twig.extension }
+
+    panier_session:
+        class: "%panier.class%"
+        arguments:
+            ['@request_stack', '@session']
+
+    redirect_listener:
+        class: "%redirection_listener.class%"
+        arguments: ['@service_container']
+        tags:
+            - {name: kernel.event_listener, event: kernel.request, method: onKernelRequest }
 
 
 

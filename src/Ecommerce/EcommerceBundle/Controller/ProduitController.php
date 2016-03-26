@@ -14,7 +14,8 @@ class ProduitController extends Controller
     public function produitsAction()
     {
         return $this->render('@Ecommerce/Produit/produits.html.twig', array(
-            'produits' => $this->get('produit_manager')->getAvailableProducts()
+            'produits' => $this->get('produit_manager')->getAvailableProducts(),
+            'panier' => $this->get('panier_session')->has('panier')
         ));
     }
 
@@ -29,7 +30,8 @@ class ProduitController extends Controller
             throw $this->createNotFoundException('Le produit n\'existe pas');
         }
         return $this->render('@Ecommerce/Produit/presentation.html.twig', array(
-            'produit' => $produit
+            'produit' => $produit,
+            'panier' => $this->get('panier_session')->has('panier')
         ));
     }
 

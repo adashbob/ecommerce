@@ -1,0 +1,14 @@
+<form action="{{ path('panier_ajouter_produit', { 'id' : produit.id }) }}" method="get">
+    <td>{{ produit.name }}</td>
+    <td>
+        <select name="qte" class="span1" onChange="this.form.submit()">
+            {% for i in 1..10 %}
+                <option value="{{ i }}" {% if i == panier[produit.id] %} selected="selected" {% endif %}>{{ i }}</option>
+            {% endfor %}
+        </select>&nbsp;
+        <a href="#"><i class="icon-refresh"></i></a>&nbsp;
+        <a href="{{ path('panier_supprimer_produit', { 'id' : produit.id }) }}"><i class="icon-trash"></i></a>
+    </td>
+    <td>{{ produit.price }} €</td>
+    <td>{{ produit.price * panier[produit.id] }} €</td>
+</form>

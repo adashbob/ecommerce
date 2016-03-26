@@ -16,6 +16,11 @@ class ProduitManager extends EcommerceManager
         return $this->repository->findBy(array('available' => 1));
     }
 
+    public function findProduitsInArray($array)
+    {
+        return $this->repository->findProduitsInArray($array);
+    }
+
 
 
 }

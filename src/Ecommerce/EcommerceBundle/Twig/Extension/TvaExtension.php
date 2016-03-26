@@ -4,13 +4,8 @@
 namespace Ecommerce\EcommerceBundle\Twig\Extension;
 
 
-class TvaExtension extends \Twig_Extension
+class TvaExtension extends BaseTwigExtension
 {
-    protected $twig;
-
-    public function __construct(\Twig_Environment $twig){
-        $this->twig = $twig;
-    }
 
     public function getFilters()
     {
@@ -18,7 +13,7 @@ class TvaExtension extends \Twig_Extension
     }
 
     public function calculTva($prixHt, $tva){
-        return $prixHt / $tva;
+        return round($prixHt / $tva, 2);
     }
 
     /**

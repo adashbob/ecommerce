@@ -5,6 +5,7 @@ namespace Ecommerce\EcommerceBundle\Services;
 
 
 use Doctrine\ORM\EntityManager;
+use Doctrine\ORM\Query\Expr\Base;
 use Ecommerce\EcommerceBundle\Entity\BaseEntity;
 
 abstract class EcommerceManager
@@ -40,6 +41,9 @@ abstract class EcommerceManager
         return $entity;
     }
 
+    /**
+     * @return mixed
+     */
     public function getRepository()
     {
         return $this->repository;
@@ -59,5 +63,15 @@ abstract class EcommerceManager
      */
     public function getAll(){
         return $this->repository->findAll();
+    }
+
+    public function persit(BaseEntity $entity)
+    {
+        $this->em->persit($entity);
+    }
+
+    public function flush(BaseEntity $entity)
+    {
+        $this->em->flush();
     }
 }

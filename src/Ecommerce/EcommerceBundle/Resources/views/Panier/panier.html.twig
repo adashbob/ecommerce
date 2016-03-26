@@ -3,9 +3,9 @@
 {% set totalHT = 0 %}
 {% set totalTTC = 0%}
 {% set refTva = {} %}
-{#{% for produit in produits %}
-    {% set refTva = refTva|merge({ ('%' ~ produit.tva.valeur) : 0 }) %}
-{% endfor %}#}
+{% for produit in produits %}
+    {% set refTva = refTva|merge({ ('%' ~ produit.tva.value) : 0 }) %}
+{% endfor %}
 
 {% block body %}
     <div class="container">
@@ -16,12 +16,11 @@
             </div>
 
             <div class="span9">
-
-                {#{% for flashMessage in app.session.flashbag.get('success') %}
+                {% for flashMessage in app.session.flashbag.get('success') %}
                     <div class="alert alert-success">
                         {{ flashMessage }}
                     </div>
-                {% endfor %}#}
+                {% endfor %}
 
                 <h2>Votre panier</h2>
                 <table class="table table-striped table-hover">
@@ -29,52 +28,42 @@
                     <tr>
                         <th>Références</th>
                         <th>Quantité</th>
-                        <th>Prix unitaire</th>
+                        <th>price unitaire</th>
                         <th>Total HT</th>
                     </tr>
                     </thead>
                     <tbody>
-                    {#{% if produits|length == 0 %}
+                    {% if produits|length == 0 %}
                         <tr>
                             <td colspan="4"><center>Aucun articles dans votre panier</center></td>
                         </tr>
-                    {% endif %}#}
+                    {% endif %}
 
-                    {#{% for produit in produits %}
+                    {% for produit in produits %}
                         <tr>
-                            <form action="{{ path('ajouter', { 'id' : produit.id }) }}" method="get">
-                                <td>{{ produit.nom }}</td>
-                                <td>
-                                    <select name="qte" class="span1" onChange="this.form.submit()">
-                                        {% for i in 1..10 %}
-                                            <option value="{{ i }}" {% if i == panier[produit.id] %} selected="selected" {% endif %}>{{ i }}</option>
-                                        {% endfor %}
-                                    </select>&nbsp;
-                                    <a href="{{ path('supprimer', { 'id' : produit.id }) }}"><i class="icon-trash"></i></a>
-                                </td>
-                                <td>{{ produit.prix }} €</td>
-                                <td>{{ produit.prix * panier[produit.id] }} €</td>
-                            </form>
+                            {{ include('@Ecommerce/Panier/Includes/_produitform.html.twig', {
+                                'produit': produit,
+                                'panier': panier
+                                })
+                            }}
                         </tr>
-                        {% set totalHT = totalHT + (produit.prix * panier[produit.id]) %}
-                        {% set totalTTC = totalTTC + (produit.prix * panier[produit.id])|tva(produit.tva.multiplicate) %}
-                        {% set refTva = refTva|merge({ ('%' ~ produit.tva.valeur) : refTva['%' ~ produit.tva.valeur] + ( produit.prix * panier[produit.id])|montantTva(produit.tva.multiplicate) }) %}
-                    {% endfor %}#}
+                        {% set totalHT = totalHT + (produit.price * panier[produit.id]) %}
+                        {% set totalTTC = totalTTC + (produit.price * panier[produit.id])|tva(produit.tva.multiplicate) %}
+                        {% set refTva = refTva|merge({ ('%' ~ produit.tva.value) : refTva['%' ~ produit.tva.value] + ( produit.price * panier[produit.id])|montantTva(produit.tva.multiplicate) }) %}
+                    {% endfor %}
                     </tbody>
                 </table>
-                {#{% if produits|length != 0 %}#}
-                    <dl class="dl-horizontal pull-right">
-                        <dt>Total HT :</dt><dd>{{ totalHT }} €</dd>
-
-                        {% for key, tva in refTva %}
-                            <dt>TVA {{ key }} :</dt><dd>{{ tva }} €</dd>
-                        {% endfor %}
-
-                        <dt>Total TTC :</dt><dd>{{ totalTTC }} €</dd>
-                    </dl>
+                {% if produits|length != 0 %}
+                    {{ include('@Ecommerce/Panier/Includes/_tva.html.twig', {
+                        'totalHT': totalHT,
+                        'refTva': refTva,
+                        'totalTTC': totalTTC
+                        })
+                    }}
                     <div class="clearfix"></div>
                     <a href="{{ path('panier_livraison') }}" class="btn btn-success pull-right">Valider mon panier</a>
-                {#{% endif %}#}
+                {% endif %}
+
                 <a href="{{ path('produit_produits') }}" class="btn btn-primary">Continuer mes achats</a>
             </div>
 
