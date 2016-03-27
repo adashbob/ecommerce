@@ -55,7 +55,10 @@ class ProduitController extends Controller
         $form->handleRequest($request);
         if($request->isMethod('post') && $form->isValid()){
             $produits = $this->get('produit_manager')->getRepository()->recherche($form['recherche']->getData());
-            return $this->render('@Ecommerce/Produit/produits.html.twig', array('produits' => $produits));
+            return $this->render('@Ecommerce/Produit/produits.html.twig', array(
+                'produits' => $produits,
+                'panier' => $this->get('panier_session')->has('panier')
+            ));
         }
 
         return $this->renderViewSearch($form);

@@ -20,6 +20,9 @@ class Panier
 
     }
 
+    /**
+     * @param $id
+     */
     public function addProduit($id)
     {
         $this->panier =  $this->get('panier');
@@ -35,6 +38,9 @@ class Panier
         $this->session->getFlashBag()->set('success', 'Article ajouté avec success');
     }
 
+    /**
+     * @param $id
+     */
     public function removeProduit($id)
     {
         $this->panier = $this->get('panier');
@@ -45,11 +51,19 @@ class Panier
         }
     }
 
+    /**
+     * @param $key
+     * @return mixed
+     */
     public function get($key){
         $session = $this->session;
         return $session->has($key) ? $session->get($key) : $this->addKey($key);
     }
 
+    /**
+     * @param $key
+     * @return mixed
+     */
     private function addKey($key)
     {
         $this->session->set($key, array());
@@ -57,19 +71,36 @@ class Panier
     }
 
 
+    /**
+     * @param $key
+     * @return bool|mixed
+     */
     public function has($key){
         $session = $this->session;
         return $session->has($key) ? $session->get($key) : false;
     }
 
+    /**
+     * @param $key
+     * @return int
+     */
     public function count($key){
 
          return $this->session->has($key) ? count($this->session->get($key)) : 0;
     }
 
+    /**
+     * @param $key
+     * @param $value
+     */
     public function set($key, $value)
     {
         $this->session->set($key, $value);
+    }
+
+    public function remove($key)
+    {
+        $this->session->remove($key);
     }
 
 }

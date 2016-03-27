@@ -51,9 +51,9 @@ class Commande implements BaseEntity
     /**
      * @var array
      *
-     * @ORM\Column(name="commande", type="array")
+     * @ORM\Column(name="facture", type="array")
      */
-    private $commande;
+    private $facture;
 
 
     /**
@@ -163,26 +163,26 @@ class Commande implements BaseEntity
     }
 
     /**
-     * Set commande
+     * Set facture
      *
-     * @param array $commande
+     * @param array $facture
      *
      * @return Commande
      */
-    public function setCommande($commande)
+    public function setFacture($facture)
     {
-        $this->commande = $commande;
+        $this->facture = $facture;
 
         return $this;
     }
 
     /**
-     * Get commande
+     * Get facture
      *
      * @return array
      */
-    public function getCommande()
+    public function getFacture()
     {
-        return $this->commande;
+        return $this->facture;
     }
 }

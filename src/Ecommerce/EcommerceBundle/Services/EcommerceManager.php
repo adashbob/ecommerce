@@ -67,10 +67,10 @@ abstract class EcommerceManager
 
     public function persit(BaseEntity $entity)
     {
-        $this->em->persit($entity);
+        $this->em->persist($entity);
     }
 
-    public function flush(BaseEntity $entity)
+    public function flushEntity()
     {
         $this->em->flush();
     }

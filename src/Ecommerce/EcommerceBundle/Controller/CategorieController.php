@@ -21,7 +21,8 @@ class CategorieController extends Controller
             throw $this->createNotFoundException('La catégorie n\'existe pas');
         }
         return $this->render('EcommerceBundle:Produit:produits.html.twig', array(
-            'produits' => $categorie->getProduits()
+            'produits' => $categorie->getProduits(),
+            'panier' => $this->get('panier_session')->has('panier')
         ));
     }
 

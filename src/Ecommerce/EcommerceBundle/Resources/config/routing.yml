@@ -9,3 +9,7 @@ ecommerce_produit:
 ecommerce_categorie:
     resource: "@EcommerceBundle/Resources/config/routing/categorie_routing.yml"
     prefix:   /categorie
+
+ecommerce_commande:
+    resource: "@EcommerceBundle/Resources/config/routing/commande_routing.yml"
+    prefix:   /commande

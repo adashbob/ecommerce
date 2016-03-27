@@ -46,7 +46,6 @@ class PanierController extends Controller
     {
         $panier = $this->get('panier_session')->get('panier');
         $produits = $this->get('produit_manager')
-            ->getRepository()
             ->findProduitsInArray(array_keys($panier));
 
         return $this->render('@Ecommerce/Panier/panier.html.twig', array(
@@ -71,6 +70,7 @@ class PanierController extends Controller
     }
 
     /**
+     * Facture la commande
      * @return \Symfony\Component\HttpFoundation\Response
      */
     public function validationAction()
@@ -78,17 +78,15 @@ class PanierController extends Controller
         if ($this->get('request_stack')->getCurrentRequest()->getMethod() == 'POST')
             $this->setLivraisonOnSession();
 
-        $adresse = $this->get('panier_session')->get('adresse');
-        $array = array_keys($this->get('panier_session')->get('panier'));
-
         return $this->render('@Ecommerce/Panier/validation.html.twig', array(
-            'produits' => $this->get('produit_manager')->findProduitsInArray($array),
-            'livraison' => $this->get('client_manager')->getClient($adresse['livraison']),
-            'facturation' => $this->get('client_manager')->getClient($adresse['facturation']),
-            'panier' => $this->get('panier_session')->get('panier')
+            'commande' => $this->get('facturation')->prepareCommande()
         ));
     }
 
+    /**
+     * Met les adresses de livraison et de facturation en session
+     * @return \Symfony\Component\HttpFoundation\RedirectResponse
+     */
     public function setLivraisonOnSession()
     {
         $request = $this->get('request_stack')->getCurrentRequest();

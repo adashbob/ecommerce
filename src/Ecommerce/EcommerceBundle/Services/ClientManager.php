@@ -13,7 +13,7 @@ class ClientManager extends EcommerceManager
         return $this->repository->find($id);
     }
 
-    public function clientArray(Client $client)
+    public function arrayClient(Client $client)
     {
         return array('prenom' => $client->getPrenom(),
             'nom' => $client->getNom(),

@@ -1,11 +1,4 @@
-{% extends ":layout/layout.html.twig" %}
-
-{% set totalHT = 0 %}
-{% set totalTTC = 0%}
-{% set refTva = {} %}
-{% for produit in produits %}
-    {% set refTva = refTva|merge({ ('%' ~ produit.tva.value) : 0 }) %}
-{% endfor %}
+{% extends "::layout/layout.html.twig" %}
 
 {% block body %}
     <div class="container">
@@ -16,72 +9,70 @@
             </div>
 
             <div class="span9">
-                {% for flashMessage in app.session.flashbag.get('success') %}
-                    <div class="alert alert-success">
-                        {{ flashMessage }}
-                    </div>
-                {% endfor %}
 
-                <h2>valider mon panier</h2>
+
+                <h2>Valider mon panier</h2>
                 <table class="table table-striped table-hover">
                     <thead>
                     <tr>
                         <th>Références</th>
                         <th>Quantité</th>
-                        <th>price unitaire</th>
+                        <th>Prix unitaire</th>
                         <th>Total HT</th>
                     </tr>
                     </thead>
                     <tbody>
-                    {% if produits|length == 0 %}
+                    {% for produit in commande.facture.produit %}
                         <tr>
-                            <td colspan="4"><center>Aucun articles dans votre panier</center></td>
+                            <td>{{ produit.reference }}</td>
+                            <td>
+                                {{ produit.quantite }}
+                            </td>
+                            <td>{{ produit.prixHT }} €</td>
+                            <td>{{ produit.prixHT * produit.quantite }} €</td>
                         </tr>
-                    {% endif %}
-
-                    {% for produit in produits %}
-                        <tr>
-                            <form action="{{ path('panier_ajouter_produit', { 'id' : produit.id }) }}" method="get">
-                                <td>{{ produit.name }}</td>
-                                <td>{{ produit.id }}</td>
-                                <td>{{ produit.price }} €</td>
-                                <td>{{ produit.price * panier[produit.id] }} €</td>
-                            </form>
-                        </tr>
-                        {% set totalHT = totalHT + (produit.price * panier[produit.id]) %}
-                        {% set totalTTC = totalTTC + (produit.price * panier[produit.id])|tva(produit.tva.multiplicate) %}
-                        {% set refTva = refTva|merge({ ('%' ~ produit.tva.value) : refTva['%' ~ produit.tva.value] + ( produit.price * panier[produit.id])|montantTva(produit.tva.multiplicate) }) %}
                     {% endfor %}
                     </tbody>
                 </table>
 
-                {{ include('@Ecommerce/Panier/Includes/_tva.html.twig', {
-                    'totalHT': totalHT,
-                    'refTva': refTva,
-                    'totalTTC': totalTTC
-                })
-                }}
+                <dl class="dl-horizontal pull-right">
+                    <dt>Total HT :</dt><dd>{{ commande.facture.prixHT }} €</dd>
+
+                    {% for key, tva in commande.facture.tva %}
+                        <dt>TVA {{ key }} :</dt><dd>{{ tva }} €</dd>
+                    {% endfor %}
+
+                    <dt>Total TTC :</dt><dd>{{ commande.facture.prixTTC }} €</dd>
+                </dl>
+
                 <div class="span3 pull-left">
                     <dl class="pull-left">
                         <dt><h4>Adresse de livraison</h4></dt>
-                        <dt>{{ livraison.prenom }} {{ livraison.nom }}</dt>
-                        <dt>{{ livraison.adresse }}</dt>
-                        <dt>{{ livraison.cp }} {{ livraison.ville }} - {{ livraison.pays }}</dt>
+                        <dt>{{ commande.facture.livraison.prenom }} {{ commande.facture.livraison.nom }}</dt>
+                        <dt>{{ commande.facture.livraison.adresse }}</dt>
+                        <dt>{{ commande.facture.livraison.cp }} {{ commande.facture.livraison.ville }} - {{ commande.facture.livraison.pays }}</dt>
                     </dl>
                 </div>
 
                 <div class="span3 pull-left">
                     <dl class="pull-left">
                         <dt><h4>Adresse de facturation</h4></dt>
-                        <dt>{{ facturation.prenom }} {{ facturation.nom }}</dt>
-                        <dt>{{ facturation.adresse }}</dt>
-                        <dt>{{ facturation.cp }} {{ facturation.ville }} - {{ facturation.pays }}</dt>
+                        <dt>{{ commande.facture.facturation.prenom }} {{ commande.facture.facturation.nom }}</dt>
+                        <dt>{{ commande.facture.facturation.adresse }}</dt>
+                        <dt>{{ commande.facture.facturation.cp }} {{ commande.facture.facturation.ville }} - {{ commande.facture.facturation.pays }}</dt>
                     </dl>
                 </div>
-                <div class="clearfix"></div>
-                <a href="#" class="btn btn-success pull-right">Payer</a>
 
-                <a href="{{ path('panier_livraison') }}" class="btn btn-primary">Retour</a>
+                <div class="clearfix"></div>
+
+                <form action="{{ path('commande_validerCommande', {'id': commande.id}) }}" method="POST"/>
+                <input name="token" type="hidden" value="{{ commande.facture.token }}" />
+                <input name="prix" type="hidden" value="{{ commande.facture.prixTTC }}" />
+                <input name="date" type="hidden" value="{{ commande.date|date('dmyhms') }}" />
+                <button type="submit" class="btn btn-success pull-right">Payer</button>
+                </form>
+
+                <a href="{{ path('panier_livraison') }}" class="btn btn-primary">retour</a>
             </div>
 
         </div>

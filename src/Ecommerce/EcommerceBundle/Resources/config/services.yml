@@ -134,5 +134,14 @@ services:
         tags:
             - {name: kernel.event_listener, event: kernel.request, method: onKernelRequest }
 
+    facturation:
+        class: Ecommerce\EcommerceBundle\Services\Facturation
+        arguments:
+            - '@produit_manager'
+            - '@client_manager'
+            - '@commande_manager'
+            - '@panier_session'
+            - '@security.token_storage'
+
 
 
