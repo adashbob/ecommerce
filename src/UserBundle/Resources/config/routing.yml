@@ -1,3 +1,7 @@
-user_homepage:
-    path:     /
-    defaults: { _controller: UserBundle:Default:index }
+user_facture:
+    path:     /facture
+    defaults: { _controller: UserBundle:User:factures }
+
+user_facturePDF:
+    path:     /facturepdf/{id}
+    defaults: { _controller: UserBundle:User:facturesPDF }

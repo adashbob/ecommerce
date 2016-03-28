@@ -143,5 +143,9 @@ services:
             - '@panier_session'
             - '@security.token_storage'
 
+    generate_facture_pdf:
+        class: Ecommerce\EcommerceBundle\Services\GenerateFacture
+        arguments: ['@service_container']
+
 
 

@@ -10,4 +10,28 @@ namespace Ecommerce\EcommerceBundle\Repository;
  */
 class CommandeRepository extends \Doctrine\ORM\EntityRepository
 {
+    public function byFacture($user)
+    {
+        $qb = $this->createQueryBuilder('c')
+            ->select('c')
+            ->where('c.user = :user')
+            ->andWhere('c.valid = true')
+            ->andWhere('c.reference != 0')
+            ->orderBy('c.id')
+            ->setParameter('user', $user);
+
+        return $qb->getQuery()->getResult();
+    }
+
+    public function byDateCommand($date)
+    {
+        $qb = $this->createQueryBuilder('c')
+            ->select('c')
+            ->where('c.date > :date')
+            ->andWhere('c.valid = true')
+            ->orderBy('c.id')
+            ->setParameter('date', $date);
+
+        return $qb->getQuery()->getResult();
+    }
 }
