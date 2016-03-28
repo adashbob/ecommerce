@@ -1,0 +1,30 @@
+services:
+    ecommerce_manager:
+        abstract: true
+        calls:
+            - [setEntityManager, ['@doctrine.orm.entity_manager']]
+            - [setRepository, [EcommerceBundle:Categorie]]
+
+    produit_manager:
+        class: "%produit_manager.class%"
+        parent: ecommerce_manager
+        calls:
+            - [setRepository, ["%produit_repository%"]]
+
+    client_manager:
+        class: "%client_manager.class%"
+        parent: ecommerce_manager
+        calls:
+            - [setRepository, ["%client_repository%"]]
+
+    categorie_manager:
+        class: "%categorie_manager.class%"
+        parent: ecommerce_manager
+        calls:
+            - [setRepository, ["%categorie_repository%"]]
+
+    commande_manager:
+        class: "%commande_manager.class%"
+        parent: ecommerce_manager
+        calls:
+            - [setRepository, ["%commande_repository%"]]

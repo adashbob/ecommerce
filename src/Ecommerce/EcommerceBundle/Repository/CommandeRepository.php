@@ -10,7 +10,7 @@ namespace Ecommerce\EcommerceBundle\Repository;
  */
 class CommandeRepository extends \Doctrine\ORM\EntityRepository
 {
-    public function byFacture($user)
+    public function getFacturesByUser($user)
     {
         $qb = $this->createQueryBuilder('c')
             ->select('c')

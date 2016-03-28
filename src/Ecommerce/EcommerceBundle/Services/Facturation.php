@@ -6,6 +6,7 @@ namespace Ecommerce\EcommerceBundle\Services;
 
 use Doctrine\ORM\EntityNotFoundException;
 use Ecommerce\EcommerceBundle\Entity\Commande;
+use Symfony\Component\DependencyInjection\ContainerInterface;
 use Symfony\Component\Security\Core\Authentication\Token\Storage\TokenStorage;
 
 class Facturation
@@ -21,18 +22,18 @@ class Facturation
     private $adresse;
     private $security;
 
-    public function __construct(ProduitManager $pm, ClientManager $cm, CommandeManager $cManager, Panier $panier, TokenStorage $security)
+    public function __construct(ContainerInterface $containerInterface)
     {
-        $this->produitManager = $pm;
-        $this->clientManager = $cm;
-        $this->commandeManager = $cManager;
-        $this->panierSession = $panier;
+        $this->produitManager = $containerInterface->get('produit_manager');
+        $this->clientManager = $containerInterface->get('client_manager');
+        $this->commandeManager = $containerInterface->get('commande_manager');
+        $this->panierSession = $containerInterface->get('panier_session');
+        $this->security = $containerInterface->get('security.token_storage');
         $this->facture = array();
         $this->totalHT = 0;
         $this->totalTVA = 0;
         $this->panier = $this->panierSession->get('panier');
         $this->adresse = $this->panierSession->get('adresse');
-        $this->security = $security;
     }
 
     /**
@@ -62,6 +63,8 @@ class Facturation
     }
 
     /**
+     * Recupère les produits du panier et calcule les prix et ajoute les
+     * adresse de livraison et de facturation
      * @return array
      */
     public function doFacture()

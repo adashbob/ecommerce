@@ -1,0 +1,18 @@
+
+services:
+    base_twig_extension:
+        abstract: true
+        calls:
+            - [setTwigEvironment, ['@twig']]
+
+    tva_extension:
+        class: "%tva_extension.class%"
+        parent: base_twig_extension
+        tags:
+            - {name: twig.extension }
+
+    montant_tva_extension:
+        class: "%montant_tva_extension.class%"
+        parent: base_twig_extension
+        tags:
+            - {name: twig.extension }
