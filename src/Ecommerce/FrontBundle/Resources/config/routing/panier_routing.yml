@@ -1,0 +1,19 @@
+panier_index:
+    path:     /
+    defaults: { _controller: EcommerceFrontBundle:Panier:panier }
+
+panier_livraison:
+    path:     /livraison
+    defaults: { _controller: EcommerceFrontBundle:Panier:livraison }
+
+panier_validation:
+    path:     /validation
+    defaults: { _controller: EcommerceFrontBundle:Panier:validation }
+
+panier_ajouter_produit:
+    path:     /ajouter/{id}
+    defaults: { _controller: EcommerceFrontBundle:Panier:ajouterProduit}
+
+panier_supprimer_produit:
+    path:     /supprimer/{id}
+    defaults: { _controller: EcommerceFrontBundle:Panier:supprimerProduit}

@@ -1,0 +1,15 @@
+ecommerce_panier:
+    resource: "@EcommerceFrontBundle/Resources/config/routing/panier_routing.yml"
+    prefix:   /panier
+
+ecommerce_produit:
+    resource: "@EcommerceFrontBundle/Resources/config/routing/produit_routing.yml"
+    prefix:   /produit
+
+ecommerce_categorie:
+    resource: "@EcommerceFrontBundle/Resources/config/routing/categorie_routing.yml"
+    prefix:   /categorie
+
+ecommerce_commande:
+    resource: "@EcommerceFrontBundle/Resources/config/routing/commande_routing.yml"
+    prefix:   /commande

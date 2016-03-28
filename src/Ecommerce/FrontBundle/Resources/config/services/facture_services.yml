@@ -1,0 +1,8 @@
+services:
+    facturation:
+        class: Ecommerce\FrontBundle\Services\Facturation
+        arguments: ['@service_container']
+
+    generate_facture_pdf:
+        class: Ecommerce\FrontBundle\Services\GenerateFacture
+        arguments: ['@service_container']

@@ -1,0 +1,39 @@
+parameters:
+    base_handler.class: BaseHandler
+
+    produit_name: produit
+    produit_entity.class: Ecommerce\FrontBundle\Entity\Produit
+    produit_manager.class: Ecommerce\FrontBundle\Services\ProduitManager
+    produit_repository: EcommerceFrontBundle:Produit
+    produit_type.class: Ecommerce\FrontBundle\Form\Type\ProduitType
+    produit_handler.class: Ecommerce\FrontBundle\Form\Handler\ProduitHandler
+
+
+    categorie_name: categorie
+    categorie_entity.class: Ecommerce\FrontBundle\Entity\Categorie
+    categorie_manager.class: Ecommerce\FrontBundle\Services\CategorieManager
+    categorie_repository: EcommerceFrontBundle:Categorie
+    categorie_type.class: Ecommerce\FrontBundle\Form\Type\CategorieType
+    categorie_handler.class: Ecommerce\FrontBundle\Form\Handler\CategorieHandler
+
+    client_name: client
+    client_entity.class: Ecommerce\FrontBundle\Entity\Client
+    client_manager.class: Ecommerce\FrontBundle\Services\ClientManager
+    client_repository: EcommerceFrontBundle:Client
+    client_type.class: Ecommerce\FrontBundle\Form\Type\ClientType
+    client_handler.class: Ecommerce\FrontBundle\Form\Handler\ClientHandler
+
+    commande_name: commande
+    commande_entity.class: Ecommerce\FrontBundle\Entity\Commande
+    commande_manager.class: Ecommerce\FrontBundle\Services\CommandeManager
+    commande_repository: EcommerceFrontBundle:Commande
+    commande_type.class: Ecommerce\FrontBundle\Form\Type\CommandeType
+    commande_handler.class: Ecommerce\FrontBundle\Form\Handler\CommandeHandler
+
+    tva_extension.class: Ecommerce\FrontBundle\Twig\Extension\TvaExtension
+    montant_tva_extension.class: Ecommerce\FrontBundle\Twig\Extension\MontantTvaExtension
+    redirection_listener.class: Ecommerce\FrontBundle\Listener\RedirectionListener
+
+
+    panier.class: Ecommerce\FrontBundle\Services\Panier
+

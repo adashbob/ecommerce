@@ -23,13 +23,13 @@ class User extends BaseUser
     protected $id;
 
     /**
-     * @ORM\OneToMany(targetEntity="Ecommerce\EcommerceBundle\Entity\Commande", mappedBy="user", cascade={"remove"})
+     * @ORM\OneToMany(targetEntity="Ecommerce\FrontBundle\Entity\Commande", mappedBy="user", cascade={"remove"})
      * @ORM\JoinColumn(nullable=true)
      */
     private $commandes;
 
     /**
-     * @ORM\OneToMany(targetEntity="Ecommerce\EcommerceBundle\Entity\Client", mappedBy="user", cascade={"remove"})
+     * @ORM\OneToMany(targetEntity="Ecommerce\FrontBundle\Entity\Client", mappedBy="user", cascade={"remove"})
      * @ORM\JoinColumn(nullable=true)
      */
     private $adresses;
@@ -55,11 +55,11 @@ class User extends BaseUser
     /**
      * Add commande
      *
-     * @param \Ecommerce\EcommerceBundle\Entity\Commande $commande
+     * @param \Ecommerce\FrontBundle\Entity\Commande $commande
      *
      * @return User
      */
-    public function addCommande(\Ecommerce\EcommerceBundle\Entity\Commande $commande)
+    public function addCommande(\Ecommerce\FrontBundle\Entity\Commande $commande)
     {
         $this->commandes[] = $commande;
 
@@ -69,9 +69,9 @@ class User extends BaseUser
     /**
      * Remove commande
      *
-     * @param \Ecommerce\EcommerceBundle\Entity\Commande $commande
+     * @param \Ecommerce\FrontBundle\Entity\Commande $commande
      */
-    public function removeCommande(\Ecommerce\EcommerceBundle\Entity\Commande $commande)
+    public function removeCommande(\Ecommerce\FrontBundle\Entity\Commande $commande)
     {
         $this->commandes->removeElement($commande);
     }
@@ -92,11 +92,11 @@ class User extends BaseUser
     /**
      * Add adress
      *
-     * @param \Ecommerce\EcommerceBundle\Entity\Client $adress
+     * @param \Ecommerce\FrontBundle\Entity\Client $adress
      *
      * @return User
      */
-    public function addAdresses(\Ecommerce\EcommerceBundle\Entity\Client $adress)
+    public function addAdresses(\Ecommerce\FrontBundle\Entity\Client $adress)
     {
         $this->adresses[] = $adress;
 
@@ -106,9 +106,9 @@ class User extends BaseUser
     /**
      * Remove adress
      *
-     * @param \Ecommerce\EcommerceBundle\Entity\Client $adress
+     * @param \Ecommerce\FrontBundle\Entity\Client $adress
      */
-    public function removeAdresses(\Ecommerce\EcommerceBundle\Entity\Client $adress)
+    public function removeAdresses(\Ecommerce\FrontBundle\Entity\Client $adress)
     {
         $this->adresses->removeElement($adress);
     }

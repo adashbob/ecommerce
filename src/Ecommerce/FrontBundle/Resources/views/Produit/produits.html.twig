@@ -1,0 +1,30 @@
+{% extends "@EcommerceFront/layout.html.twig" %}
+
+{% block body_content %}
+    {% if produits|length != 0 %}
+        <ul class="thumbnails">
+            {% for produit in produits %}
+                <li class="span3">
+                    <div class="thumbnail">
+                        <img src="{{ asset(produit.image.path) }}" alt="{{ produit.image.name }}" width="300" height="150">
+                        <div class="caption">
+                            <h4>{{ produit.name }}</h4>
+                            <p>{{ produit.price | tva(produit.tva.multiplicate)}} €</p>
+                            <a class="btn btn-primary" href="{{ path('produit_presentation', {'id': produit.id}) }}">Plus d'infos</a>
+                            {% if panier[produit.id] is not defined %}
+                                <a class="btn btn-success" href="{{ path('panier_ajouter_produit', { 'id' : produit.id }) }}">Ajouter au panier</a>
+                            {% endif %}
+                        </div>
+                    </div>
+                </li>
+            {% endfor %}
+        </ul>
+
+        <div class="navigation">
+            {{ knp_pagination_render(produits) }}
+        </div>
+
+    {% else %}
+        Aucun produit
+    {% endif %}
+{% endblock %}

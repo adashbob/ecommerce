@@ -1,7 +1,7 @@
 <div class="well">
     <ul class="nav nav-list">
         <li class="nav-header">Nos produits</li>
-        {{ render(controller('EcommerceBundle:Categorie:menu')) }}
+        {{ render(controller('EcommerceFrontBundle:Categorie:menu')) }}
     </ul>
 </div>
 
@@ -10,4 +10,4 @@
 {% else %}
     {{ include('@User/Default/connexion.html.twig') }}
 {% endif %}
-    {{ render(controller('EcommerceBundle:Panier:menu')) }}
+    {{ render(controller('EcommerceFrontBundle:Panier:menu')) }}

@@ -1,3 +1,0 @@
-commande_validerCommande:
-    path:     /valider/{id}
-    defaults: { _controller: EcommerceBundle:Commande:validerCommande }
