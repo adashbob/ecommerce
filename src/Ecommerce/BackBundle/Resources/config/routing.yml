@@ -1,0 +1,3 @@
+ecommerce_back_homepage:
+    path:     /
+    defaults: { _controller: EcommerceBackBundle:Default:index }

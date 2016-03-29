@@ -8,7 +8,7 @@ user:
 
 pages:
     resource: "@PagesBundle/Resources/config/routing.yml"
-    prefix:   /page
+    prefix:   /
 
 ecommerce:
     resource: "@EcommerceFrontBundle/Resources/config/routing.yml"

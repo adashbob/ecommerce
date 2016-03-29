@@ -38,8 +38,9 @@ class UserController extends Controller
 
     public function facturesPDFAction($id)
     {
+        $user = $this->getUser();
         $facture = $this->get('commande_manager')->getRepository()->findOneBy(
-            array('user' => $this->getUser(),
+            array('user' => $user,
             'valid' => 1,
             'id' => $id));
 
@@ -48,11 +49,8 @@ class UserController extends Controller
             return $this->redirectToRoute('user_facture');
         }
 
-        $this->get('generate_facture_pdf')->facture($facture)->Output('Facture.pdf');
-
-        $response = new Response;
-        $response->headers->set('Content-type' , 'application/pdf');
-
-        return $response;
+        $view = $this->render('@User/User/facturePDF.html.twig', array('facture' => $facture));
+        $parameters  = array('filename' => sprintf('facture_%s_%s', $user->getUsername(), $facture->getReference()));
+        return $this->get('generate_facture_pdf')->facture($view, $parameters);
     }
 }
