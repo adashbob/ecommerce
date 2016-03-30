@@ -23,7 +23,7 @@ class GenerateFacture
      * @return Response
      * @throws \HTML2PDF_exception
      */
-    public function facture($view, array $parameters  = array('author' => '', 'title' => '', 'subject' => '', 'filename' => '', 'keywords' => ''))
+    public function genratePdf($view, array $parameters  = array('author' => '', 'title' => '', 'subject' => '', 'filename' => '', 'keywords' => ''))
     {
         $html2pdf = new \Html2Pdf_Html2Pdf('P','A4','fr');
         $html2pdf->pdf->SetAuthor('');

@@ -51,6 +51,6 @@ class UserController extends Controller
 
         $view = $this->render('@User/User/facturePDF.html.twig', array('facture' => $facture));
         $parameters  = array('filename' => sprintf('facture_%s_%s', $user->getUsername(), $facture->getReference()));
-        return $this->get('generate_facture_pdf')->facture($view, $parameters);
+        return $this->get('generate_facture_pdf')->genratePdf($view, $parameters);
     }
 }

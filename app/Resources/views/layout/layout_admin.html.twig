@@ -21,14 +21,14 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="brand" href="{{ path('admin') }}">Administration</a>
+            <a class="brand" href="{#{{ path('admin') }}#}">Administration</a>
         </div>
     </div>
 </div>
 
 <div class="container">
     <div class="row">
-        {#{% include '::modulesUsed/navigationAdmin.html.twig' %}#}
+        {% include ':includes:navigationAdmin.html.twig' %}
         <div class="span9">
             {% block body %}{% endblock %}
         </div>
@@ -46,7 +46,7 @@
 </footer>
 <script src="{{ asset('js/jquery-1.10.0.min.js') }}"></script>
 <script src="{{ asset('../js/bootstrap.js') }}"></script>
-<script src="{{ asset('bundles/pages/ckeditor/ckeditor.js') }}"></script>
+{#<script src="{{ asset('bundles/pages/ckeditor/ckeditor.js') }}"></script>#}
 {% block javascripts %}{% endblock %}
 </body>
 </html>

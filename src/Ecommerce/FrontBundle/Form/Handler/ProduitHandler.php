@@ -12,9 +12,10 @@ class ProduitHandler extends BaseHandler
     protected $produit;
     protected $produitManager;
 
-    public function __construct(Form $form,  ProduitManager $produitManager){
+    public function __construct(Form $form,  ProduitManager $produitManager, $type){
         $this->form = $form;
         $this->produitManager = $produitManager;
+        $this->type = $type;
     }
 
     public function onSuccess(){

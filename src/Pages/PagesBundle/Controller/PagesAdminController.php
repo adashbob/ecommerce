@@ -6,59 +6,37 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
 use Pages\PagesBundle\Entity\Page;
-use Pages\PagesBundle\Form\PageType;
 
-/**
- * Page controller.
- *
- */
+
 class PagesAdminController extends Controller
 {
-    /**
-     * Lists all Page entities.
-     *
-     */
+
     public function indexAction()
     {
-        return $this->render('PagesAdmin/index.html.twig', array(
-            'pages' => $this->get('page_manager')->getAll(),
+        return $this->render('@Pages/PagesAdmin/index.html.twig', array(
+            'entities' => $this->get('page_manager')->getAll(),
         ));
     }
 
-    /**
-     * Creates a new Page entity.
-     *
-     */
-    public function newAction(Request $request)
+
+    public function newAction()
     {
-        $page = new Page();
-        $form = $this->createForm('Pages\PagesBundle\Form\PageType', $page);
-        $form->handleRequest($request);
-
-        if ($form->isSubmitted() && $form->isValid()) {
-            $em = $this->getDoctrine()->getManager();
-            $em->persist($page);
-            $em->flush();
-
-            return $this->redirectToRoute('adminPages_show', array('id' => $page->getId()));
+        $pageHandler = $this->get('page_handler');
+        if ($pageHandler->isCreated()) {
+            return $this->redirectToRoute('adminPages_show', array('id' => $pageHandler->getPage()->getId()));
         }
 
         return $this->render('@Pages/PagesAdmin/new.html.twig', array(
-            'page' => $page,
-            'form' => $form->createView(),
+            'form' => $pageHandler->createView()
         ));
     }
 
-    /**
-     * Finds and displays a Page entity.
-     *
-     */
     public function showAction(Page $page)
     {
         $deleteForm = $this->createDeleteForm($page);
 
         return $this->render('@Pages/PagesAdmin/show.html.twig', array(
-            'page' => $page,
+            'entity' => $page,
             'delete_form' => $deleteForm->createView(),
         ));
     }
@@ -67,26 +45,40 @@ class PagesAdminController extends Controller
      * Displays a form to edit an existing Page entity.
      *
      */
-    public function editAction(Request $request, Page $page)
+    /*public function editAction(Request $request, Page $page)
     {
         $deleteForm = $this->createDeleteForm($page);
-        $editForm = $this->createForm('Pages\PagesBundle\Form\PageType', $page);
+        $editForm = $this->createForm(PageType::class, $page);
         $editForm->handleRequest($request);
 
         if ($editForm->isSubmitted() && $editForm->isValid()) {
+            var_dump($editForm);
             $em = $this->getDoctrine()->getManager();
             $em->persist($page);
             $em->flush();
 
             return $this->redirectToRoute('adminPages_edit', array('id' => $page->getId()));
         }
-
+        //var_dump($page); die();
         return $this->render('@Pages/PagesAdmin/edit.html.twig', array(
             'page' => $page,
             'edit_form' => $editForm->createView(),
             'delete_form' => $deleteForm->createView(),
         ));
+    }*/
+
+    public function editAction(Page $page)
+    {
+        $pageHandler = $this->get('page_handler');
+        if($pageHandler->isEdit($page)){
+            return $this->redirectToRoute('adminPages_index');
+        }
+        return $this->render('@Pages/PagesAdmin/edit.html.twig', array(
+            'page' => $page,
+            'edit_form' => $pageHandler->createView()
+        ));
     }
+
 
     /**
      * Deletes a Page entity.

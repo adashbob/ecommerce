@@ -12,9 +12,10 @@ class CommandeHandler extends BaseHandler
     protected $commande;
     protected $commandeManager;
 
-    public function __construct(Form $form,  CommandeManager $commandeManager){
+    public function __construct(Form $form,  CommandeManager $commandeManager, $type){
         $this->form = $form;
         $this->commandeManager = $commandeManager;
+        $this->type = $type;
     }
 
 

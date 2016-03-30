@@ -4,7 +4,6 @@ namespace Pages\PagesBundle\Form\Handler;
 
 use Pages\PagesBundle\Services\PageManager;
 use Symfony\Component\Form\Form;
-use Symfony\Component\Security\Core\Authentication\Token\Storage\TokenStorage;
 
 class PageHandler extends BaseHandler
 {
@@ -12,22 +11,10 @@ class PageHandler extends BaseHandler
     protected $page;
     protected $pageManager;
 
-    public function __construct(Form $form,  PageManager $pageManager){
+    public function __construct(Form $form,  PageManager $pageManager, $type){
         $this->form = $form;
         $this->pageManager = $pageManager;
-    }
-
-
-    public function process(){
-        $this->form->handleRequest($this->request);
-
-        if($this->request->isMethod('post') && $this->form->isValid()){
-            $this->onSuccess();
-            return true;
-        }
-        else{
-            return false;
-        }
+        $this->type = $type;
     }
 
     public function onSuccess(){
@@ -35,12 +22,9 @@ class PageHandler extends BaseHandler
         $this->page = $this->pageManager->doPersist($page);
     }
 
-    public function getFrom(){
-        return $this->form;
+    public function getPage(){
+        return $this->page;
     }
 
-    public function createView(){
-        return $this->form->createView();
-    }
 
 }

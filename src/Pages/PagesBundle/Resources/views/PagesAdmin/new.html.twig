@@ -1,16 +1,17 @@
-{% extends 'base.html.twig' %}
+{% extends 'layout/layout_admin.html.twig' %}
 
-{% block body %}
-    <h1>Page creation</h1>
-
-    {{ form_start(form) }}
-        {{ form_widget(form) }}
-        <input type="submit" value="Create" />
-    {{ form_end(form) }}
-
-    <ul>
-        <li>
-            <a href="{{ path('adminPages_index') }}">Back to the list</a>
-        </li>
-    </ul>
+{% block body -%}
+    <h2>Pages creation</h2>
+    <div class="span9">
+        {{ form(form) }}
+    </div>
+    <div class="span12">
+        <ul class="record_actions">
+            <li>
+                <a href="{{ path('adminPages_index') }}">
+                    Retour
+                </a>
+            </li>
+        </ul>
+    </div>
 {% endblock %}

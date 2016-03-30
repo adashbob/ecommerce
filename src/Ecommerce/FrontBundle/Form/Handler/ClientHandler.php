@@ -12,9 +12,10 @@ class ClientHandler extends BaseHandler
     protected $client;
     protected $clientManager;
 
-    public function __construct(Form $form,  ClientManager $clientManager){
+    public function __construct(Form $form,  ClientManager $clientManager, $type){
         $this->form = $form;
         $this->clientManager = $clientManager;
+        $this->type = $type;
     }
 
     public function onSuccess(){

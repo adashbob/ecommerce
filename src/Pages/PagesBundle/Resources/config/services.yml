@@ -30,13 +30,12 @@ services:
     base_handler:
         abstract: true
         calls:
-            - [setRequest, ['@request_stack']]
-            - [setSecurity, ['@security.token_storage']]
+            - [setContainer, ['@service_container']]
 
     page_handler:
         class: "%page_handler.class%"
         parent: base_handler
-        arguments: ["@page_form", "@page_manager"]
+        arguments: ["@page_form", "@page_manager", "%page_type.class%"]
 
 
 

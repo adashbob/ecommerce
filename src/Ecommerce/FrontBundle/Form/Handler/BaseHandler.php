@@ -2,28 +2,40 @@
 
 namespace Ecommerce\FrontBundle\Form\Handler;
 
-use Symfony\Component\HttpFoundation\RequestStack;
-use Symfony\Component\Security\Core\Authentication\Token\Storage\TokenStorage;
+use Symfony\Component\DependencyInjection\ContainerInterface;
+use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 
 abstract class BaseHandler
 {
     protected $request;
     protected $security;
+    protected $container;
+    protected $type;
+
 
     /**
-     * calls: - [setSecurity, ['@security.token_storage']]
-     * @param TokenStorage $security
+     * calls: - [setRequest, ['@service_container']]
+     * @param ContainerInterface $container
      */
-    public function setSecurity(TokenStorage $security){
-        $this->security = $security;
+    public function setContainer(ContainerInterface $container){
+        $this->security = $container->get('security.token_storage');
+        $this->request = $container->get('request_stack')->getCurrentRequest();
+        $this->container = $container;
     }
 
     /**
-     * calls: - [setRequest, ['@request_stack']]
-     * @param RequestStack $requestStack
+     * @return bool
      */
-    public function setRequest(RequestStack $requestStack){
-        $this->request = $requestStack->getCurrentRequest();
+    public function process(){
+        $this->form->handleRequest($this->request);
+
+        if($this->request->isMethod('post') && $this->form->isValid()){
+            $this->onSuccess();
+            return true;
+        }
+        else{
+            return false;
+        }
     }
 
     /**
@@ -37,21 +49,22 @@ abstract class BaseHandler
      * @return mixed
      */
     public function createView(){
+        $this->form->add('valider', SubmitType::class);
         return $this->form->createView();
     }
 
-    public function process(){
-        $this->form->handleRequest($this->request);
-
-        if($this->request->isMethod('post') && $this->form->isValid()){
-            $this->onSuccess();
-            return true;
-        }
-        else{
-            return false;
-        }
+    /**
+     * @return mixed
+     */
+    public function createEditView($entity){
+        $this->form = $this->container->get('form.factory')->create($this->type, $entity);
+        $this->form->add('Modifier', SubmitType::class);
+        return $this->form->createView();
     }
 
+    /**
+     * @return mixed
+     */
     public abstract function onSuccess();
 
 }

@@ -12,9 +12,10 @@ class CategorieHandler extends BaseHandler
     protected $categorie;
     protected $categorieManager;
 
-    public function __construct(Form $form,  CategorieManager $categorieManager){
+    public function __construct(Form $form,  CategorieManager $categorieManager, $type){
         $this->form = $form;
         $this->categorieManager = $categorieManager;
+        $this->type = $type;
     }
 
 

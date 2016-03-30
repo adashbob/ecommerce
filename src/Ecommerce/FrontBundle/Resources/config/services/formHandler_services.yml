@@ -7,8 +7,7 @@ services:
     base_handler:
         abstract: true
         calls:
-            - [setRequest, ['@request_stack']]
-            - [setSecurity, ['@security.token_storage']]
+            - [setContainer, ['@service_container']]
 
     produit_form:
         parent: base_form
@@ -23,7 +22,7 @@ services:
     produit_handler:
         class: "%produit_handler.class%"
         parent: base_handler
-        arguments: ["@produit_form", "@produit_manager"]
+        arguments: ["@produit_form", "@produit_manager", "%produit_type.class%"]
 
     categorie_form:
         parent: base_form
@@ -38,7 +37,7 @@ services:
     categorie_handler:
         class: "%categorie_handler.class%"
         parent: base_handler
-        arguments: ["@categorie_form", "@categorie_manager"]
+        arguments: ["@categorie_form", "@categorie_manager", "%categorie_type.class%"]
 
 
     client_form:
@@ -54,7 +53,7 @@ services:
     client_handler:
         class: "%client_handler.class%"
         parent: base_handler
-        arguments: ["@client_form", "@client_manager"]
+        arguments: ["@client_form", "@client_manager", "%client_type.class%"]
 
     commande_form:
         parent: base_form
@@ -69,4 +68,4 @@ services:
     commande_handler:
         class: "%commande_handler.class%"
         parent: base_handler
-        arguments: ["@commande_form", "@commande_manager"]
+        arguments: ["@commande_form", "@commande_manager", "%commande_type.class%"]
