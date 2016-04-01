@@ -19,10 +19,9 @@ class CategorieController extends Controller
 
     /**
      * @param $id
-     * @param Request $request
      * @return \Symfony\Component\HttpFoundation\Response
      */
-    public function categorieProduitsAction($id, Request $request)
+    public function categorieProduitsAction($id)
     {
         $categorie = $this->get('categorie_manager')->getCategorie($id);
 

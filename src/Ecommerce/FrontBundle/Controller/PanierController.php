@@ -60,7 +60,7 @@ class PanierController extends Controller
     public function livraisonAction()
     {
         $clientHandler = $this->get('client_handler');
-        if($clientHandler->process()){
+        if($clientHandler->isCreated()){
             $this->redirectToRoute('panier_livraison');
         }
         return $this->render('@EcommerceFront/Panier/livraison.html.twig', array(

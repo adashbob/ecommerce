@@ -4,6 +4,8 @@ namespace Ecommerce\FrontBundle\Form\Handler;
 
 use Symfony\Component\DependencyInjection\ContainerInterface;
 use Symfony\Component\Form\Extension\Core\Type\SubmitType;
+use Symfony\Component\Form\Extension\Core\Type\FormType;
+
 
 abstract class BaseHandler
 {
@@ -26,9 +28,8 @@ abstract class BaseHandler
     /**
      * @return bool
      */
-    public function process(){
+    private function process(){
         $this->form->handleRequest($this->request);
-
         if($this->request->isMethod('post') && $this->form->isValid()){
             $this->onSuccess();
             return true;
@@ -37,6 +38,25 @@ abstract class BaseHandler
             return false;
         }
     }
+
+    /**
+     * @param $entity
+     * @return bool
+     */
+    public function isEdit($entity){
+        $this->createForm($entity);
+        $this->form->add('submit', SubmitType::class, array('label' => 'Update'));
+        return $this->process();
+    }
+
+    /**
+     * @return bool
+     */
+    public function isCreated(){
+        $this->form->add('submit', SubmitType::class, array('label' => 'Add'));
+        return $this->process();
+    }
+
 
     /**
      * @return mixed
@@ -49,22 +69,36 @@ abstract class BaseHandler
      * @return mixed
      */
     public function createView(){
-        $this->form->add('valider', SubmitType::class);
         return $this->form->createView();
     }
 
     /**
      * @return mixed
      */
-    public function createEditView($entity){
+    public function isDelete($entity){
+        $this->createForm($entity);
+        $this->form->add('submit', SubmitType::class, array('label' => 'Delete'));
+        $this->process();
+    }
+
+    /**
+     * @param $entity
+     */
+    private function createForm($entity){
         $this->form = $this->container->get('form.factory')->create($this->type, $entity);
-        $this->form->add('Modifier', SubmitType::class);
-        return $this->form->createView();
+    }
+
+    public function createDeleteForm($action){
+        return $this->container->get('form.factory')->createBuilder(FormType::class)
+            ->setAction($action)
+            ->setMethod('DELETE')
+            ->getForm()
+            ->createView()
+            ;
     }
 
     /**
      * @return mixed
      */
     public abstract function onSuccess();
-
 }

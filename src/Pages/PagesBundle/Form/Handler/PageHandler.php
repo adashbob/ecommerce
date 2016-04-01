@@ -22,6 +22,10 @@ class PageHandler extends BaseHandler
         $this->page = $this->pageManager->doPersist($page);
     }
 
+    public function onDelete($entity){
+        $this->pageManager->doRemove($entity);
+    }
+
     public function getPage(){
         return $this->page;
     }

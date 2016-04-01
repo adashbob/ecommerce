@@ -4,6 +4,8 @@ namespace Pages\PagesBundle\Form\Handler;
 
 use Symfony\Component\DependencyInjection\ContainerInterface;
 use Symfony\Component\Form\Extension\Core\Type\SubmitType;
+use Symfony\Component\Form\Extension\Core\Type\FormType;
+use Symfony\Component\Form\Form;
 
 abstract class BaseHandler
 {
@@ -11,6 +13,7 @@ abstract class BaseHandler
     protected $security;
     protected $container;
     protected $type;
+    protected $formDelete;
 
     /**
      * calls: - [setRequest, ['@service_container']]
@@ -20,6 +23,7 @@ abstract class BaseHandler
         $this->security = $container->get('security.token_storage');
         $this->request = $container->get('request_stack')->getCurrentRequest();
         $this->container = $container;
+
     }
 
     /**
@@ -54,6 +58,13 @@ abstract class BaseHandler
         return $this->process();
     }
 
+    public function isDelete($entity){
+        if(is_object($entity)){
+            $this->onDelete($entity);
+            return true;
+        }
+        else return false;
+    }
 
     /**
      * @return mixed
@@ -70,20 +81,26 @@ abstract class BaseHandler
     }
 
 
-    /**
-     * @return mixed
-     */
-    public function isDelete($entity){
-        $this->createForm($entity);
-        $this->form->add('submit', SubmitType::class, array('label' => 'Delete'));
-        $this->process();
-    }
 
     /**
      * @param $entity
      */
     private function createForm($entity){
         $this->form = $this->container->get('form.factory')->create($this->type, $entity);
+    }
+
+    public function createDeleteForm($action = null){
+        $formConfig =  $this->container->get('form.factory')->createBuilder(FormType::class)
+            ->setAction($action)
+            ->setMethod('DELETE')
+            ->getFormConfig()
+            ;
+        $this->formDelete =  new Form($formConfig);
+        return $this->formDelete->add('submit', SubmitType::class, array('label' => 'Delete'));
+    }
+
+    public function createDeleteView(){
+        return $this->formDelete->createView();
     }
 
     /**

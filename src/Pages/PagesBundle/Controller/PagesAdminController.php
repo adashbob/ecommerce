@@ -2,15 +2,16 @@
 
 namespace Pages\PagesBundle\Controller;
 
-use Symfony\Component\HttpFoundation\Request;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
-
 use Pages\PagesBundle\Entity\Page;
 
 
 class PagesAdminController extends Controller
 {
 
+    /**
+     * @return \Symfony\Component\HttpFoundation\Response
+     */
     public function indexAction()
     {
         return $this->render('@Pages/PagesAdmin/index.html.twig', array(
@@ -19,6 +20,9 @@ class PagesAdminController extends Controller
     }
 
 
+    /**
+     * @return \Symfony\Component\HttpFoundation\RedirectResponse|\Symfony\Component\HttpFoundation\Response
+     */
     public function newAction()
     {
         $pageHandler = $this->get('page_handler');
@@ -31,10 +35,13 @@ class PagesAdminController extends Controller
         ));
     }
 
+    /**
+     * @param Page $page
+     * @return \Symfony\Component\HttpFoundation\Response
+     */
     public function showAction(Page $page)
     {
         $deleteForm = $this->createDeleteForm($page);
-
         return $this->render('@Pages/PagesAdmin/show.html.twig', array(
             'entity' => $page,
             'delete_form' => $deleteForm->createView(),
@@ -42,31 +49,9 @@ class PagesAdminController extends Controller
     }
 
     /**
-     * Displays a form to edit an existing Page entity.
-     *
+     * @param Page $page
+     * @return \Symfony\Component\HttpFoundation\RedirectResponse|\Symfony\Component\HttpFoundation\Response
      */
-    /*public function editAction(Request $request, Page $page)
-    {
-        $deleteForm = $this->createDeleteForm($page);
-        $editForm = $this->createForm(PageType::class, $page);
-        $editForm->handleRequest($request);
-
-        if ($editForm->isSubmitted() && $editForm->isValid()) {
-            var_dump($editForm);
-            $em = $this->getDoctrine()->getManager();
-            $em->persist($page);
-            $em->flush();
-
-            return $this->redirectToRoute('adminPages_edit', array('id' => $page->getId()));
-        }
-        //var_dump($page); die();
-        return $this->render('@Pages/PagesAdmin/edit.html.twig', array(
-            'page' => $page,
-            'edit_form' => $editForm->createView(),
-            'delete_form' => $deleteForm->createView(),
-        ));
-    }*/
-
     public function editAction(Page $page)
     {
         $pageHandler = $this->get('page_handler');
@@ -75,42 +60,33 @@ class PagesAdminController extends Controller
         }
         return $this->render('@Pages/PagesAdmin/edit.html.twig', array(
             'page' => $page,
-            'edit_form' => $pageHandler->createView()
+            'edit_form' => $pageHandler->createView(),
+            'delete_form' => $this->createDeleteForm($page)->createView()
         ));
     }
 
 
     /**
-     * Deletes a Page entity.
-     *
+     * @param Page $page
+     * @return \Symfony\Component\HttpFoundation\RedirectResponse
      */
-    public function deleteAction(Request $request, Page $page)
+    public function deleteAction(Page $page)
     {
-        $form = $this->createDeleteForm($page);
-        $form->handleRequest($request);
-
-        if ($form->isSubmitted() && $form->isValid()) {
-            $em = $this->getDoctrine()->getManager();
-            $em->remove($page);
-            $em->flush();
+        $pageHandler = $this->get('page_handler');
+        if($pageHandler->isDelete($page)){
+            $this->get('session')->getFlashBag()->add('success', 'La page est supprimée');
         }
-
         return $this->redirectToRoute('adminPages_index');
     }
 
+
     /**
-     * Creates a form to delete a Page entity.
-     *
-     * @param Page $page The Page entity
-     *
-     * @return \Symfony\Component\Form\Form The form
+     * @param Page $page
+     * @return $this|\Symfony\Component\Form\FormInterface
      */
     private function createDeleteForm(Page $page)
     {
-        return $this->createFormBuilder()
-            ->setAction($this->generateUrl('adminPages_delete', array('id' => $page->getId())))
-            ->setMethod('DELETE')
-            ->getForm()
-        ;
+        return $this->get('page_handler')
+                    ->createDeleteForm($this->generateUrl('adminPages_delete', array('id' => $page->getId())));
     }
 }

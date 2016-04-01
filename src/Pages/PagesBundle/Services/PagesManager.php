@@ -21,6 +21,12 @@ abstract class PagesManager
         $this->em->flush();
     }
 
+    public function doRemove(BaseEntity $entity)
+    {
+        $this->em->remove($entity);
+        $this->em->flush();
+    }
+
     public function getAll(){
         return $this->repository->findAll();
     }
