@@ -22,4 +22,12 @@ class ProduitHandler extends BaseHandler
         $produit = $this->form->getData();
         $this->produit = $this->produitManager->doPersist($produit);
     }
+
+    public function getProduit(){
+        return $this->produit;
+    }
+
+    public function onDelete($entity){
+        $this->produitManager->doRemove($entity);
+    }
 }

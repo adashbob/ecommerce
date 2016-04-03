@@ -140,4 +140,8 @@ class Categorie implements BaseEntity
     {
         return $this->produits;
     }
+
+    public function __toString(){
+        return $this->getName();
+    }
 }

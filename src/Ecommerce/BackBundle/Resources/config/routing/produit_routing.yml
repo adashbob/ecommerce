@@ -1,0 +1,34 @@
+back_produits:
+    path:  /
+    defaults: { _controller: "EcommerceBackBundle:Produit:index" }
+    methods:  GET
+
+back_produits_show:
+    path:  /{id}/show
+    defaults: { _controller: "EcommerceBackBundle:Produit:show" }
+    methods: GET
+
+back_produits_new:
+    path:  /new
+    defaults: { _controller: "EcommerceBackBundle:Produit:new" }
+    methods:  [GET, POST]
+
+back_produits_create:
+    path:  /create
+    defaults: { _controller: "EcommerceBackBundle:Produit:create" }
+    methods:  [GET, POST]
+
+back_produits_edit:
+    path:  /{id}/edit
+    defaults: { _controller: "EcommerceBackBundle:Produit:edit" }
+    methods:  [GET, POST]
+
+back_produits_update:
+    path:  /{id}/update
+    defaults: { _controller: "EcommerceBackBundle:Produit:update" }
+    methods:  [POST, PUT]
+
+back_produits_delete:
+    path:  /{id}/delete
+    defaults: { _controller: "EcommerceBackBundle:Produit:delete" }
+    methods:  [DELETE, POST]

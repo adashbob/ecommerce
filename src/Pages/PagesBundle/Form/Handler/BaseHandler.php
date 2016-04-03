@@ -80,8 +80,6 @@ abstract class BaseHandler
         return $this->form->createView();
     }
 
-
-
     /**
      * @param $entity
      */
@@ -103,6 +101,9 @@ abstract class BaseHandler
         return $this->formDelete->createView();
     }
 
+    public function onDelete($entity){
+        $this->pageManager->doRemove($entity);
+    }
     /**
      * @return mixed
      */

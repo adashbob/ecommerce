@@ -41,6 +41,9 @@ class PagesAdminController extends Controller
      */
     public function showAction(Page $page)
     {
+        if(!$page){
+            throw $this->createNotFoundException('La page n\'existe pas');
+        }
         $deleteForm = $this->createDeleteForm($page);
         return $this->render('@Pages/PagesAdmin/show.html.twig', array(
             'entity' => $page,

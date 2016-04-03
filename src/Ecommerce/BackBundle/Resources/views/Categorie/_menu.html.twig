@@ -1,0 +1,8 @@
+{% for categorie in categories %}
+    <li>
+        <a href="{{ path('categorie_produits', { 'id' : categorie.id }) }}">{{ categorie.name }}</a>
+    </li>
+{% endfor %}
+<li>
+    <a href="{{ path('produit_produits') }}">Tout</a>
+</li>

@@ -1,3 +1,4 @@
-ecommerce_back_homepage:
-    path:     /
-    defaults: { _controller: EcommerceBackBundle:Default:index }
+ecommerce_back_produit:
+    resource: "@EcommerceBackBundle/Resources/config/routing/produit_routing.yml"
+    prefix:     /admin/produit
+

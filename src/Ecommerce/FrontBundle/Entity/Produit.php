@@ -28,13 +28,13 @@ class Produit implements BaseEntity
     private $image;
 
     /**
-     * @ORM\ManyToOne(targetEntity="Ecommerce\FrontBundle\Entity\Tva", cascade={"persist", "remove"})
+     * @ORM\ManyToOne(targetEntity="Ecommerce\FrontBundle\Entity\Tva")
      * @ORM\JoinColumn(nullable=false)
      */
     private $tva;
 
     /**
-     * @ORM\ManyToOne(targetEntity="Ecommerce\FrontBundle\Entity\Categorie", inversedBy="produits", cascade={"persist", "remove"})
+     * @ORM\ManyToOne(targetEntity="Ecommerce\FrontBundle\Entity\Categorie", inversedBy="produits")
      * @ORM\JoinColumn(nullable=false)
      */
     private $categorie;

@@ -1,0 +1,17 @@
+{% extends ':layout:layout_admin.html.twig' %}
+
+{% block body -%}
+    <h1>Produits creation</h1>
+
+    <form action="{{ path('back_produits_create') }}" method="POST">
+        {{ form(form) }}
+    </form>
+
+    <ul class="record_actions">
+        <li>
+            <a href="{{ path('back_produits') }}">
+                Back to the list
+            </a>
+        </li>
+    </ul>
+{% endblock %}

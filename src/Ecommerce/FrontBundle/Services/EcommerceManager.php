@@ -57,6 +57,12 @@ abstract class EcommerceManager
         $this->em->flush();
     }
 
+    public function doRemove(BaseEntity $entity)
+    {
+        $this->em->remove($entity);
+        $this->em->flush();
+    }
+
     /**
      * @return mixed
      */

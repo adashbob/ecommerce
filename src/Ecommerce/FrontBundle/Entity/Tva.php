@@ -124,4 +124,8 @@ class Tva implements BaseEntity
     {
         return $this->value;
     }
+
+    public function __toString(){
+        return $this->getName();
+    }
 }
