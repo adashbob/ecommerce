@@ -1,0 +1,18 @@
+{% extends '::layout/layout_admin.html.twig' %}
+
+{% block body -%}
+    <h1>Categories edit</h1>
+
+    <form action="{{ path('back_categorie_update', { 'id' : entity.id }) }}" method="POST">
+        {{ form(edit_form) }}
+    </form>
+
+    <ul class="record_actions">
+        <li>
+            <a href="{{ path('back_categorie') }}">
+                Back to the list
+            </a>
+        </li>
+        <li>{{ form(delete_form) }}</li>
+    </ul>
+{% endblock %}

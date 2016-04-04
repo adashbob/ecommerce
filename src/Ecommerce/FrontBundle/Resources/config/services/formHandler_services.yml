@@ -32,7 +32,7 @@ services:
             - "@categorie_entity"
 
     categorie_entity:
-        class: "%produit_entity.class%"
+        class: "%categorie_entity.class%"
 
     categorie_handler:
         class: "%categorie_handler.class%"

@@ -2,3 +2,7 @@ ecommerce_back_produit:
     resource: "@EcommerceBackBundle/Resources/config/routing/produit_routing.yml"
     prefix:     /admin/produit
 
+ecommerce_back_categorie:
+    resource: "@EcommerceBackBundle/Resources/config/routing/categorie_routing.yml"
+    prefix:     /admin/categorie
+

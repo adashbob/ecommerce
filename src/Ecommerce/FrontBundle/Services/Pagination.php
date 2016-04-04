@@ -24,6 +24,6 @@ class Pagination
      */
     public function doPagination($entity)
     {
-        return $this->knpPaginator->paginate($entity, $this->request->query->get('page', 1), 3);;
+        return $this->knpPaginator->paginate($entity, $this->request->query->get('page', 1), 6);
     }
 }

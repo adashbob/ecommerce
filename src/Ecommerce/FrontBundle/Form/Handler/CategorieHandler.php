@@ -25,6 +25,14 @@ class CategorieHandler extends BaseHandler
         $this->categorie = $this->categorieManager->doPersist($categorie);
     }
 
+    public function getCategorie(){
+        return $this->categorie;
+    }
+
+    public function onDelete($entity){
+        $this->categorieManager->doRemove($entity);
+    }
+
 
 
 }

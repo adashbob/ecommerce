@@ -1,8 +1,34 @@
-categorie_menu:
-    path:     /menu
-    defaults: { _controller: EcommerceFrontBundle:Categorie:menu }
+back_categorie:
+    path:  /
+    defaults: { _controller: "EcommerceBackBundle:Categorie:index" }
+    methods:  GET
 
-categorie_produits:
-    path:     /produits/{id}
-    defaults: { _controller: EcommerceFrontBundle:Categorie:categorieProduits }
+back_categorie_show:
+    path:  /{id}/show
+    defaults: { _controller: "EcommerceBackBundle:Categorie:show" }
+    methods: GET
 
+back_categorie_new:
+    path:  /new
+    defaults: { _controller: "EcommerceBackBundle:Categorie:new" }
+    methods:  [GET, POST]
+
+back_categorie_create:
+    path:  /create
+    defaults: { _controller: "EcommerceBackBundle:Categorie:create" }
+    methods:  [GET, POST]
+
+back_categorie_edit:
+    path:  /{id}/edit
+    defaults: { _controller: "EcommerceBackBundle:Categorie:edit" }
+    methods:  [GET, POST]
+
+back_categorie_update:
+    path:  /{id}/update
+    defaults: { _controller: "EcommerceBackBundle:Categorie:update" }
+    methods:  [POST, PUT]
+
+back_categorie_delete:
+    path:  /{id}/delete
+    defaults: { _controller: "EcommerceBackBundle:Categorie:delete" }
+    methods:  [DELETE, POST]

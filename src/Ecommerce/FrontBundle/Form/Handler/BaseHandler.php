@@ -45,9 +45,7 @@ abstract class BaseHandler
      * @return bool
      */
     public function isEdit($entity){
-        return $this
-            ->createEditForm($entity)
-            ->process();
+        return $this->createEditForm($entity)->process();
     }
 
     public function createEditForm($entity)
@@ -93,11 +91,12 @@ abstract class BaseHandler
     }
 
     public function createDeleteForm($action = null){
-        $formConfig =  $this->container->get('form.factory')->createBuilder(FormType::class)
+        $formConfig =  $this->container
+            ->get('form.factory')
+            ->createBuilder(FormType::class)
             ->setAction($action)
             ->setMethod('DELETE')
-            ->getFormConfig()
-        ;
+            ->getFormConfig();
         $this->formDelete =  new Form($formConfig);
         return $this->formDelete->add('submit', SubmitType::class, array('label' => 'Delete'));
     }

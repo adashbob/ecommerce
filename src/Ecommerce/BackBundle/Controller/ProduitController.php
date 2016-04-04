@@ -8,6 +8,9 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 class ProduitController extends Controller
 {
 
+    /**
+     * @return \Symfony\Component\HttpFoundation\Response
+     */
     public function indexAction()
     {
         return $this->render('@EcommerceBack/Produit/index.html.twig', array(
@@ -15,6 +18,9 @@ class ProduitController extends Controller
         ));
     }
 
+    /**
+     * @return \Symfony\Component\HttpFoundation\RedirectResponse|
+     */
     public function createAction()
     {
         $produitHandler = $this->get('produit_handler');
@@ -29,6 +35,9 @@ class ProduitController extends Controller
     }
 
 
+    /**
+     * @return \Symfony\Component\HttpFoundation\Response
+     */
     public function newAction()
     {
         return $this->render('@EcommerceBack/Produit/new.html.twig', array(
@@ -36,6 +45,10 @@ class ProduitController extends Controller
         ));
     }
 
+    /**
+     * @param Produit $produit
+     * @return \Symfony\Component\HttpFoundation\Response
+     */
     public function showAction(Produit $produit)
     {
         if (!$produit) {
@@ -48,6 +61,10 @@ class ProduitController extends Controller
         ));
     }
 
+    /**
+     * @param Produit $produit
+     * @return \Symfony\Component\HttpFoundation\Response
+     */
     public function editAction(Produit $produit)
     {
         if (!$produit) {
@@ -63,12 +80,12 @@ class ProduitController extends Controller
     }
 
 
+    /**
+     * @param Produit $produit
+     * @return \Symfony\Component\HttpFoundation\RedirectResponse
+     */
     public function updateAction(Produit $produit)
     {
-        if (!$produit) {
-            throw $this->createNotFoundException('Unable to find Produits entity.');
-        }
-
         $produitHandler = $this->get('produit_handler');
         $deleteForm = $this->createDeleteForm($produit);
 
@@ -83,6 +100,10 @@ class ProduitController extends Controller
         ));
     }
 
+    /**
+     * @param Produit $produit
+     * @return \Symfony\Component\HttpFoundation\RedirectResponse
+     */
     public function deleteAction(Produit $produit)
     {
         $produitHandler = $this->get('produit_handler');
@@ -94,7 +115,10 @@ class ProduitController extends Controller
     }
 
 
-
+    /**
+     * @param Produit $produit
+     * @return $this|\Symfony\Component\Form\FormInterface
+     */
     private function createDeleteForm(Produit $produit)
     {
         return $this->get('produit_handler')

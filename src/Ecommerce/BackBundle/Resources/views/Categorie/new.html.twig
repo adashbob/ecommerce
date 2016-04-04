@@ -1,0 +1,17 @@
+{% extends ':layout/layout_admin.html.twig' %}
+
+{% block body -%}
+    <h1>Categories creation</h1>
+
+    <form action="{{ path('back_categorie_create') }}" method="POST">
+        {{ form(form) }}
+    </form>
+
+    <ul class="record_actions">
+        <li>
+            <a href="{{ path('back_categorie') }}">
+                Back to the list
+            </a>
+        </li>
+    </ul>
+{% endblock %}
