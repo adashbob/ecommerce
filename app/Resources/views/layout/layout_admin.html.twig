@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="{{ asset('css/bootstrap-responsive.css') }}" />
     <link rel="stylesheet" href="{{ asset('css/style.css') }}" />
     <link rel="stylesheet" href="{{ asset('css/font-awesome.css') }}" />
+    <link rel="stylesheet" href="{{ asset('js/DataTables-1.10.11/media/css/jquery.dataTables.min.css') }}" />
     {% block stylesheets %}{% endblock %}
     <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
 </head>
@@ -44,9 +45,19 @@
             </div>
         </div>
 </footer>
-<script src="{{ asset('js/jquery-1.10.0.min.js') }}"></script>
+<script src="{{ asset('js/DataTables-1.10.11/media/js/jquery.js') }}"></script>
 <script src="{{ asset('js/bootstrap.js') }}"></script>
 <script src="{{ asset('bundles/pages/js/ckeditor/ckeditor.js') }}"></script>
+<script src="{{ asset('js/DataTables-1.10.11/media/js/jquery.dataTables.min.js') }}"></script>
+
+
+<script>
+    $('table').addClass('records_list table  table-bordered');
+    $('table').DataTable({
+        "autoWidth": false,
+        "bAutoWidth": false
+    });
+</script>
 {% block javascripts %}{% endblock %}
 </body>
 </html>

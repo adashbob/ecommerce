@@ -10,7 +10,7 @@ use Doctrine\ORM\Mapping as ORM;
  * @ORM\Table(name="categorie")
  * @ORM\Entity(repositoryClass="Ecommerce\FrontBundle\Repository\CategorieRepository")
  */
-class Categorie implements BaseEntity
+class Categorie extends BaseEntity
 {
     /**
      * @var int

@@ -3,13 +3,12 @@
 {% block body -%}
     <h1>Produits list</h1>
 
-    <table class="table table-striped table-hover">
+    <table class="table table-striped table-hover records_list table  table-bordered" id="tab">
         <thead>
         <tr>
             <th>Nom</th>
             <th>Prix</th>
             <th>Disponible</th>
-            <th>Image</th>
             <th>Actions</th>
         </tr>
         </thead>
@@ -19,10 +18,9 @@
                 <td>{{ entity.name }}</td>
                 <td>{{ entity.price }}</td>
                 <td>{{ entity.available }}</td>
-                <td>{{ entity.image.path }}</td>
                 <td>
                     <a href="{{ path('back_produits_show', { 'id': entity.id }) }}"><i class="icon-book"></i></a>
-                    <a href="{{ path('back_produits_edit', { 'id': entity.id }) }}"><i class="icon-edit"></i></a>
+                    <a href="{{ path('back_produits_update', { 'id': entity.id }) }}"><i class="icon-edit"></i></a>
                 </td>
             </tr>
         {% endfor %}
@@ -31,7 +29,7 @@
 
     <ul>
         <li>
-            <a href="{{ path('back_produits_new') }}">
+            <a href="{{ path('back_produits_create') }}">
                 Create a new entry
             </a>
         </li>

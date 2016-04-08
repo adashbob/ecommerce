@@ -3,9 +3,7 @@
 {% block body -%}
     <h1>Produits edit</h1>
 
-    <form action="{{ path('back_produits_update', { 'id' : entity.id }) }}" method="POST">
-        {{ form(edit_form) }}
-    </form>
+    {{ form(edit_form) }}
 
     <ul class="record_actions">
         <li>

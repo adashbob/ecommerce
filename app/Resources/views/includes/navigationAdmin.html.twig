@@ -3,10 +3,10 @@
     <div class="well">
         <ul class="nav nav-list">
             <li>
-                <a href="{#{{ path('adminProduits') }}#}">Produits</a>
+                <a href="{{ path('back_produits') }}">Produits</a>
             </li>
             <li>
-                <a href="{#{{ path('adminCategories') }}#}">Catégories produits</a>
+                <a href="{{ path('back_categorie') }}">Catégories produits</a>
             </li>
         </ul>
     </div>
@@ -17,7 +17,7 @@
                 <a href="{#{{ path('adminUtilisateurs') }}#}">Clients</a>
             </li>
             <li>
-                <a href="{#{{ path('adminCommande') }}#}">Commandes</a>
+                <a href="{{ path('back_commande') }}">Commandes</a>
             </li>
         </ul>
     </div>
@@ -25,7 +25,7 @@
     <div class="well">
         <ul class="nav nav-list">
             <li>
-                <a href="{#{{ path('adminPages') }}#}">Pages</a>
+                <a href="{{ path('adminPages_index') }}">Pages</a>
             </li>
         </ul>
     </div>    

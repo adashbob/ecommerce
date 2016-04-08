@@ -3,14 +3,17 @@
 namespace Ecommerce\FrontBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\HttpFoundation\File\UploadedFile;
+use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * Media
  *
  * @ORM\Table(name="media")
  * @ORM\Entity(repositoryClass="Ecommerce\FrontBundle\Repository\MediaRepository")
+ * @ORM\HasLifecycleCallbacks()
  */
-class Media implements BaseEntity
+class Media extends BaseEntity
 {
     /**
      * @var int
@@ -22,26 +25,24 @@ class Media implements BaseEntity
     private $id;
 
     /**
-     * @var string
-     *
-     * @ORM\Column(name="path", type="string", length=255)
+     * @ORM\Column(type="string", length=255, name="name")
+     * @Assert\NotBlank()
      */
-    private $path;
+    protected $name;
 
     /**
-     * @var string
-     *
-     * @ORM\Column(name="alt", type="string", length=125)
+     * @ORM\Column(type="string", length=255, nullable=true)
      */
-    private $alt;
+    protected $path;
 
     /**
-     * @var string
-     *
-     * @ORM\Column(name="name", type="string", length=125)
+     * @Assert\File(maxSize="6000000")
      */
-    private $name;
+    private $file;
 
+    protected $tempFile;
+
+    protected $oldFile;
 
     /**
      * Get id
@@ -53,24 +54,65 @@ class Media implements BaseEntity
         return $this->id;
     }
 
-    /**
-     * Set path
-     *
-     * @param string $path
-     *
-     * @return Media
-     */
-    public function setPath($path)
+    public function getUploadRootDir()
     {
-        $this->path = $path;
+        return sprintf('%s/../../../../%s', __DIR__, 'web/upload');
+    }
 
-        return $this;
+    public function getAbsolutePath(){
+        return null === $this->path ? null : sprintf('%s/%s', $this->getUploadRootDir(), $this->path);
     }
 
     /**
-     * Get path
-     *
-     * @return string
+     * Générer un nom pour l'image
+     * @ORM\PrePersist()
+     * @ORM\PreUpdate()
+     */
+    public function preUpload(){
+        $this->tempFile = $this->getAbsolutePath();
+        $this->oldFile = $this->getPath();
+        if (null !== $this->file)
+            $this->path = sprintf('%s.%s', sha1(uniqid(mt_rand(), true)), $this->file->guessExtension());
+
+    }
+
+    public function getAssetPath()
+    {
+        return sprintf('upload/%s', $this->path);
+    }
+
+    /**
+     * @ORM\PostPersist()
+     * @ORM\PostUpdate()
+     */
+    public function upload()
+    {
+        if (null !== $this->file) {
+            $this->file->move($this->getUploadRootDir(), $this->path);
+            unset($this->file);
+
+            if ($this->oldFile != null) unlink($this->tempFile);
+        }
+    }
+
+    /**
+     * @ORM\PreRemove()
+     */
+    public function preRemoveUpload()
+    {
+        $this->tempFile = $this->getAbsolutePath();
+    }
+
+    /**
+     * @ORM\PostRemove()
+     */
+    public function removeUpload()
+    {
+        if (file_exists($this->tempFile)) unlink($this->tempFile);
+    }
+
+    /**
+     * @return mixed
      */
     public function getPath()
     {
@@ -78,50 +120,41 @@ class Media implements BaseEntity
     }
 
     /**
-     * Set alt
-     *
-     * @param string $alt
-     *
-     * @return Media
-     */
-    public function setAlt($alt)
-    {
-        $this->alt = $alt;
-
-        return $this;
-    }
-
-    /**
-     * Get alt
-     *
-     * @return string
-     */
-    public function getAlt()
-    {
-        return $this->alt;
-    }
-
-    /**
-     * Set name
-     *
-     * @param string $name
-     *
-     * @return Media
-     */
-    public function setName($name)
-    {
-        $this->name = $name;
-
-        return $this;
-    }
-
-    /**
-     * Get name
-     *
-     * @return string
+     * @return mixed
      */
     public function getName()
     {
         return $this->name;
     }
+
+    /**
+     * @param mixed $name
+     */
+    public function setName($name)
+    {
+        $this->name = $name;
+    }
+
+    /**
+     * Sets file.
+     *
+     * @param UploadedFile $file
+     */
+    public function setFile(UploadedFile $file = null)
+    {
+        $this->file = $file;
+    }
+
+    /**
+     * Get file.
+     *
+     * @return UploadedFile
+     */
+    public function getFile()
+    {
+        return $this->file;
+    }
+
+
+
 }

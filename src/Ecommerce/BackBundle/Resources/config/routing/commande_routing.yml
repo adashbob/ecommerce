@@ -1,3 +1,9 @@
-commande_validerCommande:
-    path:     /valider/{id}
-    defaults: { _controller: EcommerceFrontBundle:Commande:validerCommande }
+back_commande:
+    path:  /
+    defaults: { _controller: "EcommerceBackBundle:Commande:commandes" }
+    methods:  GET
+
+back_commande_show:
+    path:  /{id}/facture
+    defaults: { _controller: "EcommerceBackBundle:Commande:showFacture" }
+    methods: GET

@@ -31,7 +31,7 @@ abstract class BaseHandler
      */
     private function process(){
         $this->form->handleRequest($this->request);
-        if($this->request->isMethod('post') && $this->form->isValid()){
+        if($this->form->isSubmitted() && $this->form->isValid()){
             $this->onSuccess();
             return true;
         }

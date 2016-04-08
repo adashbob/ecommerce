@@ -6,3 +6,6 @@ ecommerce_back_categorie:
     resource: "@EcommerceBackBundle/Resources/config/routing/categorie_routing.yml"
     prefix:     /admin/categorie
 
+ecommerce_back_commande:
+    resource: "@EcommerceBackBundle/Resources/config/routing/commande_routing.yml"
+    prefix:     /admin/commande

@@ -10,7 +10,7 @@ use Doctrine\ORM\Mapping as ORM;
  * @ORM\Table(name="tva")
  * @ORM\Entity(repositoryClass="Ecommerce\FrontBundle\Repository\TvaRepository")
  */
-class Tva implements BaseEntity
+class Tva extends BaseEntity
 {
     /**
      * @var int
