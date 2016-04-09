@@ -1,0 +1,11 @@
+adminUser_index:
+    path:     /
+    defaults: { _controller: UserBundle:UserAdmin:index }
+
+adminUser_adresses:
+    path:     /{id}/adresses
+    defaults: { _controller: UserBundle:UserAdmin:utilisateur}
+
+adminUser_factures:
+    path:     /{id}/factures
+    defaults: { _controller: UserBundle:UserAdmin:utilisateur}

@@ -23,7 +23,3 @@ back_produits_delete:
     path:  /{id}/delete
     defaults: { _controller: "EcommerceBackBundle:Produit:delete" }
     methods:  [DELETE, POST]
-
-back_media_create:
-    path:  /media/create
-    defaults: { _controller: "EcommerceBackBundle:Produit:createMedia" }

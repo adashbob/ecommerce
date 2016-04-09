@@ -4,7 +4,7 @@ ecommerce_back:
 
 user:
     resource: "@UserBundle/Resources/config/routing.yml"
-    prefix:   /user
+    prefix:   /
 
 pages:
     resource: "@PagesBundle/Resources/config/routing.yml"

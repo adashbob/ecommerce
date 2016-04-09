@@ -9,6 +9,7 @@ use Doctrine\ORM\Mapping as ORM;
  *
  * @ORM\Table(name="produit")
  * @ORM\Entity(repositoryClass="Ecommerce\FrontBundle\Repository\ProduitRepository")
+ * @ORM\HasLifecycleCallbacks()
  */
 class Produit extends BaseEntity
 {

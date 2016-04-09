@@ -1,7 +1,9 @@
-user_facture:
-    path:     /facture
-    defaults: { _controller: UserBundle:User:factures }
+user:
+    resource: "@UserBundle/Resources/config/routing/user_routing.yml"
+    prefix:   /user
 
-user_facturePDF:
-    path:     /facturepdf/{id}
-    defaults: { _controller: UserBundle:User:facturesPDF }
+user_adminUser:
+    resource: "@UserBundle/Resources/config/routing/adminUser_routing.yml"
+    prefix:   /admin/user
+
+

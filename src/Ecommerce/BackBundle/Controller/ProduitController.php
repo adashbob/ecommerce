@@ -2,8 +2,6 @@
 
 namespace Ecommerce\BackBundle\Controller;
 
-use Ecommerce\FrontBundle\Form\Type\ProduitType;
-use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 use Ecommerce\FrontBundle\Entity\Produit;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
@@ -28,7 +26,9 @@ class ProduitController extends Controller
         $produitHandler = $this->get('produit_handler');
 
         if ($produitHandler->isCreated()) {
-            return $this->redirectToRoute('back_produits_show', array('id' => $produitHandler->getProduit()->getId()));
+            return $this->redirectToRoute('back_produits_show', array(
+                'id' => $produitHandler->getProduit()->getId()
+            ));
         }
 
         return $this->render('@EcommerceBack/Produit/create.html.twig', array(
@@ -95,28 +95,9 @@ class ProduitController extends Controller
      */
     private function createDeleteForm(Produit $produit)
     {
-        return $this->get('produit_handler')
+        return $this
+            ->get('produit_handler')
             ->createDeleteForm($this->generateUrl('back_produits_delete', array('id' => $produit->getId())));
     }
 
-    public function createMediaAction()
-    {
-        $request = $this->get('request_stack')->getCurrentRequest();
-        $produit = new Produit();
-
-        $form = $this->get('form.factory')->createNamed('produit', 'Ecommerce\FrontBundle\Form\Type\ProduitType', $produit);
-        $form->add('submit', SubmitType::class);
-        $form->handleRequest($request);
-
-        if($form->isSubmitted() && $form->isValid()){
-            $this->get('doctrine.orm.entity_manager')->persist($produit);
-            $this->get('doctrine.orm.entity_manager')->flush();
-            return $this->redirectToRoute('back_produits_new');
-        }
-
-        return $this->render('@EcommerceBack/Produit/newMedia.html.twig', array(
-            'form' => $form->createView()
-        ));
-
-    }
 }
