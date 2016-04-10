@@ -1,4 +1,11 @@
 services:
-#    ecommerce_back.example:
-#        class: Ecommerce\BackBundle\Example
-#        arguments: ["@service_id", "plain_value", %parameter%]
+
+    ecommerce_mailer:
+        class: Ecommerce\BackBundle\Services\Mailer
+        arguments: ['@mailer', '@templating', '%admin_mailer%']
+
+    ecommerce_mailer_listener:
+        class: Ecommerce\BackBundle\Services\MailerListener
+        arguments: ['@ecommerce_mailer', "@commande_manager"]
+        tags:
+            - { name: kernel.event_listener, event: kernel.request, method: process }

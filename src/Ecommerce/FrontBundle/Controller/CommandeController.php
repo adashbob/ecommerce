@@ -16,7 +16,12 @@ class CommandeController extends Controller
     {
         $this->get('facturation')->validerCommande($id);
         $this->get('session')->getFlashBag()->add('success','Votre commande est validé avec succès');
-        return $this->redirectToRoute('user_facture');
+        return $this->redirectToRoute('user_commande_success', array('id' => $id));
     }
+
+    public function successAction($id){
+        return $this->redirectToRoute('user_facture');;
+    }
+
 
 }

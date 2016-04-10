@@ -2,6 +2,10 @@ user_facture:
     path:     /facture
     defaults: { _controller: UserBundle:User:factures }
 
+user_commande_success:
+    path: /commande/{id}/success/
+    defaults: { _controller: EcommerceFrontBundle:Commande:success }
+
 user_facturePDF:
     path:     /facturepdf/{id}
     defaults: { _controller: UserBundle:User:facturesPDF }
