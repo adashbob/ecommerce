@@ -38,7 +38,7 @@ class Media extends BaseEntity
     /**
      * @Assert\File(maxSize="6000000")
      */
-    private $file;
+    public $file;
 
     protected $tempFile;
 
