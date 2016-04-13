@@ -3,6 +3,7 @@
 namespace Ecommerce\FrontBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * Produit
@@ -44,6 +45,8 @@ class Produit extends BaseEntity
      * @var string
      *
      * @ORM\Column(name="name", type="string", length=255)
+     * @Assert\NotBlank(message="Le nom du produit doit être renseigné")
+     * @Assert\Length(min="2", max="20")
      */
     private $name;
 
@@ -58,6 +61,7 @@ class Produit extends BaseEntity
      * @var float
      *
      * @ORM\Column(name="price", type="float")
+     * @Assert\Type(type="int")
      */
     private $price;
 
