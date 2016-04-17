@@ -1,0 +1,5 @@
+ville:
+    path:     /{cp}
+    defaults: { _controller: EcommerceFrontBundle:Ville:ville }
+    options:
+        expose: true

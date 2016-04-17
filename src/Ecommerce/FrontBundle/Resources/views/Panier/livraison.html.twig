@@ -1,4 +1,4 @@
-{% extends ":layout/layout.html.twig" %}
+{% extends ":layout:layout.html.twig" %}
 
 {% block body %}
     <div class="container">
@@ -20,7 +20,7 @@
                         <h4>Ajouter une nouvelle adresse</h4>
                         <form action="{{ path('panier_livraison') }}" method="POST">
                             {{ form_widget(form) }}
-                            <button class="btn btn-primary" type="submit">Ajouter</button>
+                            {#<button class="btn btn-primary" type="submit">Ajouter</button>#}
                         </form>
                     </div>
                 </div>

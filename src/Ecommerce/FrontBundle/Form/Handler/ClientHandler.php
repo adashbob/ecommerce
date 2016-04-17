@@ -24,5 +24,4 @@ class ClientHandler extends BaseHandler
         $this->client = $this->clientManager->doPersist($client);
     }
 
-
 }

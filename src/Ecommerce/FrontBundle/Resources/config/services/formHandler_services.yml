@@ -55,6 +55,12 @@ services:
         parent: base_handler
         arguments: ["@client_form", "@client_manager", "%client_type.class%"]
 
+    client_type:
+        class: "%client_type.class%"
+        arguments: ['@service_container']
+        tags:
+            - {name: form.type}
+
     commande_form:
         parent: base_form
         arguments:

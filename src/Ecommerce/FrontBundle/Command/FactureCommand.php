@@ -18,7 +18,7 @@ class FactureCommand extends ContainerAwareCommand
     protected function configure()
     {
         $this->setName('ecommerce:facture')
-            ->setDescription('Ceci est un premier test')
+            ->setDescription('Generer des factures inférieurs à une date donnée')
             ->addArgument('date', InputArgument::OPTIONAL, 'Date pour laquel vous souhaitez récuperer les factures');
     }
 

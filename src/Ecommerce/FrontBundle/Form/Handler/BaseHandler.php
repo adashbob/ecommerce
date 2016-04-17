@@ -51,7 +51,8 @@ abstract class BaseHandler
     public function createEditForm($entity)
     {
         $this->form = $this->container->get('form.factory')->create($this->type, $entity);
-        $this->form->add('submit', SubmitType::class, array('label' => 'Update'));
+        $this->form->add('submit', SubmitType::class,
+            array('label' => 'Update', 'attr' => array('class' => 'btn btn-primary')));
         return $this;
     }
 
@@ -86,7 +87,8 @@ abstract class BaseHandler
 
 
     public function createNewForm(){
-        $this->form->add('submit', SubmitType::class, array('label' => 'Add'));
+        $this->form->add('submit', SubmitType::class,
+            array('label' => 'Add', 'attr' => array('class' => 'btn btn-primary')));
         return $this;
     }
 
@@ -109,5 +111,6 @@ abstract class BaseHandler
      * @return mixed
      */
     public abstract function onSuccess();
+
 
 }

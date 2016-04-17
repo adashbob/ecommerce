@@ -13,3 +13,7 @@ ecommerce_categorie:
 ecommerce_commande:
     resource: "@EcommerceFrontBundle/Resources/config/routing/commande_routing.yml"
     prefix:   /commande
+
+ecommerce_ville:
+    resource: "@EcommerceFrontBundle/Resources/config/routing/ville_routing.yml"
+    prefix: /ville
