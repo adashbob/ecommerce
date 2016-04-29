@@ -7,6 +7,11 @@ use Symfony\Component\HttpFoundation\JsonResponse;
 
 class VilleController extends Controller
 {
+    /**
+     * @param $cp
+     * @return JsonResponse
+     * @throws \Exception
+     */
     public function villeAction($cp)
     {
         $request = $this->get('request_stack')->getCurrentRequest();

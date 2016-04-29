@@ -22,6 +22,9 @@ class RedirectionListener
         $this->route = $containerInterface->get('router');
     }
 
+    /**
+     * @param GetResponseEvent $event
+     */
     public function onKernelRequest(GetResponseEvent $event)
     {
         $route = $event->getRequest()->attributes->get('_route');

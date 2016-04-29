@@ -48,6 +48,11 @@ abstract class BaseHandler
         return $this->createEditForm($entity)->process();
     }
 
+    /**
+     * Create the edit form
+     * @param $entity
+     * @return $this
+     */
     public function createEditForm($entity)
     {
         $this->form = $this->container->get('form.factory')->create($this->type, $entity);
@@ -86,12 +91,21 @@ abstract class BaseHandler
     }
 
 
+    /**
+     * Generate the create form
+     * @return $this
+     */
     public function createNewForm(){
         $this->form->add('submit', SubmitType::class,
             array('label' => 'Add', 'attr' => array('class' => 'btn btn-primary')));
         return $this;
     }
 
+    /**
+     * Create the delete form
+     * @param null $action
+     * @return $this|\Symfony\Component\Form\FormInterface
+     */
     public function createDeleteForm($action = null){
         $formConfig =  $this->container
             ->get('form.factory')

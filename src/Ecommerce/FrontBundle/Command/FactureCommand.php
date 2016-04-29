@@ -13,7 +13,7 @@ class FactureCommand extends ContainerAwareCommand
 {
 
     /**
-     *
+     * Configuration de la commande
      */
     protected function configure()
     {

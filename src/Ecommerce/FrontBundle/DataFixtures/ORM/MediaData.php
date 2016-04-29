@@ -20,13 +20,13 @@ class MediaData extends AbstractFixture implements OrderedFixtureInterface
     public function load(ObjectManager $manager)
     {
         $media1 = new Media();
-        $media1->setPath('http://cp.lakanal.free.fr/exercices/jeux/memory/legumes/legumes.png');
+        $media1->setPath('legumes.png');
         $media1->setAlt('Légumes');
         $media1->setName('Légumes');
         $manager->persist($media1);
 
         $media2 = new Media();
-        $media2->setPath('http://img0.mxstatic.com/wallpapers/238cdfc903a19ad39ea901619dd55d47_large.jpeg');
+        $media2->setPath('large.jpeg');
         $media2->setAlt('Fruits');
         $media2->setName('Fruits');
         $manager->persist($media2);

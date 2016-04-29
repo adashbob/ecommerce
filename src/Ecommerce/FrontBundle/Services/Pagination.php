@@ -19,11 +19,11 @@ class Pagination
     }
 
     /**
-     * @param $entity
+     * @param $entities
      * @return \Knp\Component\Pager\Pagination\PaginationInterface
      */
-    public function doPagination($entity)
+    public function doPagination($entities)
     {
-        return $this->knpPaginator->paginate($entity, $this->request->query->get('page', 1), 6);
+        return $this->knpPaginator->paginate($entities, $this->request->query->get('page', 1), 6);
     }
 }

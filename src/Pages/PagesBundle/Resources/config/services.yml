@@ -39,3 +39,11 @@ services:
 
 
 
+    curl_url:
+        class: Pages\PagesBundle\Services\CurlUrl
+
+    validator_check_url:
+        class: Pages\PagesBundle\Validator\Constraints\ConstraintsCheckUrlValidator
+        arguments: ['@curl_url']
+        tags:
+            - { name: validator.constraint_validator, alias: validatorCheckUrl}

@@ -3,6 +3,7 @@
 namespace Pages\PagesBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Pages\PagesBundle\Validator\Constraints as CustomAssert;
 
 /**
  * Page
@@ -32,6 +33,7 @@ class Page implements BaseEntity
      * @var string
      *
      * @ORM\Column(name="contenu", type="string", length=255)
+     * @CustomAssert\ConstraintsCheckUrl()
      */
     private $contenu;
 

@@ -7,6 +7,11 @@ namespace Ecommerce\FrontBundle\Services;
 use Symfony\Component\HttpFoundation\RequestStack;
 use Symfony\Component\HttpFoundation\Session\Session;
 
+/**
+ * Class Panier
+ * @package Ecommerce\FrontBundle\Services
+ * Gestion des paniers des clients (ajout, modif, suppresson produit dans un panier)
+ */
 class Panier
 {
     private $request;
