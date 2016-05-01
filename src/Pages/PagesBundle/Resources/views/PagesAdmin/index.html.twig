@@ -15,8 +15,8 @@
             <tr>
                 <td>{{ entity.titre }}</td>
                 <td>
-                    <a href="{{ path('adminPages_show', { 'id': entity.id }) }}"><i class="icon-book"></i></a>
-                    <a href="{{ path('adminPages_edit', { 'id': entity.id }) }}"><i class="icon-edit"></i></a>
+                    <a href="{{ path('adminPages_show', { 'slug': entity.slug }) }}"><i class="icon-book"></i></a>
+                    <a href="{{ path('adminPages_edit', { 'slug': entity.slug }) }}"><i class="icon-edit"></i></a>
                     </ul>
                 </td>
             </tr>

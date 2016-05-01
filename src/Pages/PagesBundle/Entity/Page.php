@@ -9,7 +9,9 @@ use Gedmo\Mapping\Annotation as Gedmo;
 /**
  * Page
  *
- * @ORM\Table(name="page")
+ * @ORM\Table(name="page",
+ *     uniqueConstraints={
+ *     @ORM\UniqueConstraint(name="page_slug", columns={"slug"})})
  * @ORM\Entity(repositoryClass="Pages\PagesBundle\Repository\PageRepository")
  */
 class Page implements BaseEntity
@@ -55,6 +57,12 @@ class Page implements BaseEntity
      * @ORM\Column(name="title_changed", type="datetime", nullable=true)
      */
     protected $titleChanged;
+
+    /**
+     * @Gedmo\Slug(fields={"titre"})
+     * @ORM\Column(length=128, unique=true)
+     */
+    protected $slug;
 
     /**
      * Get id
@@ -113,5 +121,15 @@ class Page implements BaseEntity
     {
         return $this->contenu;
     }
+
+    /**
+     * @return mixed
+     */
+    public function getSlug()
+    {
+        return $this->slug;
+    }
+
+
 }
 

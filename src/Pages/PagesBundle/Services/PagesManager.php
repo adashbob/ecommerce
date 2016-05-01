@@ -30,4 +30,9 @@ abstract class PagesManager
     public function getAll(){
         return $this->repository->findAll();
     }
+
+    public function getRepository()
+    {
+        return $this->repository();
+    }
 }

@@ -4,7 +4,7 @@ adminPages_index:
     methods:  GET
 
 adminPages_show:
-    path:     /{id}/show
+    path:     /show/{slug}
     defaults: { _controller: "PagesBundle:PagesAdmin:show" }
     methods:  GET
 
@@ -14,7 +14,7 @@ adminPages_new:
     methods:  [GET, POST]
 
 adminPages_edit:
-    path:     /{id}/edit
+    path:     /edit/{slug}
     defaults: { _controller: "PagesBundle:PagesAdmin:edit" }
     methods:  [GET, POST]
 

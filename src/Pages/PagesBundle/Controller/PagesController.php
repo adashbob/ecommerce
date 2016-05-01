@@ -8,14 +8,12 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 class PagesController extends Controller
 {
     /**
-     * @param $id
+     * @param $page
      * @return \Symfony\Component\HttpFoundation\Response
      * @throws EntityNotFoundException
      */
-    public function showAction($id)
+    public function showAction(Page $page)
     {
-        $page = $this->get('page_manager')->getPage($id);
-
         if(!$page){
             throw $this->createNotFoundException('La page n\'existe pas');
         }
@@ -49,7 +47,7 @@ class PagesController extends Controller
     public function createAction(){
         $pageHandler = $this->get('page_handler');
 
-        if($pageHandler->process()){
+        if($pageHandler->isCreated()){
             return $this->redirectToRoute('page_all');
         }
         return $this->render('PagesBundle:Pages:create.html.twig', array(

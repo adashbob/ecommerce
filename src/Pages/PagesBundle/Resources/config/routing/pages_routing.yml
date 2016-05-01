@@ -1,5 +1,5 @@
 page_show:
-    path:     /show/{id}
+    path:     /show/{slug}
     defaults: { _controller: PagesBundle:Pages:show }
 
 page_menu:

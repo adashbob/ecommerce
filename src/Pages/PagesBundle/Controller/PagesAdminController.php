@@ -27,7 +27,9 @@ class PagesAdminController extends Controller
     {
         $pageHandler = $this->get('page_handler');
         if ($pageHandler->isCreated()) {
-            return $this->redirectToRoute('adminPages_show', array('id' => $pageHandler->getPage()->getId()));
+            return $this->redirectToRoute('adminPages_show', array(
+                'slug' => $pageHandler->getPage()->getSlug()
+            ));
         }
 
         return $this->render('@Pages/PagesAdmin/new.html.twig', array(
