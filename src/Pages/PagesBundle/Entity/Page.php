@@ -13,6 +13,7 @@ use Gedmo\Mapping\Annotation as Gedmo;
  *     uniqueConstraints={
  *     @ORM\UniqueConstraint(name="page_slug", columns={"slug"})})
  * @ORM\Entity(repositoryClass="Pages\PagesBundle\Repository\PageRepository")
+ * @Gedmo\SoftDeleteable(fieldName="deletedAt", timeAware=false)
  */
 class Page implements BaseEntity
 {
@@ -51,6 +52,12 @@ class Page implements BaseEntity
      * @ORM\Column(type="datetime", nullable=true)
      */
     protected $updateAt;
+
+    /**
+     * @ORM\Column(type="datetime", nullable=true)
+     */
+    protected $deletedAt;
+
 
     /**
      * @Gedmo\Timestampable(on="change", field="titre")
@@ -128,6 +135,22 @@ class Page implements BaseEntity
     public function getSlug()
     {
         return $this->slug;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getDeletedAt()
+    {
+        return $this->deletedAt;
+    }
+
+    /**
+     * @param mixed $deletedAt
+     */
+    public function setDeletedAt($deletedAt)
+    {
+        $this->deletedAt = $deletedAt;
     }
 
 

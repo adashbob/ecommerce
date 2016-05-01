@@ -1,0 +1,19 @@
+# This file is auto-generated during the composer install
+parameters:
+    database_host: 127.0.0.1
+    database_port: null
+    database_name: ecommerce_pre_prod
+    database_user: root
+    database_password: bdiallo
+    mailer_transport: smtp
+    mailer_host: smtp.gmail.com
+    mailer_user: bobodiallobe@gmail.com
+    mailer_password: xxxxxxx
+    secret: d3a3a257897b916d0aa3697bdc6a1a62a86a8a87
+twig:
+    globals:
+        telephone: '33 800 34 55'
+        fax: '00 CC DD 00'
+        rue: 'RUE RXED DDDD'
+        adresse: 'Fass Mbao'
+        pathDefault: 'http://ecommerce/'

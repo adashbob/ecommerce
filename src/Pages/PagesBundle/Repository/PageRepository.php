@@ -10,4 +10,13 @@ namespace Pages\PagesBundle\Repository;
  */
 class PageRepository extends \Doctrine\ORM\EntityRepository
 {
+    public function findByRemove()
+    {
+        $qb = $this->createQueryBuilder('u')
+            ->select('u')
+            ->where('u.deletedAt IS NOT NULL');
+
+        return $qb->getQuery()->getResult();
+    }
 }
+

@@ -22,3 +22,12 @@ adminPages_delete:
     path:     /{id}/delete
     defaults: { _controller: "PagesBundle:PagesAdmin:delete" }
     methods:  DELETE
+
+adminPages_softdel:
+    path:  /soft/del
+    defaults: { _controller: "PagesBundle:PagesAdmin:softDel" }
+
+adminPages_restore:
+    path:  /{id}/restore
+    defaults: { _controller: "PagesBundle:PagesAdmin:restore" }
+
