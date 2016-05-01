@@ -5,6 +5,7 @@ imports:
     - { resource: services/twigExtensions_services.yml }
     - { resource: services/listeners_services.yml }
     - { resource: services/facture_services.yml }
+    - { resource: services/gedmo_services.yml }
 
 services:
     panier_session:

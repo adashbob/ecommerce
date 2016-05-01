@@ -1,7 +1,9 @@
 <?php
 
 namespace Ecommerce\FrontBundle\Entity;
+
 use Doctrine\ORM\Mapping as ORM;
+use Gedmo\Mapping\Annotation as Gedmo;
 
 
 /**
@@ -14,30 +16,16 @@ abstract class BaseEntity
 {
 
     /**
+     * @Gedmo\Timestampable(on="create")
      * @ORM\Column(name="created_at", type="datetime", nullable=true)
      */
     protected $createdAt;
 
     /**
+     * @Gedmo\Timestampable(on="update")
      * @ORM\Column(name="updated_at", type="datetime", nullable=true)
      */
-    protected $updatedAt;
-
-    /**
-     * @ORM\PrePersist()
-     */
-    public function prePersist(){
-        $this->createdAt = new \DateTime(null, new \DateTimeZone('Africa/Dakar'));
-        $this->updatedAt = new \DateTime(null, new \DateTimeZone('Africa/Dakar'));
-    }
-
-    /**
-     * @ORM\PreUpdate()
-     */
-    public function preUpdate()
-    {
-        $this->updatedAt = new \DateTime(null, new \DateTimeZone('Africa/Dakar'));
-    }
+    protected $updateAt;
 
 
 }

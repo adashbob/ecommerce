@@ -4,6 +4,7 @@ namespace Pages\PagesBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 use Pages\PagesBundle\Validator\Constraints as CustomAssert;
+use Gedmo\Mapping\Annotation as Gedmo;
 
 /**
  * Page
@@ -37,6 +38,23 @@ class Page implements BaseEntity
      */
     private $contenu;
 
+    /**
+     * @Gedmo\Timestampable(on="create")
+     * @ORM\Column(type="datetime", nullable=true)
+     */
+    protected $createdAt;
+
+    /**
+     * @Gedmo\Timestampable(on="update")
+     * @ORM\Column(type="datetime", nullable=true)
+     */
+    protected $updateAt;
+
+    /**
+     * @Gedmo\Timestampable(on="change", field="titre")
+     * @ORM\Column(name="title_changed", type="datetime", nullable=true)
+     */
+    protected $titleChanged;
 
     /**
      * Get id
