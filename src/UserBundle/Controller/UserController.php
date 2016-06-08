@@ -32,7 +32,9 @@ class UserController extends Controller
     public function facturesAction()
     {
         return $this->render('@User/User/facture.html.twig', array(
-            'factures' => $this->get('commande_manager')->getRepository()->getFacturesByUser($this->getUser())
+            'factures' => $this->get('commande_manager')
+                ->getRepository()
+                ->getFacturesByUser($this->getUser())
         ));
     }
 
