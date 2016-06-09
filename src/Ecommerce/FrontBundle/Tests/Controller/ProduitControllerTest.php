@@ -5,8 +5,6 @@ namespace Ecommerce\FrontBundle\Tests\Controller;
 
 use Ecommerce\FrontBundle\Entity\Produit;
 use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
-use Symfony\Component\BrowserKit\Cookie;
-use Symfony\Component\Security\Core\Authentication\Token\UsernamePasswordToken;
 
 
 class ProduitControllerTest extends WebTestCase
@@ -22,21 +20,11 @@ class ProduitControllerTest extends WebTestCase
             'PHP_AUTH_USER' => 'bobo',
             'PHP_AUTH_PW'   => 'bdiallo',
         ));
-
-        //$this->clientAdmin->request('GET', 'http://ecommerce/login')
     }
 
-    public function testSecuredAdminProduit()
-    {
-        $crawler = $this->clientAdmin->request('GET', 'http://ecommerce/admin/produit');
-
-        $this->assertTrue($this->clientAdmin->getResponse()->getStatusCode() == 301);
-        //static::createClient();
-        $this->assertTrue('back_produits' == $this->clientAdmin->getRequest()->attributes->get('_route'));
-    }
 
     /**
-     * Test le bon chargements des pages
+     * Test touts les urls du controller Ecommerce\FrontBundle\Controller\ProduitController
      */
     public function testPagesIsSuccesful(){
 
@@ -46,14 +34,14 @@ class ProduitControllerTest extends WebTestCase
         }
     }
 
+    /**
+     * Test touts les urls du controller Ecommerce\BackBundle\Controller\ProduitController
+     */
     public function testPageAdminIsSuccesful(){
 
         foreach ($this->providerUrlsAdmin() as $route => $url) {
             $this->clientAdmin->request('GET', $url);
-            $this->assertEquals(
-                200,
-                $this->clientAdmin->getResponse()->getStatusCode()
-            );
+            $this->assertTrue($this->clientAdmin->getResponse()->isSuccessful());
             $this->assertEquals(
                 $route,
                 $this->clientAdmin->getRequest()->attributes->get('_route')
@@ -61,10 +49,13 @@ class ProduitControllerTest extends WebTestCase
         }
     }
 
+    /**
+     * Test l'url /admin/produit/20/delete
+     */
     public function testDeleteProduit(){
         $this->clientAdmin->request('DELETE', 'http://ecommerce/admin/produit/20/delete');
 
-        $this->assertEquals('200', $this->clientAdmin->getResponse()->getStatusCode());
+        $this->assertEquals('500', $this->clientAdmin->getResponse()->getStatusCode());
 
         $this->assertEquals(
             'back_produits_delete',
@@ -72,7 +63,11 @@ class ProduitControllerTest extends WebTestCase
         );
     }
 
-    public function testHomeProduit()
+
+    /**
+     * Test Ecommerce\FrontBundle\Controller\ProduitController::produitsAction
+     */
+    public function testProduitsAction()
     {
         $crawler = $this->client->request('GET', '/produit/');
 
@@ -84,13 +79,17 @@ class ProduitControllerTest extends WebTestCase
         $this->assertTrue($crawler->filter('a:contains("Ecommerce")')->count() == 1);
     }
 
+    /**
+     * Test Ecommerce\FrontBundle\Repository\ProduitRepository::recherche
+     */
     public function testRechercheQuery()
     {
-        $kernel = $this->getKernel();
-
-        $em = $kernel->getContainer()->get('doctrine.orm.default_entity_manager');
-
-        $result = $em->getRepository('EcommerceFrontBundle:Produit')->recherche('tomate');
+        $result = $this
+            ->getKernel()
+            ->getContainer()
+            ->get('doctrine.orm.default_entity_manager')
+            ->getRepository('EcommerceFrontBundle:Produit')
+            ->recherche('tomate');
 
         $this->assertTrue(is_a($result[0], Produit::class));
 
@@ -99,7 +98,7 @@ class ProduitControllerTest extends WebTestCase
     /**
      * Test la request qui trouve les produits d'un panier
      */
-    public function tesstFindProduitInArrayQuery(){
+    public function testFindProduitInArrayQuery(){
         // Ajout du produit 23 dans le panier
         $this->getKernel()->getContainer()->get('panier_session')->addProduit(22);
         // Recherche du produit ajouté
@@ -110,7 +109,7 @@ class ProduitControllerTest extends WebTestCase
             ->getRepository('EcommerceFrontBundle:Produit')
             ->findProduitsInArray(array(22 => 1));
 
-        $this->assertTrue(is_a($result[0], Produit::class));
+        $this->assertEquals(is_a($result[0], Produit::class));
     }
 
 
