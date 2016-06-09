@@ -35,7 +35,9 @@
         "leafo/scssphp": "^0.6.3",
         "patchwork/jsqueeze": "^2.0",
         "stof/doctrine-extensions-bundle": "^1.2",
-        "phpunit/phpunit": "^4.8"
+        "phpunit/phpunit": "^4.8",
+        "symfony/browser-kit": "^3.1",
+        "symfony/css-selector": "^3.1"
     },
     "require-dev": {
         "sensio/generator-bundle": "^3.0",
