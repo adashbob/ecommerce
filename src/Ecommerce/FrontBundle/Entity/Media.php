@@ -128,6 +128,14 @@ class Media extends BaseEntity
     }
 
     /**
+     * @param mixed $path
+     */
+    public function setPath($path)
+    {
+        $this->path = $path;
+    }
+
+    /**
      * @param mixed $name
      */
     public function setName($name)

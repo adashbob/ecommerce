@@ -11,6 +11,11 @@ class ProduitControllerTest extends WebTestCase
 {
     private $client = null;
     private $clientAdmin = null;
+    private $em;
+
+    /*public function __construct(){
+        $kernel = new AppK;
+    }*/
 
     public function setUp()
     {
@@ -20,13 +25,17 @@ class ProduitControllerTest extends WebTestCase
             'PHP_AUTH_USER' => 'bobo',
             'PHP_AUTH_PW'   => 'bdiallo',
         ));
+
+        static::$kernel = static::createKernel();
+        static::$kernel->boot();
+        $this->em = static::$kernel->getContainer()->get('doctrine.orm.entity_manager');
     }
 
 
     /**
      * Test touts les urls du controller Ecommerce\FrontBundle\Controller\ProduitController
      */
-    public function testPagesIsSuccesful(){
+    public function testPagesAreSuccesful(){
 
         foreach ($this->providerUrls() as $url) {
             $this->client->request('GET', $url);
@@ -37,7 +46,7 @@ class ProduitControllerTest extends WebTestCase
     /**
      * Test touts les urls du controller Ecommerce\BackBundle\Controller\ProduitController
      */
-    public function testPageAdminIsSuccesful(){
+    public function testPagesAdminAreSuccesful(){
 
         foreach ($this->providerUrlsAdmin() as $route => $url) {
             $this->clientAdmin->request('GET', $url);
@@ -52,7 +61,7 @@ class ProduitControllerTest extends WebTestCase
     /**
      * Test l'url /admin/produit/20/delete
      */
-    public function testDeleteProduit(){
+    public function testDeleteProduitAction(){
         $this->clientAdmin->request('DELETE', 'http://ecommerce/admin/produit/20/delete');
 
         $this->assertEquals('500', $this->clientAdmin->getResponse()->getStatusCode());
@@ -84,43 +93,29 @@ class ProduitControllerTest extends WebTestCase
      */
     public function testRechercheQuery()
     {
-        $result = $this
-            ->getKernel()
-            ->getContainer()
-            ->get('doctrine.orm.default_entity_manager')
+        $produits = $this->em
             ->getRepository('EcommerceFrontBundle:Produit')
             ->recherche('tomate');
 
-        $this->assertTrue(is_a($result[0], Produit::class));
+        $this->assertTrue(is_a($produits[0], Produit::class));
+        $this->assertCount(1, $produits);
 
     }
 
     /**
      * Test la request qui trouve les produits d'un panier
+     *
      */
-    public function testFindProduitInArrayQuery(){
-        // Ajout du produit 23 dans le panier
-        $this->getKernel()->getContainer()->get('panier_session')->addProduit(22);
-        // Recherche du produit ajouté
-        $result = $this
-            ->getKernel()
-            ->getContainer()
-            ->get('doctrine.orm.default_entity_manager')
+    public function testsFindProduitInArrayQuery(){
+        /*$this->client->request('GET', 'http://ecommerce/panier/');
+        $this->getKernel()->getContainer()->get('panier_session')->addProduit(19);
+        */
+        $produits = $this->em
             ->getRepository('EcommerceFrontBundle:Produit')
-            ->findProduitsInArray(array(22 => 1));
+            ->findProduitsInArray(array(19 => 1));
 
-        $this->assertEquals(is_a($result[0], Produit::class));
-    }
-
-
-    /**
-     * @return \Symfony\Component\HttpKernel\KernelInterface
-     */
-    private function getKernel()
-    {
-        $kernel = static::createKernel();
-        $kernel->boot();
-        return $kernel;
+        //$this->assertTrue(is_a($produits[0], Produit::class));
+        $this->assertCount(0, $produits);
     }
 
     public function providerUrls()
@@ -143,5 +138,15 @@ class ProduitControllerTest extends WebTestCase
         );
     }
 
+
+    /**
+     * @return \Symfony\Component\HttpKernel\KernelInterface
+     */
+    private function getKernel()
+    {
+        $kernel = static::createKernel();
+        $kernel->boot();
+        return $kernel;
+    }
 
 }

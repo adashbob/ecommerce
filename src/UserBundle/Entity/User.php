@@ -4,6 +4,7 @@ namespace UserBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 use FOS\UserBundle\Model\User as BaseUser;
+use Doctrine\Common\Collections\ArrayCollection;
 
 /**
  * User
@@ -38,8 +39,8 @@ class User extends BaseUser
     public function __construct()
     {
         parent::__construct();
-        $this->commandes = new \Doctrine\Common\Collections\ArrayCollection();
-        $this->adresses = new \Doctrine\Common\Collections\ArrayCollection();
+        $this->commandes = new ArrayCollection();
+        $this->adresses = new ArrayCollection();
     }
 
     /**
