@@ -2,22 +2,204 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1b0872b5-5230-426d-974e-68202ff690f3" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Ecommerce/FrontBundle/DataFixtures/ORM/DataLoaderTest.php" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Ecommerce/FrontBundle/DataFixtures/ORM/Test/DataLoader.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Ecommerce/FrontBundle/DataFixtures/ORM/Test/categories.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Ecommerce/FrontBundle/DataFixtures/ORM/Test/clients.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Ecommerce/FrontBundle/DataFixtures/ORM/Test/medias.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Ecommerce/FrontBundle/DataFixtures/ORM/Test/produits.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Ecommerce/FrontBundle/DataFixtures/ORM/Test/tva.yml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/Ecommerce/BackBundle/Controller/CategorieController.php.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/Ecommerce/BackBundle/Controller/CommandeController.php.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/Ecommerce/BackBundle/Controller/ProduitController.php.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/Ecommerce/BackBundle/Controller/dashboard.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/Ecommerce/BackBundle/Controller/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/Ecommerce/BackBundle/EcommerceBackBundle.php.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/Ecommerce/BackBundle/Services/Mailer.php.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/Ecommerce/BackBundle/Services/MailerListener.php.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/Ecommerce/BackBundle/Services/dashboard.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/Ecommerce/BackBundle/Services/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/Ecommerce/BackBundle/Tests/Controller/DefaultControllerTest.php.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/Ecommerce/BackBundle/Tests/Controller/ProduitControllerTest.php.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/Ecommerce/BackBundle/Tests/Controller/dashboard.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/Ecommerce/BackBundle/Tests/Controller/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/Ecommerce/BackBundle/Tests/dashboard.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/Ecommerce/BackBundle/Tests/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/Ecommerce/BackBundle/dashboard.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/Ecommerce/BackBundle/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/Command/FactureCommand.php.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/Command/dashboard.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/Command/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/Controller/CategorieController.php.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/Controller/CommandeController.php.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/Controller/PanierController.php.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/Controller/ProduitController.php.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/Controller/VilleController.php.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/Controller/dashboard.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/Controller/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/DataFixtures/ORM/CategorieData.php.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/DataFixtures/ORM/ClientData.php.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/DataFixtures/ORM/MediaData.php.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/DataFixtures/ORM/ProduitData.php.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/DataFixtures/ORM/TvaData.php.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/DataFixtures/ORM/dashboard.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/DataFixtures/ORM/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/DataFixtures/dashboard.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/DataFixtures/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/EcommerceFrontBundle.php.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/Entity/BaseEntity.php.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/Entity/Categorie.php.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/Entity/Client.php.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/Entity/Commande.php.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/Entity/Media.php.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/Entity/Produit.php.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/Entity/Tva.php.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/Entity/Ville.php.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/Entity/dashboard.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/Entity/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/Form/Handler/BaseHandler.php.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/Form/Handler/CategorieHandler.php.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/Form/Handler/ClientHandler.php.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/Form/Handler/CommandeHandler.php.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/Form/Handler/ProduitHandler.php.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/Form/Handler/dashboard.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/Form/Handler/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/Form/Type/CategorieType.php.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/Form/Type/ClientType.php.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/Form/Type/CommandeType.php.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/Form/Type/MediaType.php.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/Form/Type/ProduitType.php.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/Form/Type/RechercheType.php.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/Form/Type/dashboard.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/Form/Type/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/Form/dashboard.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/Form/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/Listener/RedirectionListener.php.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/Listener/UserAgentSubcriber.php.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/Listener/dashboard.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/Listener/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/Repository/CategorieRepository.php.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/Repository/ClientRepository.php.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/Repository/CommandeRepository.php.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/Repository/MediaRepository.php.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/Repository/ProduitRepository.php.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/Repository/TvaRepository.php.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/Repository/dashboard.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/Repository/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/Services/CategorieManager.php.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/Services/ClientManager.php.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/Services/CommandeManager.php.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/Services/EcommerceManager.php.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/Services/Facturation.php.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/Services/GenerateFacture.php.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/Services/Pagination.php.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/Services/Panier.php.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/Services/ProduitManager.php.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/Services/TvaManager.php.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/Services/dashboard.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/Services/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/Tests/Base.php.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/Tests/Controller/CategorieControllerTest.php.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/Tests/Controller/CommandeControllerTest.php.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/Tests/Controller/PanierControllerTest.php.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/Tests/Controller/ProduitControllerTest.php.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/Tests/Controller/dashboard.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/Tests/Controller/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/Tests/dashboard.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/Tests/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/Twig/Extension/BaseTwigExtension.php.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/Twig/Extension/MontantTvaExtension.php.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/Twig/Extension/TvaExtension.php.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/Twig/Extension/dashboard.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/Twig/Extension/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/Twig/dashboard.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/Twig/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/dashboard.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/Ecommerce/dashboard.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/Ecommerce/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/Pages/PagesBundle/Controller/PagesAdminController.php.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/Pages/PagesBundle/Controller/PagesController.php.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/Pages/PagesBundle/Controller/dashboard.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/Pages/PagesBundle/Controller/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/Pages/PagesBundle/DataFixtures/ORM/PageData.php.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/Pages/PagesBundle/DataFixtures/ORM/dashboard.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/Pages/PagesBundle/DataFixtures/ORM/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/Pages/PagesBundle/DataFixtures/dashboard.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/Pages/PagesBundle/DataFixtures/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/Pages/PagesBundle/Entity/BaseEntity.php.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/Pages/PagesBundle/Entity/Page.php.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/Pages/PagesBundle/Entity/dashboard.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/Pages/PagesBundle/Entity/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/Pages/PagesBundle/Form/Handler/BaseHandler.php.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/Pages/PagesBundle/Form/Handler/PageHandler.php.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/Pages/PagesBundle/Form/Handler/dashboard.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/Pages/PagesBundle/Form/Handler/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/Pages/PagesBundle/Form/Type/PageType.php.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/Pages/PagesBundle/Form/Type/dashboard.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/Pages/PagesBundle/Form/Type/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/Pages/PagesBundle/Form/dashboard.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/Pages/PagesBundle/Form/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/Pages/PagesBundle/PagesBundle.php.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/Pages/PagesBundle/Repository/PageRepository.php.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/Pages/PagesBundle/Repository/dashboard.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/Pages/PagesBundle/Repository/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/Pages/PagesBundle/Services/CurlUrl.php.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/Pages/PagesBundle/Services/PageManager.php.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/Pages/PagesBundle/Services/PagesManager.php.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/Pages/PagesBundle/Services/dashboard.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/Pages/PagesBundle/Services/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/Pages/PagesBundle/Tests/Controller/DefaultControllerTest.php.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/Pages/PagesBundle/Tests/Controller/PageControllerTest.php.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/Pages/PagesBundle/Tests/Controller/PagesControllerTest.php.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/Pages/PagesBundle/Tests/Controller/dashboard.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/Pages/PagesBundle/Tests/Controller/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/Pages/PagesBundle/Tests/dashboard.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/Pages/PagesBundle/Tests/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/Pages/PagesBundle/Validator/Constraints/ConstraintsCheckUrl.php.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/Pages/PagesBundle/Validator/Constraints/ConstraintsCheckUrlValidator.php.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/Pages/PagesBundle/Validator/Constraints/dashboard.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/Pages/PagesBundle/Validator/Constraints/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/Pages/PagesBundle/Validator/dashboard.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/Pages/PagesBundle/Validator/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/Pages/PagesBundle/dashboard.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/Pages/PagesBundle/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/Pages/dashboard.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/Pages/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/UserBundle/Controller/UserAdminController.php.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/UserBundle/Controller/UserController.php.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/UserBundle/Controller/dashboard.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/UserBundle/Controller/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/UserBundle/DataFixtures/ORM/UserData.php.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/UserBundle/DataFixtures/ORM/dashboard.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/UserBundle/DataFixtures/ORM/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/UserBundle/DataFixtures/dashboard.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/UserBundle/DataFixtures/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/UserBundle/Entity/User.php.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/UserBundle/Entity/dashboard.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/UserBundle/Entity/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/UserBundle/Repository/UserRepository.php.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/UserBundle/Repository/dashboard.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/UserBundle/Repository/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/UserBundle/Tests/Controller/DefaultControllerTest.php.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/UserBundle/Tests/Controller/dashboard.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/UserBundle/Tests/Controller/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/UserBundle/Tests/dashboard.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/UserBundle/Tests/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/UserBundle/UserBundle.php.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/UserBundle/dashboard.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/UserBundle/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/css/bootstrap.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/css/nv.d3.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/css/style.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/dashboard.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/fonts/glyphicons-halflings-regular.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/fonts/glyphicons-halflings-regular.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/fonts/glyphicons-halflings-regular.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/fonts/glyphicons-halflings-regular.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/fonts/glyphicons-halflings-regular.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/js/bootstrap.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/js/d3.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/js/holder.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/js/html5shiv.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/js/jquery.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/js/nv.d3.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/js/respond.min.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/config.yml" afterPath="$PROJECT_DIR$/app/config/config.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/config_test.yml" afterPath="$PROJECT_DIR$/app/config/config_test.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Ecommerce/FrontBundle/DataFixtures/ORM/Dev/DataLoader.php" afterPath="$PROJECT_DIR$/src/Ecommerce/FrontBundle/DataFixtures/ORM/Dev/DataLoader.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Ecommerce/FrontBundle/DataFixtures/ORM/Dev/medias.yml" afterPath="$PROJECT_DIR$/src/Ecommerce/FrontBundle/DataFixtures/ORM/Dev/medias.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Ecommerce/FrontBundle/DataFixtures/ORM/Dev/produits.yml" afterPath="$PROJECT_DIR$/src/Ecommerce/FrontBundle/DataFixtures/ORM/Dev/produits.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/UserBundle/Entity/User.php" afterPath="$PROJECT_DIR$/src/UserBundle/Entity/User.php" />
     </list>
     <ignored path="ecommerce.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -273,90 +455,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ecommerce" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ecommerce" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ecommerce" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ecommerce" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Ecommerce" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FrontBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ecommerce" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ecommerce" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Ecommerce" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FrontBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DataFixtures" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ORM" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ecommerce" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ecommerce" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Ecommerce" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
@@ -433,10 +531,10 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="51" y="24" width="1315" height="744" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32615384" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27143982" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27143982" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3276923" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22423288" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
