@@ -21,6 +21,9 @@ security:
              http_basic:
 
 # base de données de test
+# Note: Pour utiliser l'orm test en ligne de commande pas besoin de préciser
+# l'option --em=test, --env=test seulement suffit:
+# exemple: php bin/console doctrine:schema:create --env=test
 doctrine:
     dbal:
         driver: pdo_mysql
@@ -32,8 +35,5 @@ doctrine:
         auto_generate_proxy_classes: "%kernel.debug%"
         entity_managers:
             test:
-                mappings:
-                    EcommerceFrontBundle: ~
-                    PagesBundle: ~
-                    FOSUserBundle: true
-                    UserBundle: true
+                mappings: ~
+

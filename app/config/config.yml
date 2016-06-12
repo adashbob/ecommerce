@@ -72,7 +72,6 @@ doctrine:
                         enabled: true
                 auto_mapping: true
                 mappings:
-                    UserBundle: ~
                     gedmo_translatable:
                         type: annotation
                         prefix: Gedmo\Translatable\Entity

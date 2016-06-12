@@ -23,7 +23,7 @@ Ecommerce\FrontBundle\Entity\Produit:
         available: 1
         description: dddddddd
         categorie: '@categorie1'
-        image: '@image5'
+        image: '@image7'
         tva: '@tva2'
 
     produit4:
@@ -32,7 +32,7 @@ Ecommerce\FrontBundle\Entity\Produit:
         available: 1
         description: dddddddddd
         categorie: '@categorie1'
-        image: '@image6'
+        image: '@image8'
         tva: '@tva2'
 
     produit5:
@@ -41,7 +41,7 @@ Ecommerce\FrontBundle\Entity\Produit:
         available: 1
         description: dddddddddddd
         categorie: '@categorie2'
-        image: '@image7'
+        image: '@image2'
         tva: '@tva2'
 
     produit6:
@@ -50,5 +50,23 @@ Ecommerce\FrontBundle\Entity\Produit:
         available: 1
         description: ddddddddd
         categorie: '@categorie2'
-        image: '@image8'
+        image: '@image6'
+        tva: '@tva2'
+
+    produit7:
+        name: Molon
+        price: 1.7
+        available: 1
+        description: ddddddddd
+        categorie: '@categorie2'
+        image: '@image5'
+        tva: '@tva2'
+
+    produit8:
+        name: Banane
+        price: 1.7
+        available: 1
+        description: ddddddddd
+        categorie: '@categorie2'
+        image: '@image9'
         tva: '@tva2'

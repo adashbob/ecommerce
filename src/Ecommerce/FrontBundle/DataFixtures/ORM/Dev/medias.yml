@@ -1,11 +1,11 @@
 Ecommerce\FrontBundle\Entity\Media:
     image1:
-        name: Légumes
-        path: legumes.png
+        name: Mais
+        path: 89212d029963c7e1823711186e6d4b065e988fa7.jpg
 
     image2:
-        name: Fruit
-        path: large.jpg
+        name: Rasin
+        path: bc76f70906264390e54636e76e48ca3234a24999.jpg
 
     image3:
         name: Poivron rouge
@@ -16,12 +16,12 @@ Ecommerce\FrontBundle\Entity\Media:
         path: b876f70906264390e54636e76e48ca3234a24444.jpg
 
     image5:
-        name: Poivron rouge
-        path: b876f70906264390e54636e76e48ca3234a24922.jpg
+        name: Molon
+        path: molon.jpg
 
     image6:
-        name: Piment
-        path: b876f70906264390e54636e76e48ca3234a24444.jpg
+        name: Orange
+        path: bc76f70906264390e54636e76e48ca3234a24998.jpg
 
     image7:
         name: Tomate
@@ -30,3 +30,7 @@ Ecommerce\FrontBundle\Entity\Media:
     image8:
         name: Poivron vert
         path: b876f70906264390e54636e76e48ca3234a24997.jpg
+
+    image9:
+        name: Banane
+        path: banane.jpg

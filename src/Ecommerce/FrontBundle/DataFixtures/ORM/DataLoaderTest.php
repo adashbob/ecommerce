@@ -1,12 +1,12 @@
 <?php
 
 
-namespace Ecommerce\FrontBundle\DataFixtures\ORM\Dev;
+namespace Ecommerce\FrontBundle\DataFixtures\ORM;
 
 
 use Hautelook\AliceBundle\Doctrine\DataFixtures\AbstractLoader;
 
-class DataLoader extends AbstractLoader
+class DataLoaderTest extends AbstractLoader
 {
     /**
      * {@inheritdoc}
@@ -14,11 +14,11 @@ class DataLoader extends AbstractLoader
     public function getFixtures()
     {
         return [
-            __DIR__.'/medias.yml',
-            __DIR__.'/categories.yml',
-            __DIR__.'/clients.yml',
-            __DIR__.'/tva.yml',
-            __DIR__.'/produits.yml',
+            __DIR__.'/Dev/medias.yml',
+            __DIR__.'/Dev/categories.yml',
+            __DIR__.'/Dev/clients.yml',
+            __DIR__.'/Dev/tva.yml',
+            __DIR__.'/Dev/produits.yml',
             '@UserBundle/DataFixtures/ORM/Dev/users.yml'
         ];
     }
