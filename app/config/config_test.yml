@@ -29,10 +29,11 @@ doctrine:
         password: bdiallo
         dbname: testecommerce
     orm:
+        auto_generate_proxy_classes: "%kernel.debug%"
         entity_managers:
             test:
                 mappings:
                     EcommerceFrontBundle: ~
-                    EcommerceBackBundle: ~
                     PagesBundle: ~
-                    UserBundle: ~
+                    FOSUserBundle: true
+                    UserBundle: true

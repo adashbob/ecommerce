@@ -2,258 +2,38 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1b0872b5-5230-426d-974e-68202ff690f3" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Facturation/13-04-2016 10-16-03/facture1.pdf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Facturation/13-04-2016 10-16-03/facture10.pdf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Facturation/13-04-2016 10-16-03/facture11.pdf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Facturation/13-04-2016 10-16-03/facture12.pdf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Facturation/13-04-2016 10-16-03/facture13.pdf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Facturation/13-04-2016 10-16-03/facture14.pdf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Facturation/13-04-2016 10-16-03/facture2.pdf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Facturation/13-04-2016 10-16-03/facture3.pdf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Facturation/13-04-2016 10-16-03/facture4.pdf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Facturation/13-04-2016 10-16-03/facture5.pdf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Facturation/13-04-2016 10-16-03/facture6.pdf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Facturation/13-04-2016 10-16-03/facture7.pdf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Facturation/13-04-2016 10-16-03/facture8.pdf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Facturation/13-04-2016 10-16-03/facture9.pdf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/fonts/glyphicons-halflings-regular.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/fonts/glyphicons-halflings-regular.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/fonts/glyphicons-halflings-regular.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/fonts/glyphicons-halflings-regular.woff2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/tests.bootstrap.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Ecommerce/FrontBundle/DataFixtures/ORM/categories.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Ecommerce/FrontBundle/DataFixtures/ORM/medias.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Ecommerce/FrontBundle/Entity/test/CategorieData.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Ecommerce/FrontBundle/Entity/test/ClientData.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Ecommerce/FrontBundle/Entity/test/MediaData.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Ecommerce/FrontBundle/Entity/test/ProduitData.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Ecommerce/FrontBundle/Entity/test/TvaData.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Pages/PagesBundle/DataFixtures/test/ORM/PageData.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/UserBundle/Entity/test/UserData.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/Ecommerce/BackBundle/Controller/CategorieController.php.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/Ecommerce/BackBundle/Controller/CommandeController.php.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/Ecommerce/BackBundle/Controller/ProduitController.php.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/Ecommerce/BackBundle/Controller/dashboard.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/Ecommerce/BackBundle/Controller/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/Ecommerce/BackBundle/EcommerceBackBundle.php.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/Ecommerce/BackBundle/Services/Mailer.php.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/Ecommerce/BackBundle/Services/MailerListener.php.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/Ecommerce/BackBundle/Services/dashboard.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/Ecommerce/BackBundle/Services/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/Ecommerce/BackBundle/Tests/Controller/DefaultControllerTest.php.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/Ecommerce/BackBundle/Tests/Controller/ProduitControllerTest.php.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/Ecommerce/BackBundle/Tests/Controller/dashboard.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/Ecommerce/BackBundle/Tests/Controller/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/Ecommerce/BackBundle/Tests/dashboard.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/Ecommerce/BackBundle/Tests/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/Ecommerce/BackBundle/dashboard.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/Ecommerce/BackBundle/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/Command/FactureCommand.php.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/Command/dashboard.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/Command/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/Controller/CategorieController.php.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/Controller/CommandeController.php.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/Controller/PanierController.php.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/Controller/ProduitController.php.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/Controller/VilleController.php.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/Controller/dashboard.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/Controller/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/DataFixtures/ORM/CategorieData.php.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/DataFixtures/ORM/ClientData.php.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/DataFixtures/ORM/MediaData.php.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/DataFixtures/ORM/ProduitData.php.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/DataFixtures/ORM/TvaData.php.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/DataFixtures/ORM/dashboard.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/DataFixtures/ORM/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/DataFixtures/dashboard.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/DataFixtures/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/EcommerceFrontBundle.php.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/Entity/BaseEntity.php.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/Entity/Categorie.php.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/Entity/Client.php.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/Entity/Commande.php.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/Entity/Media.php.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/Entity/Produit.php.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/Entity/Tva.php.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/Entity/Ville.php.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/Entity/dashboard.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/Entity/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/Form/Handler/BaseHandler.php.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/Form/Handler/CategorieHandler.php.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/Form/Handler/ClientHandler.php.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/Form/Handler/CommandeHandler.php.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/Form/Handler/ProduitHandler.php.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/Form/Handler/dashboard.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/Form/Handler/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/Form/Type/CategorieType.php.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/Form/Type/ClientType.php.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/Form/Type/CommandeType.php.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/Form/Type/MediaType.php.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/Form/Type/ProduitType.php.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/Form/Type/RechercheType.php.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/Form/Type/dashboard.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/Form/Type/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/Form/dashboard.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/Form/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/Listener/RedirectionListener.php.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/Listener/UserAgentSubcriber.php.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/Listener/dashboard.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/Listener/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/Repository/CategorieRepository.php.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/Repository/ClientRepository.php.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/Repository/CommandeRepository.php.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/Repository/MediaRepository.php.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/Repository/ProduitRepository.php.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/Repository/TvaRepository.php.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/Repository/dashboard.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/Repository/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/Services/CategorieManager.php.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/Services/ClientManager.php.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/Services/CommandeManager.php.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/Services/EcommerceManager.php.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/Services/Facturation.php.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/Services/GenerateFacture.php.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/Services/Pagination.php.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/Services/Panier.php.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/Services/ProduitManager.php.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/Services/TvaManager.php.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/Services/dashboard.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/Services/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/Tests/Base.php.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/Tests/Controller/CategorieControllerTest.php.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/Tests/Controller/CommandeControllerTest.php.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/Tests/Controller/PanierControllerTest.php.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/Tests/Controller/ProduitControllerTest.php.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/Tests/Controller/dashboard.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/Tests/Controller/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/Tests/dashboard.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/Tests/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/Twig/Extension/BaseTwigExtension.php.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/Twig/Extension/MontantTvaExtension.php.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/Twig/Extension/TvaExtension.php.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/Twig/Extension/dashboard.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/Twig/Extension/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/Twig/dashboard.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/Twig/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/dashboard.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/Ecommerce/FrontBundle/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/Ecommerce/dashboard.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/Ecommerce/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/Pages/PagesBundle/Controller/PagesAdminController.php.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/Pages/PagesBundle/Controller/PagesController.php.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/Pages/PagesBundle/Controller/dashboard.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/Pages/PagesBundle/Controller/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/Pages/PagesBundle/DataFixtures/ORM/PageData.php.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/Pages/PagesBundle/DataFixtures/ORM/dashboard.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/Pages/PagesBundle/DataFixtures/ORM/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/Pages/PagesBundle/DataFixtures/dashboard.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/Pages/PagesBundle/DataFixtures/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/Pages/PagesBundle/Entity/BaseEntity.php.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/Pages/PagesBundle/Entity/Page.php.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/Pages/PagesBundle/Entity/dashboard.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/Pages/PagesBundle/Entity/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/Pages/PagesBundle/Form/Handler/BaseHandler.php.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/Pages/PagesBundle/Form/Handler/PageHandler.php.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/Pages/PagesBundle/Form/Handler/dashboard.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/Pages/PagesBundle/Form/Handler/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/Pages/PagesBundle/Form/Type/PageType.php.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/Pages/PagesBundle/Form/Type/dashboard.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/Pages/PagesBundle/Form/Type/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/Pages/PagesBundle/Form/dashboard.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/Pages/PagesBundle/Form/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/Pages/PagesBundle/PagesBundle.php.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/Pages/PagesBundle/Repository/PageRepository.php.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/Pages/PagesBundle/Repository/dashboard.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/Pages/PagesBundle/Repository/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/Pages/PagesBundle/Services/CurlUrl.php.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/Pages/PagesBundle/Services/PageManager.php.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/Pages/PagesBundle/Services/PagesManager.php.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/Pages/PagesBundle/Services/dashboard.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/Pages/PagesBundle/Services/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/Pages/PagesBundle/Tests/Controller/DefaultControllerTest.php.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/Pages/PagesBundle/Tests/Controller/PageControllerTest.php.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/Pages/PagesBundle/Tests/Controller/PagesControllerTest.php.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/Pages/PagesBundle/Tests/Controller/dashboard.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/Pages/PagesBundle/Tests/Controller/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/Pages/PagesBundle/Tests/dashboard.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/Pages/PagesBundle/Tests/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/Pages/PagesBundle/Validator/Constraints/ConstraintsCheckUrl.php.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/Pages/PagesBundle/Validator/Constraints/ConstraintsCheckUrlValidator.php.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/Pages/PagesBundle/Validator/Constraints/dashboard.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/Pages/PagesBundle/Validator/Constraints/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/Pages/PagesBundle/Validator/dashboard.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/Pages/PagesBundle/Validator/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/Pages/PagesBundle/dashboard.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/Pages/PagesBundle/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/Pages/dashboard.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/Pages/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/UserBundle/Controller/UserAdminController.php.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/UserBundle/Controller/UserController.php.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/UserBundle/Controller/dashboard.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/UserBundle/Controller/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/UserBundle/DataFixtures/ORM/UserData.php.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/UserBundle/DataFixtures/ORM/dashboard.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/UserBundle/DataFixtures/ORM/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/UserBundle/DataFixtures/dashboard.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/UserBundle/DataFixtures/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/UserBundle/Entity/User.php.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/UserBundle/Entity/dashboard.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/UserBundle/Entity/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/UserBundle/Repository/UserRepository.php.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/UserBundle/Repository/dashboard.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/UserBundle/Repository/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/UserBundle/Tests/Controller/DefaultControllerTest.php.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/UserBundle/Tests/Controller/dashboard.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/UserBundle/Tests/Controller/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/UserBundle/Tests/dashboard.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/UserBundle/Tests/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/UserBundle/UserBundle.php.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/UserBundle/dashboard.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/UserBundle/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/css/bootstrap.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/css/nv.d3.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/css/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/dashboard.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/fonts/glyphicons-halflings-regular.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/js/bootstrap.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/js/d3.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/js/holder.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/js/html5shiv.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/js/jquery.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/js/nv.d3.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/js/respond.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/app.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/app_bootstrap-responsive_2.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/app_bootstrap_1.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/app_font-awesome_4.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/app_style_3.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/app.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/app_ajax_3.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/app_bootstrap_2.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/app_jquery-1.10.0.min_1.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/app_router_4.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Ecommerce/FrontBundle/DataFixtures/ORM/CategorieData.php" afterPath="$PROJECT_DIR$/src/Ecommerce/FrontBundle/Entity/dev/CategorieData.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Ecommerce/FrontBundle/DataFixtures/ORM/ClientData.php" afterPath="$PROJECT_DIR$/src/Ecommerce/FrontBundle/Entity/dev/ClientData.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Ecommerce/FrontBundle/DataFixtures/ORM/MediaData.php" afterPath="$PROJECT_DIR$/src/Ecommerce/FrontBundle/Entity/dev/MediaData.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Ecommerce/FrontBundle/DataFixtures/ORM/ProduitData.php" afterPath="$PROJECT_DIR$/src/Ecommerce/FrontBundle/Entity/dev/ProduitData.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Ecommerce/FrontBundle/DataFixtures/ORM/TvaData.php" afterPath="$PROJECT_DIR$/src/Ecommerce/FrontBundle/Entity/dev/TvaData.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Pages/PagesBundle/DataFixtures/ORM/PageData.php" afterPath="$PROJECT_DIR$/src/Pages/PagesBundle/DataFixtures/dev/ORM/PageData.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/UserBundle/DataFixtures/ORM/UserData.php" afterPath="$PROJECT_DIR$/src/UserBundle/Entity/dev/UserData.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Ecommerce/FrontBundle/DataFixtures/ORM/Dev/DataLoader.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Ecommerce/FrontBundle/DataFixtures/ORM/Dev/clients.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Ecommerce/FrontBundle/DataFixtures/ORM/Dev/produits.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Ecommerce/FrontBundle/DataFixtures/ORM/Dev/tva.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Ecommerce/FrontBundle/DataFixtures/ORM/Test/DataLoader.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Ecommerce/FrontBundle/DataFixtures/ORM/Test/categories.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Ecommerce/FrontBundle/DataFixtures/ORM/Test/clients.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Ecommerce/FrontBundle/DataFixtures/ORM/Test/medias.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Ecommerce/FrontBundle/DataFixtures/ORM/Test/produits.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Ecommerce/FrontBundle/DataFixtures/ORM/Test/tva.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/UserBundle/DataFixtures/ORM/Dev/users.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/UserBundle/DataFixtures/ORM/Test/users.yml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Ecommerce/FrontBundle/Entity/dev/CategorieData.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Ecommerce/FrontBundle/Entity/dev/ClientData.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Ecommerce/FrontBundle/Entity/dev/MediaData.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Ecommerce/FrontBundle/Entity/dev/ProduitData.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Ecommerce/FrontBundle/Entity/dev/TvaData.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Ecommerce/FrontBundle/Entity/test/CategorieData.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Ecommerce/FrontBundle/Entity/test/ClientData.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Ecommerce/FrontBundle/Entity/test/MediaData.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Ecommerce/FrontBundle/Entity/test/ProduitData.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Ecommerce/FrontBundle/Entity/test/TvaData.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/UserBundle/Entity/dev/UserData.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/UserBundle/Entity/test/UserData.php" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Ecommerce/FrontBundle/DataFixtures/ORM/categories.yml" afterPath="$PROJECT_DIR$/src/Ecommerce/FrontBundle/DataFixtures/ORM/Dev/categories.yml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Ecommerce/FrontBundle/DataFixtures/ORM/medias.yml" afterPath="$PROJECT_DIR$/src/Ecommerce/FrontBundle/DataFixtures/ORM/Dev/medias.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/AppKernel.php" afterPath="$PROJECT_DIR$/app/AppKernel.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/config.yml" afterPath="$PROJECT_DIR$/app/config/config.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/config_dev.yml" afterPath="$PROJECT_DIR$/app/config/config_dev.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/config_test.yml" afterPath="$PROJECT_DIR$/app/config/config_test.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/phpunit.xml" afterPath="$PROJECT_DIR$/app/phpunit.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Ecommerce/FrontBundle/Entity/Media.php" afterPath="$PROJECT_DIR$/src/Ecommerce/FrontBundle/Entity/Media.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Ecommerce/FrontBundle/Tests/Controller/ProduitControllerTest.php" afterPath="$PROJECT_DIR$/src/Ecommerce/FrontBundle/Tests/Controller/ProduitControllerTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/UserBundle/Entity/User.php" afterPath="$PROJECT_DIR$/src/UserBundle/Entity/User.php" />
     </list>
     <ignored path="ecommerce.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -305,7 +85,7 @@
         <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
       </PATH_ELEMENT>
       <PATH_ELEMENT>
-        <option name="myItemId" value="categorie" />
+        <option name="myItemId" value="utilisateur" />
         <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
       </PATH_ELEMENT>
     </PATH>
@@ -316,92 +96,51 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="CategorieData.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Ecommerce/FrontBundle/Entity/test/CategorieData.php">
+      <file leaf-file-name="DataLoader.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Ecommerce/FrontBundle/DataFixtures/ORM/Dev/DataLoader.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.615385">
-              <caret line="28" column="41" selection-start-line="28" selection-start-column="41" selection-end-line="28" selection-end-column="41" />
+            <state vertical-scroll-proportion="-10.153846">
+              <caret line="23" column="5" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-            <state split_layout="FIRST">
-              <first_editor vertical-scroll-proportion="0.0">
-                <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-                <folding />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-          <provider editor-type-id="MarkdownFxPreviewEditor">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ProduitData.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Ecommerce/FrontBundle/Entity/dev/ProduitData.php">
+      <file leaf-file-name="config_test.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/config/config_test.yml">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+              <caret line="37" column="39" selection-start-line="37" selection-start-column="39" selection-end-line="37" selection-end-column="39" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="medias.yml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Ecommerce/FrontBundle/DataFixtures/ORM/medias.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8937198">
-              <caret line="30" column="26" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="26" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="categories.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Ecommerce/FrontBundle/DataFixtures/ORM/categories.yml">
+      <file leaf-file-name="config_dev.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/config/config_dev.yml">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+              <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ecommerce.categorie" pinned="false" current-in-tab="false">
-        <entry file="dbDummy://dbtable:/1625b691/8267c229-df05-4fbd-9572-e821b0bf68d2/ecommerce.categorie">
-          <provider editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ProduitControllerTest.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Ecommerce/FrontBundle/Tests/Controller/ProduitControllerTest.php">
+      <file leaf-file-name="config.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/config/config.yml">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="57" column="9" selection-start-line="57" selection-start-column="9" selection-end-line="57" selection-end-column="9" />
+              <caret line="1" column="22" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Categorie.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Ecommerce/FrontBundle/Entity/Categorie.php">
+      <file leaf-file-name="parameters.yml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="31" column="6" selection-start-line="31" selection-start-column="6" selection-end-line="31" selection-end-column="6" />
+            <state vertical-scroll-proportion="0.14170693">
+              <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -410,20 +149,52 @@
       <file leaf-file-name="console.sql" pinned="false" current-in-tab="false">
         <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/8267c229-df05-4fbd-9572-e821b0bf68d2/console.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
-              <caret line="0" column="23" selection-start-line="0" selection-start-column="23" selection-end-line="0" selection-end-column="23" />
+            <state vertical-scroll-proportion="-0.73333335">
+              <caret line="1" column="26" selection-start-line="1" selection-start-column="26" selection-end-line="1" selection-end-column="26" />
               <folding>
-                <marker date="1465665030102" expanded="true" signature="0:23" placeholder="SELECT * fro... categorie" />
+                <marker date="1465702874623" expanded="true" signature="23:49" placeholder="SELECT * fro... utilisateur" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="console.sql" pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/1211f69d-ee23-40e0-9342-5f787d4f4783/console.sql">
+      <file leaf-file-name="users.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/UserBundle/DataFixtures/ORM/Test/users.yml">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="19" selection-start-line="0" selection-start-column="19" selection-end-line="0" selection-end-column="19" />
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="User.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/UserBundle/Entity/User.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.84615386">
+              <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+              <folding>
+                <element signature="e#37#69#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tva.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Ecommerce/FrontBundle/DataFixtures/ORM/Test/tva.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DataLoader.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Ecommerce/FrontBundle/DataFixtures/ORM/Test/DataLoader.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-16.923077">
+              <caret line="20" column="36" selection-start-line="16" selection-start-column="12" selection-end-line="20" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -444,16 +215,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/tests/AppBundle/Controller/DefaultControllerTest.php" />
-        <option value="$PROJECT_DIR$/src/Ecommerce/BackBundle/Tests/Controller/ProduitControllerTest.php" />
-        <option value="$PROJECT_DIR$/src/UserBundle/Controller/UserController.php" />
-        <option value="$PROJECT_DIR$/src/Ecommerce/FrontBundle/Resources/config/services.yml" />
-        <option value="$PROJECT_DIR$/src/Ecommerce/FrontBundle/Listener/UserAgentSubcriber.php" />
-        <option value="$PROJECT_DIR$/src/Ecommerce/FrontBundle/Repository/TestRepository.php" />
-        <option value="$PROJECT_DIR$/src/Ecommerce/FrontBundle/Entity/Test.php" />
-        <option value="$PROJECT_DIR$/composer.json" />
-        <option value="$PROJECT_DIR$/src/Ecommerce/FrontBundle/Tests/Controller/BaseTest.php" />
-        <option value="$PROJECT_DIR$/src/Ecommerce/FrontBundle/Repository/ProduitRepository.php" />
         <option value="$PROJECT_DIR$/src/Ecommerce/FrontBundle/Controller/ProduitController.php" />
         <option value="$PROJECT_DIR$/src/Ecommerce/FrontBundle/Controller/PanierController.php" />
         <option value="$PROJECT_DIR$/app/config/security.yml" />
@@ -463,12 +224,9 @@
         <option value="$PROJECT_DIR$/src/Ecommerce/FrontBundle/Entity/Media.php" />
         <option value="$PROJECT_DIR$/src/UserBundle/Entity/User.php" />
         <option value="$PROJECT_DIR$/app/tests.bootstrap.php" />
-        <option value="$PROJECT_DIR$/app/config/config_test.yml" />
-        <option value="$PROJECT_DIR$/app/config/config.yml" />
         <option value="$PROJECT_DIR$/src/Ecommerce/FrontBundle/Entity/Client.php" />
         <option value="$PROJECT_DIR$/src/Ecommerce/FrontBundle/Entity/Commande.php" />
         <option value="$PROJECT_DIR$/vendor/friendsofsymfony/jsrouting-bundle/FOSJsRoutingBundle.php" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/1211f69d-ee23-40e0-9342-5f787d4f4783/console.sql" />
         <option value="$PROJECT_DIR$/app/AppKernel.php" />
         <option value="$PROJECT_DIR$/src/Ecommerce/FrontBundle/DataFixtures/dev/ORM/TestLoader.php" />
         <option value="$PROJECT_DIR$/src/Ecommerce/FrontBundle/DataFixtures/dev/ORM/categories.yml" />
@@ -492,9 +250,22 @@
         <option value="$PROJECT_DIR$/src/Ecommerce/FrontBundle/DataFixtures/ORM/MediaData.php" />
         <option value="$PROJECT_DIR$/src/Ecommerce/FrontBundle/Tests/Controller/ProduitControllerTest.php" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/8267c229-df05-4fbd-9572-e821b0bf68d2/console.sql" />
         <option value="$PROJECT_DIR$/src/Ecommerce/FrontBundle/DataFixtures/ORM/medias.yml" />
         <option value="$PROJECT_DIR$/src/Ecommerce/FrontBundle/DataFixtures/ORM/categories.yml" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/1211f69d-ee23-40e0-9342-5f787d4f4783/console.sql" />
+        <option value="$PROJECT_DIR$/app/config/config_dev.yml" />
+        <option value="$PROJECT_DIR$/src/Ecommerce/FrontBundle/DataFixtures/ORM/Dev/clients.yml" />
+        <option value="$PROJECT_DIR$/src/UserBundle/DataFixtures/ORM/Dev/users.yml" />
+        <option value="$PROJECT_DIR$/src/Ecommerce/FrontBundle/DataFixtures/ORM/Dev/categories.yml" />
+        <option value="$PROJECT_DIR$/src/Ecommerce/FrontBundle/DataFixtures/ORM/Dev/tva.yml" />
+        <option value="$PROJECT_DIR$/src/Ecommerce/FrontBundle/DataFixtures/ORM/Dev/DataLoader.php" />
+        <option value="$PROJECT_DIR$/src/Ecommerce/FrontBundle/DataFixtures/ORM/Dev/produits.yml" />
+        <option value="$PROJECT_DIR$/src/Ecommerce/FrontBundle/DataFixtures/ORM/Dev/medias.yml" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/8267c229-df05-4fbd-9572-e821b0bf68d2/console.sql" />
+        <option value="$PROJECT_DIR$/src/Ecommerce/FrontBundle/DataFixtures/ORM/Test/DataLoader.php" />
+        <option value="$PROJECT_DIR$/app/config/config_test.yml" />
+        <option value="$PROJECT_DIR$/app/config/config.yml" />
+        <option value="$PROJECT_DIR$/app/config/parameters.yml" />
       </list>
     </option>
   </component>
@@ -558,6 +329,186 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ecommerce" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ecommerce" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ecommerce" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ecommerce" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="UserBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ecommerce" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ecommerce" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="UserBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Entity" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ecommerce" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ecommerce" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="UserBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DataFixtures" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ORM" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ecommerce" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ecommerce" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="UserBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DataFixtures" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ORM" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ecommerce" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ecommerce" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Ecommerce" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FrontBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ecommerce" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ecommerce" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Ecommerce" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FrontBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DataFixtures" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ORM" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ecommerce" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ecommerce" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Ecommerce" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -572,19 +523,19 @@
     <property name="full.screen.before.presentation.mode" value="false" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/Ecommerce/FrontBundle/DataFixtures/ORM" />
+      <recent name="$PROJECT_DIR$/src/UserBundle/DataFixtures/ORM" />
+      <recent name="$PROJECT_DIR$/src/Ecommerce/FrontBundle/DataFixtures/ORM/Dev" />
+      <recent name="$PROJECT_DIR$/src/Ecommerce/FrontBundle/DataFixtures/ORM/yml" />
+      <recent name="$PROJECT_DIR$/src/Ecommerce/FrontBundle/DataFixtures/ORM/" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/Ecommerce/FrontBundle/DataFixtures/ORM/Dev" />
       <recent name="$PROJECT_DIR$/src/Ecommerce/FrontBundle/DataFixtures/ORM" />
       <recent name="$PROJECT_DIR$/src/UserBundle/Entity" />
       <recent name="$PROJECT_DIR$/src/Ecommerce/FrontBundle/Entity" />
       <recent name="$PROJECT_DIR$/src/UserBundle/DataFixtures/ORM/test" />
-      <recent name="$PROJECT_DIR$/src/UserBundle/DataFixtures/ORM" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/Ecommerce/FrontBundle/DataFixtures/ORM" />
-      <recent name="$PROJECT_DIR$/src/Ecommerce/FrontBundle/DataFixtures/ORM/yml" />
-      <recent name="$PROJECT_DIR$/src/Ecommerce/FrontBundle/DataFixtures/ORM/" />
-      <recent name="$PROJECT_DIR$/src/Pages/PagesBundle/DataFixtures/dev" />
-      <recent name="$PROJECT_DIR$/src/Pages/PagesBundle/DataFixtures" />
     </key>
   </component>
   <component name="RunManager">
@@ -637,7 +588,7 @@
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32615384" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2675059" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32923076" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3276923" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22423288" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32872504" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -698,48 +649,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Ecommerce/FrontBundle/Services/Panier.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.6153846">
-          <caret line="30" column="20" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Ecommerce/FrontBundle/Resources/config/routing/panier_routing.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="60" selection-start-line="2" selection-start-column="60" selection-end-line="2" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/var/bootstrap.php.cache">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.38969404">
-          <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/autoload.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/phpunit.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="40" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Pages/PagesBundle/Controller/PagesAdminController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -772,27 +681,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/config_dev.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="43" column="12" selection-start-line="43" selection-start-column="12" selection-end-line="43" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/config_test.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="24" column="9" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
         </state>
       </provider>
     </entry>
@@ -845,13 +733,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/UserBundle/Entity/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.9615383">
-          <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Ecommerce/FrontBundle/Entity/Ville.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-8.461538">
@@ -887,76 +768,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Ecommerce/FrontBundle/Entity/dev/TvaData.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="3" column="52" selection-start-line="3" selection-start-column="52" selection-end-line="3" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Ecommerce/FrontBundle/Entity/dev/MediaData.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-19.461538">
-          <caret line="28" column="39" selection-start-line="28" selection-start-column="39" selection-end-line="28" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Ecommerce/FrontBundle/Entity/dev/ClientData.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="3" column="52" selection-start-line="3" selection-start-column="52" selection-end-line="3" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Ecommerce/FrontBundle/Entity/dev/CategorieData.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="43" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Ecommerce/FrontBundle/Entity/test/TvaData.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="3" column="53" selection-start-line="3" selection-start-column="53" selection-end-line="3" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Ecommerce/FrontBundle/Entity/test/MediaData.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="3" column="53" selection-start-line="3" selection-start-column="53" selection-end-line="3" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Ecommerce/FrontBundle/Entity/test/ClientData.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="3" column="53" selection-start-line="3" selection-start-column="53" selection-end-line="3" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Ecommerce/FrontBundle/Entity/test/ProduitData.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="1" column="53" selection-start-line="1" selection-start-column="53" selection-end-line="1" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/UserBundle/Entity/dev/UserData.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="1" column="41" selection-start-line="1" selection-start-column="41" selection-end-line="1" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/UserBundle/Entity/test/UserData.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="1" column="42" selection-start-line="1" selection-start-column="42" selection-end-line="1" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/hautelook/alice-bundle/src/Alice/ProcessorChain.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -987,34 +798,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/1211f69d-ee23-40e0-9342-5f787d4f4783/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0">
-          <caret line="0" column="19" selection-start-line="0" selection-start-column="19" selection-end-line="0" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Ecommerce/FrontBundle/Entity/Categorie.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="31" column="6" selection-start-line="31" selection-start-column="6" selection-end-line="31" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Ecommerce/FrontBundle/Tests/Controller/ProduitControllerTest.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="57" column="9" selection-start-line="57" selection-start-column="9" selection-end-line="57" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Ecommerce/FrontBundle/Entity/dev/ProduitData.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1033,16 +820,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/8267c229-df05-4fbd-9572-e821b0bf68d2/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0">
-          <caret line="0" column="23" selection-start-line="0" selection-start-column="23" selection-end-line="0" selection-end-column="23" />
-          <folding>
-            <marker date="1465665030102" expanded="true" signature="0:23" placeholder="SELECT * fro... categorie" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="dbDummy://dbtable:/1625b691/8267c229-df05-4fbd-9572-e821b0bf68d2/ecommerce.categorie">
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1056,26 +833,162 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Ecommerce/FrontBundle/Entity/test/CategorieData.php">
+    <entry file="file://$PROJECT_DIR$/src/Ecommerce/FrontBundle/Entity/Categorie.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.615385">
-          <caret line="28" column="41" selection-start-line="28" selection-start-column="41" selection-end-line="28" selection-end-column="41" />
+        <state vertical-scroll-proportion="-1.6923077">
+          <caret line="25" column="102" selection-start-line="25" selection-start-column="102" selection-end-line="25" selection-end-column="102" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Ecommerce/FrontBundle/DataFixtures/ORM/categories.yml">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/1211f69d-ee23-40e0-9342-5f787d4f4783/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.73333335">
+          <caret line="1" column="24" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/security.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Ecommerce/FrontBundle/DataFixtures/ORM/medias.yml">
+    <entry file="file://$PROJECT_DIR$/src/Ecommerce/FrontBundle/DataFixtures/ORM/Dev/clients.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8937198">
-          <caret line="30" column="26" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="26" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="19" column="23" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Ecommerce/FrontBundle/DataFixtures/ORM/Dev/tva.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Ecommerce/FrontBundle/DataFixtures/ORM/Dev/categories.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Ecommerce/FrontBundle/DataFixtures/ORM/Dev/produits.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="52" column="23" selection-start-line="52" selection-start-column="23" selection-end-line="52" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Ecommerce/FrontBundle/DataFixtures/ORM/Dev/medias.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="31" column="58" selection-start-line="31" selection-start-column="58" selection-end-line="31" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/UserBundle/DataFixtures/ORM/Dev/users.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="20" column="48" selection-start-line="20" selection-start-column="48" selection-end-line="20" selection-end-column="48" />
+          <folding>
+            <marker date="1465696447664" expanded="true" signature="0:500" placeholder="UserBundle\Entity\User:" />
+            <marker date="1465696447664" expanded="true" signature="187:342" placeholder="user2:" />
+            <marker date="1465696447664" expanded="true" signature="347:500" placeholder="user3:" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Ecommerce/FrontBundle/DataFixtures/ORM/Test/tva.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Ecommerce/FrontBundle/DataFixtures/ORM/Dev/DataLoader.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.153846">
+          <caret line="23" column="5" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/config_dev.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/8267c229-df05-4fbd-9572-e821b0bf68d2/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.73333335">
+          <caret line="1" column="26" selection-start-line="1" selection-start-column="26" selection-end-line="1" selection-end-column="26" />
+          <folding>
+            <marker date="1465702874623" expanded="true" signature="23:49" placeholder="SELECT * fro... utilisateur" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Ecommerce/FrontBundle/DataFixtures/ORM/Test/DataLoader.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-16.923077">
+          <caret line="20" column="36" selection-start-line="16" selection-start-column="12" selection-end-line="20" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/UserBundle/Entity/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.84615386">
+          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding>
+            <element signature="e#37#69#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/UserBundle/DataFixtures/ORM/Test/users.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/config_test.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="37" column="39" selection-start-line="37" selection-start-column="39" selection-end-line="37" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="1" column="22" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.14170693">
+          <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
           <folding />
         </state>
       </provider>

@@ -15,18 +15,18 @@ Ecommerce\FrontBundle\Entity\Media:
         name: Piment
         path: b876f70906264390e54636e76e48ca3234a24444.jpg
 
-    image3:
+    image5:
         name: Poivron rouge
         path: b876f70906264390e54636e76e48ca3234a24922.jpg
 
-    image4:
+    image6:
         name: Piment
         path: b876f70906264390e54636e76e48ca3234a24444.jpg
 
-    image5:
+    image7:
         name: Tomate
         path: b876f70906264390e54636e76e48ca3234a24999.jpg
 
-    image6:
+    image8:
         name: Poivron vert
         path: b876f70906264390e54636e76e48ca3234a24997.jpg

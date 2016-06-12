@@ -1,0 +1,6 @@
+Ecommerce\FrontBundle\Entity\Categorie:
+
+    categorie{1..5}:
+        name: <categorieName($fake('current')-1)>
+        image: '@image<current()>'
+

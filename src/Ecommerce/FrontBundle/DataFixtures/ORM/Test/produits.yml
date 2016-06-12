@@ -1,0 +1,54 @@
+Ecommerce\FrontBundle\Entity\Produit:
+    produit1:
+        name: Poivron rouge
+        price: 1.99
+        available: 1
+        description: dddddddddd
+        categorie: '@categorie1'
+        image: '@image3'
+        tva: '@tva1'
+
+    produit2:
+        name: Piment
+        price: 1.99
+        available: 1
+        description: dddddddd
+        categorie: '@categorie1'
+        image: '@image4'
+        tva: '@tva2'
+
+    produit3:
+        name: Tomate
+        price: 1.99
+        available: 1
+        description: dddddddd
+        categorie: '@categorie1'
+        image: '@image5'
+        tva: '@tva2'
+
+    produit4:
+        name: Poivron vert
+        price: 1.99
+        available: 1
+        description: dddddddddd
+        categorie: '@categorie1'
+        image: '@image6'
+        tva: '@tva2'
+
+    produit5:
+        name: Rasin
+        price: 1.99
+        available: 1
+        description: dddddddddddd
+        categorie: '@categorie2'
+        image: '@image7'
+        tva: '@tva2'
+
+    produit6:
+        name: Orange
+        price: 1.99
+        available: 1
+        description: ddddddddd
+        categorie: '@categorie2'
+        image: '@image8'
+        tva: '@tva2'

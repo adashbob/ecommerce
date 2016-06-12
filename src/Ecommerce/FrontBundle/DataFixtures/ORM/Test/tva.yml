@@ -1,0 +1,10 @@
+Ecommerce\FrontBundle\Entity\Tva:
+    tva1:
+        name: TVA 1.75%
+        multiplicate: 0.982
+        value: 1.75
+
+    tva2:
+        name: TVA 20%
+        multiplicate: 0.833
+        value: 20
