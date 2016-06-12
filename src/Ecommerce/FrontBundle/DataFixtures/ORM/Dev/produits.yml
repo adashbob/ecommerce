@@ -3,7 +3,7 @@ Ecommerce\FrontBundle\Entity\Produit:
         name: Poivron rouge
         price: 1.99
         available: 1
-        description: dddddddddd
+        description: <text(200)>
         categorie: '@categorie1'
         image: '@image3'
         tva: '@tva1'
@@ -12,7 +12,7 @@ Ecommerce\FrontBundle\Entity\Produit:
         name: Piment
         price: 1.99
         available: 1
-        description: dddddddd
+        description: <text(200)>
         categorie: '@categorie1'
         image: '@image4'
         tva: '@tva2'
@@ -21,7 +21,7 @@ Ecommerce\FrontBundle\Entity\Produit:
         name: Tomate
         price: 1.99
         available: 1
-        description: dddddddd
+        description: <text(600)>
         categorie: '@categorie1'
         image: '@image7'
         tva: '@tva2'
@@ -30,7 +30,7 @@ Ecommerce\FrontBundle\Entity\Produit:
         name: Poivron vert
         price: 1.99
         available: 1
-        description: dddddddddd
+        description: <text(200)>
         categorie: '@categorie1'
         image: '@image8'
         tva: '@tva2'
@@ -39,7 +39,7 @@ Ecommerce\FrontBundle\Entity\Produit:
         name: Rasin
         price: 1.99
         available: 1
-        description: dddddddddddd
+        description: <text(200)>
         categorie: '@categorie2'
         image: '@image2'
         tva: '@tva2'
@@ -48,7 +48,7 @@ Ecommerce\FrontBundle\Entity\Produit:
         name: Orange
         price: 1.99
         available: 1
-        description: ddddddddd
+        description: <text(500)>
         categorie: '@categorie2'
         image: '@image6'
         tva: '@tva2'
@@ -57,7 +57,7 @@ Ecommerce\FrontBundle\Entity\Produit:
         name: Molon
         price: 1.7
         available: 1
-        description: ddddddddd
+        description: <text(300)>
         categorie: '@categorie2'
         image: '@image5'
         tva: '@tva2'
@@ -66,7 +66,7 @@ Ecommerce\FrontBundle\Entity\Produit:
         name: Banane
         price: 1.7
         available: 1
-        description: ddddddddd
+        description: <text(400)>
         categorie: '@categorie2'
         image: '@image9'
         tva: '@tva2'

@@ -80,7 +80,12 @@ class ProduitController extends Controller
      */
     public function deleteAction(Produit $produit)
     {
+        if(!$produit){
+            return $this->createNotFoundException('Le produit n\'existe pas');
+        }
+
         $produitHandler = $this->get('produit_handler');
+
         if ($produitHandler->isDelete($produit)) {
             $this->get('session')->getFlashBag()->add('success', 'Le produit est supprimé avec succès');
         }

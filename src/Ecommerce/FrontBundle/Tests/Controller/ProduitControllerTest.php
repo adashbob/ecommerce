@@ -50,7 +50,7 @@ class ProduitControllerTest extends WebTestCase
 
         foreach ($this->providerUrlsAdmin() as $route => $url) {
             $this->clientAdmin->request('GET', $url);
-            $this->assertTrue($this->clientAdmin->getResponse()->isSuccessful());
+            $this->assertEquals(200, $this->clientAdmin->getResponse()->getStatusCode());
             $this->assertEquals(
                 $route,
                 $this->clientAdmin->getRequest()->attributes->get('_route')
@@ -59,17 +59,21 @@ class ProduitControllerTest extends WebTestCase
     }
 
     /**
-     * Test l'url /admin/produit/20/delete
+     * Test l'url /admin/produit/3/delete (correspond au tomate)
      */
     public function testDeleteProduitAction(){
-        $this->clientAdmin->request('DELETE', 'http://ecommerce/admin/produit/20/delete');
+        $this->clientAdmin->request('GET', 'http://ecommerce/admin/produit/3/show');
+        $this->assertEquals(200, $this->clientAdmin->getResponse()->getStatusCode());
 
-        $this->assertEquals('500', $this->clientAdmin->getResponse()->getStatusCode());
+        $this->clientAdmin->request('DELETE', 'http://ecommerce/admin/produit/3/delete');
 
         $this->assertEquals(
             'back_produits_delete',
             $this->clientAdmin->getRequest()->attributes->get('_route')
         );
+
+        $this->clientAdmin->request('GET', 'http://ecommerce/admin/produit/3/show');
+        $this->assertEquals(404, $this->clientAdmin->getResponse()->getStatusCode());
     }
 
 
@@ -95,7 +99,7 @@ class ProduitControllerTest extends WebTestCase
     {
         $produits = $this->em
             ->getRepository('EcommerceFrontBundle:Produit')
-            ->recherche('tomate');
+            ->recherche('orange');
 
         $this->assertTrue(is_a($produits[0], Produit::class));
         $this->assertCount(1, $produits);
@@ -107,22 +111,20 @@ class ProduitControllerTest extends WebTestCase
      *
      */
     public function testsFindProduitInArrayQuery(){
-        /*$this->client->request('GET', 'http://ecommerce/panier/');
-        $this->getKernel()->getContainer()->get('panier_session')->addProduit(19);
-        */
+
         $produits = $this->em
             ->getRepository('EcommerceFrontBundle:Produit')
-            ->findProduitsInArray(array(19 => 1));
+            ->findProduitsInArray(array(2 => 1));
 
-        //$this->assertTrue(is_a($produits[0], Produit::class));
-        $this->assertCount(0, $produits);
+        $this->assertTrue(is_a($produits[0], Produit::class));
+        $this->assertCount(1, $produits);
     }
 
     public function providerUrls()
     {
         return array(
             '/produit/',
-            '/produit/presentation/19',
+            '/produit/presentation/2',
             '/produit/traiterRecherche/'
         );
     }
@@ -133,8 +135,8 @@ class ProduitControllerTest extends WebTestCase
         return array(
             'back_produits' => $url,
             'back_produits_create' => $url.'create',
-            'back_produits_show' => $url.'19/show',
-            'back_produits_update' => $url.'19/update'
+            'back_produits_show' => $url.'2/show',
+            'back_produits_update' => $url.'2/update'
         );
     }
 
