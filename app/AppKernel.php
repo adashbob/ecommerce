@@ -8,24 +8,44 @@ class AppKernel extends Kernel
     public function registerBundles()
     {
        $bundles = [
-            new Symfony\Bundle\FrameworkBundle\FrameworkBundle(),
-            new Symfony\Bundle\SecurityBundle\SecurityBundle(),
-            new Symfony\Bundle\TwigBundle\TwigBundle(),
-            new Symfony\Bundle\MonologBundle\MonologBundle(),
-            new Symfony\Bundle\SwiftmailerBundle\SwiftmailerBundle(),
-            new Doctrine\Bundle\DoctrineBundle\DoctrineBundle(),
-            new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
+           new Symfony\Bundle\FrameworkBundle\FrameworkBundle(),
+           new Symfony\Bundle\SecurityBundle\SecurityBundle(),
+           new Symfony\Bundle\TwigBundle\TwigBundle(),
+           new Symfony\Bundle\MonologBundle\MonologBundle(),
+           new Symfony\Bundle\SwiftmailerBundle\SwiftmailerBundle(),
+           new \Symfony\Bundle\AsseticBundle\AsseticBundle(),
 
-            new Ecommerce\FrontBundle\EcommerceFrontBundle(),
-            new Pages\PagesBundle\PagesBundle(),
-            new FOS\UserBundle\FOSUserBundle(),
-            new UserBundle\UserBundle(),
-            new Knp\Bundle\PaginatorBundle\KnpPaginatorBundle(),
-            new Ecommerce\BackBundle\EcommerceBackBundle(),
-            new \Liip\ImagineBundle\LiipImagineBundle(),
-            new FOS\JsRoutingBundle\FOSJsRoutingBundle(),
-            new \Symfony\Bundle\AsseticBundle\AsseticBundle(),
-            new Stof\DoctrineExtensionsBundle\StofDoctrineExtensionsBundle(),
+           // doctrine
+           new Doctrine\Bundle\DoctrineBundle\DoctrineBundle(),
+           new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
+
+           // owner bundle
+           new Ecommerce\BackBundle\EcommerceBackBundle(),
+           new Ecommerce\FrontBundle\EcommerceFrontBundle(),
+           new Pages\PagesBundle\PagesBundle(),
+
+           // paginator
+           new Knp\Bundle\PaginatorBundle\KnpPaginatorBundle(),
+
+           // image
+           new \Liip\ImagineBundle\LiipImagineBundle(),
+
+           // routing
+           new FOS\JsRoutingBundle\FOSJsRoutingBundle(),
+
+           // doctrine extension
+           new Stof\DoctrineExtensionsBundle\StofDoctrineExtensionsBundle(),
+
+           // user
+           new FOS\UserBundle\FOSUserBundle(),
+           new UserBundle\UserBundle(),
+
+           // admin
+           new Knp\Bundle\MenuBundle\KnpMenuBundle(),
+           new Sonata\CoreBundle\SonataCoreBundle(),
+           new Sonata\BlockBundle\SonataBlockBundle(),
+           new Sonata\DoctrineORMAdminBundle\SonataDoctrineORMAdminBundle(),
+           new Sonata\AdminBundle\SonataAdminBundle(),
         ];
 
         if (in_array($this->getEnvironment(), ['dev', 'test'], true)) {

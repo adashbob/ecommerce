@@ -137,3 +137,11 @@ liip_imagine:
             quality: 75
             filters:
                 thumbnail: { size: [470, 300], mode: outbound }
+
+# SonnataBundle
+sonata_block:
+    default_contexts: [cms]
+    blocks:
+        # enable the SonataAdminBundle block
+        sonata.admin.block.admin_list:
+            contexts: [admin]

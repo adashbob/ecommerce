@@ -18,7 +18,7 @@ services:
         arguments: ['@knp_paginator', '@request_stack']
 
     user_agent_subcriber:
-        class: Ecommerce\FrontBundle\Listener\UserAgentSubcriber
+        class: Ecommerce\FrontBundle\EventListener\UserAgentSubcriber
         arguments: ['@logger']
         tags:
             - {name: kernel.event_subscriber, method: onKernelRequest}

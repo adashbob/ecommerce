@@ -62,17 +62,17 @@ class ProduitControllerTest extends WebTestCase
      * Test l'url /admin/produit/3/delete (correspond au tomate)
      */
     public function testDeleteProduitAction(){
-        $this->clientAdmin->request('GET', 'http://ecommerce/admin/produit/3/show');
+        $this->clientAdmin->request('GET', '/admin/produit/3/show');
         $this->assertEquals(200, $this->clientAdmin->getResponse()->getStatusCode());
 
-        $this->clientAdmin->request('DELETE', 'http://ecommerce/admin/produit/3/delete');
+        $this->clientAdmin->request('DELETE', '/admin/produit/3/delete');
 
         $this->assertEquals(
             'back_produits_delete',
             $this->clientAdmin->getRequest()->attributes->get('_route')
         );
 
-        $this->clientAdmin->request('GET', 'http://ecommerce/admin/produit/3/show');
+        $this->clientAdmin->request('GET', '/admin/produit/3/show');
         $this->assertEquals(404, $this->clientAdmin->getResponse()->getStatusCode());
     }
 
@@ -110,7 +110,7 @@ class ProduitControllerTest extends WebTestCase
      * Test la request qui trouve les produits d'un panier
      *
      */
-    public function testsFindProduitInArrayQuery(){
+    public function testFindProduitInArrayQuery(){
 
         $produits = $this->em
             ->getRepository('EcommerceFrontBundle:Produit')
@@ -118,6 +118,31 @@ class ProduitControllerTest extends WebTestCase
 
         $this->assertTrue(is_a($produits[0], Produit::class));
         $this->assertCount(1, $produits);
+    }
+
+    /**
+     * Test en utilisant le profiler pour le nombre de rq effectué sur la base
+     * de données et le temps mis par le framework
+     */
+    public function testIndexWithProfiler()
+    {
+        $client = static::createClient();
+        $client->enableProfiler();
+
+        $crawler = $client->request('GET', '/produit/');
+        if($profile = $client->getProfile()){
+            $this->assertEquals(
+                11,
+                $profile->getCollector('db')->getQueryCount()
+            );
+
+            // Vérifier le temps utilisé par le framework
+            $this->assertLessThan(
+                500,
+                $profile->getCollector('time')->getDuration()
+            );
+        }
+
     }
 
     public function providerUrls()
@@ -131,7 +156,7 @@ class ProduitControllerTest extends WebTestCase
 
     public function providerUrlsAdmin()
     {
-        $url = 'http://ecommerce/admin/produit/';
+        $url = '/admin/produit/';
         return array(
             'back_produits' => $url,
             'back_produits_create' => $url.'create',

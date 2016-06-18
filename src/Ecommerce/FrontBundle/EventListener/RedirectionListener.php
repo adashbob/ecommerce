@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Ecommerce\FrontBundle\Listener;
+namespace Ecommerce\FrontBundle\EventListener;
 
 
 use Symfony\Component\DependencyInjection\ContainerInterface;

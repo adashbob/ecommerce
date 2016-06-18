@@ -24,3 +24,12 @@ fos_js_routing:
     resource: "@FOSJsRoutingBundle/Resources/config/routing/routing.xml"
 
 
+# SonnataBundle
+admin_area:
+    resource: "@SonataAdminBundle/Resources/config/routing/sonata_admin.xml"
+    prefix: /adminSonna
+
+_sonata_admin:
+    resource: .
+    type: sonata_admin
+    prefix: /adminSonna

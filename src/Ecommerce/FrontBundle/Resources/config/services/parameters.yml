@@ -32,7 +32,7 @@ parameters:
 
     tva_extension.class: Ecommerce\FrontBundle\Twig\Extension\TvaExtension
     montant_tva_extension.class: Ecommerce\FrontBundle\Twig\Extension\MontantTvaExtension
-    redirection_listener.class: Ecommerce\FrontBundle\Listener\RedirectionListener
+    redirection_listener.class: Ecommerce\FrontBundle\EventListener\RedirectionListener
 
 
     panier.class: Ecommerce\FrontBundle\Services\Panier
