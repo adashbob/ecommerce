@@ -138,7 +138,7 @@ liip_imagine:
             filters:
                 thumbnail: { size: [470, 300], mode: outbound }
 
-# SonnataBundle
+# SonnataBlock
 sonata_block:
     default_contexts: [cms]
     blocks:

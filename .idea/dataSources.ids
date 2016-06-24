@@ -327,7 +327,6 @@
         <data-type>int(11)</data-type>
       </column>
       <column id="89" parent="7" name="name">
-        <mandatory>1</mandatory>
         <data-type>varchar(255)</data-type>
       </column>
       <column id="90" parent="7" name="path">

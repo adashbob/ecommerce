@@ -10,15 +10,15 @@ services:
         tags:
             - { name: kernel.event_listener, event: kernel.request, method: process }
 
-    ################ SonataAdminBundle ####################
+    ###################### SonataAdminBundle ########################
     admin.category:
         class: Ecommerce\BackBundle\Admin\CategorieAdmin
         arguments: [~, Ecommerce\FrontBundle\Entity\Categorie, ~]
         tags:
-            - {name: sonata.admin, manager_type: orm, label: Categorie }
+            - { name: sonata.admin, manager_type: orm, label: Categorie }
 
     admin.produit:
         class: Ecommerce\BackBundle\Admin\ProduitAdmin
         arguments: [~, Ecommerce\FrontBundle\Entity\Produit, ~]
         tags:
-            - {name: sonata.admin, manager_type: orm, label: Produit }
+            - { name: sonata.admin, manager_type: orm, label: Produit }

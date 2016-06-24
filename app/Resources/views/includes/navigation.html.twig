@@ -7,6 +7,7 @@
 
 {% if is_granted('IS_AUTHENTICATED_FULLY') %}
     {{ include('@User/Default/utilisateurConnecte.html.twig') }}
+
 {% else %}
     {{ include('@User/Default/connexion.html.twig') }}
 {% endif %}

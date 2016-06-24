@@ -10,6 +10,7 @@ use Sonata\AdminBundle\Datagrid\DatagridMapper;
 use Sonata\AdminBundle\Datagrid\ListMapper;
 use Sonata\AdminBundle\Form\FormMapper;
 use Symfony\Bridge\Doctrine\Form\Type\EntityType;
+use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\Extension\Core\Type\CountryType;
 use Symfony\Component\Form\Extension\Core\Type\TextareaType;
 
@@ -23,18 +24,23 @@ class ProduitAdmin extends AbstractAdmin
     protected function configureFormFields(FormMapper $formMapper)
     {
         $formMapper
-            ->add('name', 'text')
-            ->add('description', TextareaType::class)
-            ->add('price')
-            ->add('categorie')
-            ->add('pays', CountryType::class, array('mapped' => false))
-            ->add('client', EntityType::class, array(
-                'class'   => 'UserBundle\Entity\User',
-                'mapped'  => false
-            ))
-            ->add('tva')
-            ->add('image', MediaType::class)
-            ->add('available');
+            ->with('Content', array('class' => 'col-md-6'))
+                ->add('name', TextType::class)
+                ->add('description', TextareaType::class)
+                ->add('price')
+                ->add('categorie')
+            ->end()
+            ->with('Meta data', array('class' => 'col-md-6'))
+                ->add('pays', CountryType::class, array('mapped' => false))
+                ->add('client', EntityType::class, array(
+                    'class'   => 'UserBundle\Entity\User',
+                    'mapped'  => false))
+                ->add('tva')
+                ->add('image', MediaType::class)
+                ->add('available')
+            ->end()
+
+           ;
     }
 
     /**
@@ -59,7 +65,7 @@ class ProduitAdmin extends AbstractAdmin
     protected function configureListFields(ListMapper $listMapper)
     {
         $listMapper
-            ->addIdentifier('name')
+            ->addIdentifier('name') // contient le lien de modification de l'entité
             ->add('price')
             ->add('categorie')
             ->add('client')
