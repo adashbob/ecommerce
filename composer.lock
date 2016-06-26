@@ -941,12 +941,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfSymfony/FOSUserBundle.git",
-                "reference": "d1fccc6335b74beca94525551cacc06b256ed261"
+                "reference": "298f27ce696deaa6ecd72e6ba563f892a17e0512"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSUserBundle/zipball/d1fccc6335b74beca94525551cacc06b256ed261",
-                "reference": "d1fccc6335b74beca94525551cacc06b256ed261",
+                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSUserBundle/zipball/298f27ce696deaa6ecd72e6ba563f892a17e0512",
+                "reference": "298f27ce696deaa6ecd72e6ba563f892a17e0512",
                 "shasum": ""
             },
             "require": {
@@ -1002,7 +1002,7 @@
             "keywords": [
                 "User management"
             ],
-            "time": "2016-05-27 12:14:43"
+            "time": "2016-06-21 10:34:42"
         },
         {
             "name": "fzaninotto/faker",
@@ -1511,16 +1511,16 @@
         },
         {
             "name": "knplabs/knp-menu-bundle",
-            "version": "v2.1.1",
+            "version": "2.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/KnpLabs/KnpMenuBundle.git",
-                "reference": "90aff8e39274d1225dfa3bb7b1dd4e47b7312dca"
+                "reference": "42ff1953c3a79d0b31aba2ece8c03fbd70e7f1ca"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/KnpLabs/KnpMenuBundle/zipball/90aff8e39274d1225dfa3bb7b1dd4e47b7312dca",
-                "reference": "90aff8e39274d1225dfa3bb7b1dd4e47b7312dca",
+                "url": "https://api.github.com/repos/KnpLabs/KnpMenuBundle/zipball/42ff1953c3a79d0b31aba2ece8c03fbd70e7f1ca",
+                "reference": "42ff1953c3a79d0b31aba2ece8c03fbd70e7f1ca",
                 "shasum": ""
             },
             "require": {
@@ -1564,7 +1564,7 @@
             "keywords": [
                 "menu"
             ],
-            "time": "2015-12-15 12:06:23"
+            "time": "2016-06-21 06:53:03"
         },
         {
             "name": "knplabs/knp-paginator-bundle",
@@ -1706,16 +1706,16 @@
         },
         {
             "name": "leafo/scssphp",
-            "version": "v0.6.4",
+            "version": "v0.6.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/leafo/scssphp.git",
-                "reference": "f73a054101715a2cd288658291c7425c39fdcfc8"
+                "reference": "0649d38dfef6808be1a89040a3312e8bda0b3aed"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/leafo/scssphp/zipball/f73a054101715a2cd288658291c7425c39fdcfc8",
-                "reference": "f73a054101715a2cd288658291c7425c39fdcfc8",
+                "url": "https://api.github.com/repos/leafo/scssphp/zipball/0649d38dfef6808be1a89040a3312e8bda0b3aed",
+                "reference": "0649d38dfef6808be1a89040a3312e8bda0b3aed",
                 "shasum": ""
             },
             "require": {
@@ -1755,7 +1755,7 @@
                 "scss",
                 "stylesheet"
             ],
-            "time": "2016-06-15 22:20:16"
+            "time": "2016-06-20 15:25:08"
         },
         {
             "name": "liip/imagine-bundle",
@@ -3053,16 +3053,16 @@
         },
         {
             "name": "sensio/distribution-bundle",
-            "version": "v5.0.6",
+            "version": "v5.0.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sensiolabs/SensioDistributionBundle.git",
-                "reference": "ffe306d09c1f2bad721237f63b2169d1b78253d0"
+                "reference": "a9c4723cbdbc6cf7fbfdfde3c639cb1943f0293a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sensiolabs/SensioDistributionBundle/zipball/ffe306d09c1f2bad721237f63b2169d1b78253d0",
-                "reference": "ffe306d09c1f2bad721237f63b2169d1b78253d0",
+                "url": "https://api.github.com/repos/sensiolabs/SensioDistributionBundle/zipball/a9c4723cbdbc6cf7fbfdfde3c639cb1943f0293a",
+                "reference": "a9c4723cbdbc6cf7fbfdfde3c639cb1943f0293a",
                 "shasum": ""
             },
             "require": {
@@ -3101,7 +3101,7 @@
                 "configuration",
                 "distribution"
             ],
-            "time": "2016-04-25 20:50:31"
+            "time": "2016-06-23 16:11:33"
         },
         {
             "name": "sensio/framework-extra-bundle",
@@ -3211,16 +3211,16 @@
         },
         {
             "name": "sonata-project/admin-bundle",
-            "version": "3.3.1",
+            "version": "3.3.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sonata-project/SonataAdminBundle.git",
-                "reference": "15b350f0f4ca1ab6eb44b774071f46a9ac9a3410"
+                "reference": "c487e5f1d78235e5c3cf616cf8c10146fa4ceee0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sonata-project/SonataAdminBundle/zipball/15b350f0f4ca1ab6eb44b774071f46a9ac9a3410",
-                "reference": "15b350f0f4ca1ab6eb44b774071f46a9ac9a3410",
+                "url": "https://api.github.com/repos/sonata-project/SonataAdminBundle/zipball/c487e5f1d78235e5c3cf616cf8c10146fa4ceee0",
+                "reference": "c487e5f1d78235e5c3cf616cf8c10146fa4ceee0",
                 "shasum": ""
             },
             "require": {
@@ -3301,7 +3301,7 @@
                 "bootstrap",
                 "sonata"
             ],
-            "time": "2016-06-17 15:56:56"
+            "time": "2016-06-23 18:26:45"
         },
         {
             "name": "sonata-project/block-bundle",
@@ -4853,16 +4853,16 @@
         },
         {
             "name": "sensio/generator-bundle",
-            "version": "v3.0.6",
+            "version": "v3.0.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sensiolabs/SensioGeneratorBundle.git",
-                "reference": "ac91535054d025937d897d78ebb5fc2da5e955a4"
+                "reference": "d1be460925376703a470a3ac6ec034eb7eab3892"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sensiolabs/SensioGeneratorBundle/zipball/ac91535054d025937d897d78ebb5fc2da5e955a4",
-                "reference": "ac91535054d025937d897d78ebb5fc2da5e955a4",
+                "url": "https://api.github.com/repos/sensiolabs/SensioGeneratorBundle/zipball/d1be460925376703a470a3ac6ec034eb7eab3892",
+                "reference": "d1be460925376703a470a3ac6ec034eb7eab3892",
                 "shasum": ""
             },
             "require": {
@@ -4901,7 +4901,7 @@
                 }
             ],
             "description": "This bundle generates code for you",
-            "time": "2016-02-26 04:36:01"
+            "time": "2016-06-20 05:58:05"
         },
         {
             "name": "symfony/phpunit-bridge",

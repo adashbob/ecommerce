@@ -250,4 +250,6 @@ class Produit extends BaseEntity
     {
         return $this->categorie;
     }
+
+
 }

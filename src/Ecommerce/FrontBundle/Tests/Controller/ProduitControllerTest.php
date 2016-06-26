@@ -17,6 +17,10 @@ class ProduitControllerTest extends WebTestCase
         $kernel = new AppK;
     }*/
 
+    /**
+     * Créer un client avec authentification anonyme
+     * Créer un clientAdmin avec authentification du user bobo:bdiallo
+     */
     public function setUp()
     {
         $this->client = static::createClient();

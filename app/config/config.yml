@@ -50,6 +50,13 @@ assetic:
 twig:
     debug:            "%kernel.debug%"
     strict_variables: "%kernel.debug%"
+    globals:
+        rue: Fass Mbao
+        telephone: +221 77 170 98 19
+        fax: Mbao
+        pathDefault: "web/"
+        adresse: Fass Mbao
+
 
 # Doctrine Configuration
 doctrine:
