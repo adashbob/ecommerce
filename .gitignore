@@ -19,8 +19,6 @@
 /node_modules/
 /bower_components
 
-Supprimerait bower.json
-Supprimerait package.json
 Supprimerait web/css/appFacture.css
 Supprimerait web/css/appFacture_facture_1.css
 Supprimerait web/css/app_facture_1.css
