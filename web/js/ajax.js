@@ -5,7 +5,7 @@ $("document").ready(function() {
                 type: 'get',
                 url: Routing.generate('ville', {cp:  $(this).val()}),
                 beforeSend: function() {
-                    if ($(".loading").length == 0) {
+                    if ($(".loading").length === 0) {
                         $("form .ville").parent().append('<div class="loading"></div>');
                     }
                     $(".ville option").remove();
@@ -16,7 +16,7 @@ $("document").ready(function() {
                     });
                     $(".loading").remove();
                 }
-            });
+            }); 
 
         } else {
             $(".ville").val('');

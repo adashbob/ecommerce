@@ -6,10 +6,8 @@
     <meta name="keywords" content="{% block motsCles %}{% endblock %}" />
     <meta name="description" content="{% block description %}{% endblock %}" />
     {% block stylesheets %}{% endblock %}
-    <link rel="stylesheet" href="{{ asset('css/bootstrap.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/bootstrap-responsive.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
     <link rel="stylesheet" href="{{ asset('css/font-awesome.css') }}">
+    <link rel="stylesheet" href="{{ asset('tmp/css/min.css') }}">
     {#{% stylesheets filter="scssphp" output="css/app.css"
         'css/bootstrap.css'
         'css/bootstrap-responsive.css'
@@ -67,7 +65,9 @@
         </div>
     </div>
 </footer>
-<script type="text/javascript" src="{{ asset('tmp/build-min.js') }}"></script>
+
+
+<script type="text/javascript" src="{{ asset('tmp/js/min.js') }}"></script>
 {#{% javascripts filter="?jsqueeze" output="js/app.js"
     'js/jquery-1.10.0.min.js'
     'js/bootstrap.js'
