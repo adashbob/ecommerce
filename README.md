@@ -1,12 +1,14 @@
-.checkout
-=========
+E-commerce application in Symfony 3
 
-Une application ecommerce avec Symonfy3.
+## Building the project
 
-. Description
-=============
-L'application permet de génér un stock de produits et les commandes en ligne.
-
-Toutes les foinctionnalités de l'application sont découplées en services 
-(utilisation poussée des services)
+The project is a simple APIRestFul E-Commerce in symfony 3 and angularjs. To build the whole project, just run :
+ - `clone https://github.com/adashbob/ecommerce.git`
+ - `php composer.phar install`
+ - `bower install`
+ - `grunt install ; grunt` (before install grunt-cli by: `sudo npm install -g grunt-cli`)'
+ 
+Refer to app/config/parameters.yml.dist to configure a database and run : 
+- `php bin/console doctrine:schema:create`
+- `php bin/console h:d:f:l` create fixtures
 
