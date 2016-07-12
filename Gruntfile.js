@@ -73,7 +73,7 @@ module.exports = function (grunt) {
             options: {
                 swapPath: "var/tmp/phplint"
             },
-            src: ["src/**/*.php"],
+            src: ["src/**/*.php "],
             app: ["app/**/*.php"],
             web: ["web/*.php"]
         },
