@@ -6,14 +6,18 @@
     <meta name="keywords" content="{% block motsCles %}{% endblock %}" />
     <meta name="description" content="{% block description %}{% endblock %}" />
     {% block stylesheets %}{% endblock %}
-    {% stylesheets filter="scssphp" output="css/app.css"
+    <link rel="stylesheet" href="{{ asset('css/bootstrap.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/bootstrap-responsive.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/font-awesome.css') }}">
+    {#{% stylesheets filter="scssphp" output="css/app.css"
         'css/bootstrap.css'
         'css/bootstrap-responsive.css'
         'css/style.css'
         'css/font-awesome.css'
         %}
         <link rel="stylesheet" href="{{ asset_url }}" type="text/css" />
-    {% endstylesheets %}
+    {% endstylesheets %}#}
     <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
 </head>
 <body>
@@ -63,14 +67,18 @@
         </div>
     </div>
 </footer>
-{% javascripts filter="?jsqueeze" output="js/app.js"
+<script type="text/javascript" src="{{ asset('js/jquery-1.10.0.min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('js/bootstrap.js') }}"></script>
+<script type="text/javascript" src="{{ asset('js/ajax.js') }}"></script>
+<script type="text/javascript" src="{{ asset('bundles/fosjsrouting/js/router.js') }}"></script>
+{#{% javascripts filter="?jsqueeze" output="js/app.js"
     'js/jquery-1.10.0.min.js'
     'js/bootstrap.js'
     'js/ajax.js'
     'bundles/fosjsrouting/js/router.js'
     %}
     <script src="{{ asset_url }}"></script>
-{% endjavascripts %}
+{% endjavascripts %}#}
 <script src="{{ path('fos_js_routing_js', {"callback": "fos.Router.setData"}) }}"></script>
 {% block javascripts %}{% endblock %}
 </body>

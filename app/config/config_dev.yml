@@ -34,8 +34,8 @@ monolog:
 #    delivery_address: me@example.com
 
 #Assetic configuration
-assetic:
-    use_controller: false
+#assetic:
+#    use_controller: false
 
 #hautelook_alice:
 #    db_drivers:

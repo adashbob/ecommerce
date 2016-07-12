@@ -38,13 +38,13 @@ framework:
     assets: ~
 
 #AsseticBundle configuration & filtres (jsqueeze, scssphp)
-assetic:
-    debug:          '%kernel.debug%'
-    use_controller: '%kernel.debug%'
-    filters:
-        scssphp:
-            formatter: 'Leafo\ScssPhp\Formatter\Compressed'
-        jsqueeze: ~
+#assetic:
+#    debug:          '%kernel.debug%'
+#    use_controller: '%kernel.debug%'
+#    filters:
+#        scssphp:
+#            formatter: 'Leafo\ScssPhp\Formatter\Compressed'
+#        jsqueeze: ~
 
 # Twig Configuration
 twig:
