@@ -19,10 +19,4 @@
 /node_modules/
 /bower_components
 
-Supprimerait web/css/appFacture.css
-Supprimerait web/css/appFacture_facture_1.css
-Supprimerait web/css/app_facture_1.css
-Supprimerait web/upload/64efda5319deac334d829734377040e14e9c4d52.jpeg
-Supprimerait web/upload/70e935f67065faa7f0ad49f1e4f9ccfe322fb65d.jpeg
 web/tmp/
-Supprimerait web/tmp/
