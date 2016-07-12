@@ -2,6 +2,7 @@
 
 module.exports = function (grunt) {
 
+
     // Chargement automatiques des packages
     require('load-grunt-tasks')(grunt);
 
@@ -67,10 +68,18 @@ module.exports = function (grunt) {
                 },
             },
         },
+        // Validate php file
+        phplint: {
+            options: {
+                swapPath: "var/tmp/phplint"
+            },
+            src: ["src/**/*.php"],
+            app: ["app/**/*.php"],
+            web: ["web/*.php"]
+        },
 
     });
 
     // Définition de nouvelles tâches
-    grunt.registerTask('default', ['jshint', 'concat', 'uglify', 'cssmin']);
-
+    grunt.registerTask('default', ['jshint', 'concat', 'uglify', 'cssmin', 'phplint']);
 }
