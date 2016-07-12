@@ -20,5 +20,3 @@
 /bower_components
 
 web/tmp/
-!package.json
-!bower.json
