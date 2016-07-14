@@ -7,28 +7,11 @@ use Symfony\Component\HttpFoundation\Response;
 
 class UserController extends Controller
 {
-    /*public function villesAction(Request $request,$cp)
-    {
-        if ($request->isXmlHttpRequest()) {
-            $em = $this->getDoctrine()->getManager();
-            $villeCodePostal = $em->getRepository('UtilisateursBundle:Villes')->findBy(array('villeCodePostal' => $cp));
 
-            if ($villeCodePostal) {
-                $villes = array();
-                foreach($villeCodePostal as $ville) {
-                    $villes[] = $ville->getVilleNom();
-                }
-            } else {
-                $ville = null;
-            }
-
-            $response = new JsonResponse();
-            return $response->setData(array('ville' => $villes));
-        } else {
-            throw new \Exception('Erreur');
-        }
-    }*/
-
+    /**
+     * Affiche les factures d'un utilisateur
+     * @return Response
+     */
     public function facturesAction()
     {
         return $this->render('@User/User/facture.html.twig', array(
@@ -38,6 +21,11 @@ class UserController extends Controller
         ));
     }
 
+    /**
+     * Imprime la facture d'un utilisateur
+     * @param $id
+     * @return \Symfony\Component\HttpFoundation\RedirectResponse|Response
+     */
     public function facturesPDFAction($id)
     {
         $user = $this->getUser();

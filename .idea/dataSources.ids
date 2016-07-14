@@ -6,8 +6,10 @@
       <identifier-quote-string>`</identifier-quote-string>
     </database-info>
     <case-sensitivity plain-identifiers="exact" quoted-identifiers="exact"/>
-    <database-model serializer="dbm" rdbms="MYSQL" format-version="2.5">
-      <schema id="1" name="ecommerce"/>
+    <database-model serializer="dbm" rdbms="MYSQL" format-version="2.6">
+      <schema id="1" name="ecommerce">
+        <visible>1</visible>
+      </schema>
       <table id="2" parent="1" name="produit"/>
       <table id="3" parent="1" name="utilisateur"/>
       <table id="4" parent="1" name="categorie"/>
@@ -21,41 +23,41 @@
       <table id="12" parent="1" name="ext_translations"/>
       <column id="13" parent="2" name="id">
         <mandatory>1</mandatory>
-        <data-type>int(11)</data-type>
+        <data-type>int(11)|0</data-type>
         <sequence-identity>1</sequence-identity>
       </column>
       <column id="14" parent="2" name="image_id">
         <mandatory>1</mandatory>
-        <data-type>int(11)</data-type>
+        <data-type>int(11)|0</data-type>
       </column>
       <column id="15" parent="2" name="tva_id">
         <mandatory>1</mandatory>
-        <data-type>int(11)</data-type>
+        <data-type>int(11)|0</data-type>
       </column>
       <column id="16" parent="2" name="categorie_id">
         <mandatory>1</mandatory>
-        <data-type>int(11)</data-type>
+        <data-type>int(11)|0</data-type>
       </column>
       <column id="17" parent="2" name="name">
         <mandatory>1</mandatory>
-        <data-type>varchar(255)</data-type>
+        <data-type>varchar(255)|0</data-type>
       </column>
       <column id="18" parent="2" name="description">
-        <data-type>varchar(255)</data-type>
+        <data-type>varchar(255)|0</data-type>
       </column>
       <column id="19" parent="2" name="price">
         <mandatory>1</mandatory>
-        <data-type>double</data-type>
+        <data-type>double|0</data-type>
       </column>
       <column id="20" parent="2" name="available">
         <mandatory>1</mandatory>
-        <data-type>tinyint(1)</data-type>
+        <data-type>tinyint(1)|0</data-type>
       </column>
       <column id="21" parent="2" name="created_at">
-        <data-type>datetime</data-type>
+        <data-type>datetime|0</data-type>
       </column>
       <column id="22" parent="2" name="updated_at">
-        <data-type>datetime</data-type>
+        <data-type>datetime|0</data-type>
       </column>
       <index id="23" parent="2" name="IDX_29A5EC274D79775F">
         <columns>tva_id</columns>
@@ -98,68 +100,68 @@
       </foreign-key>
       <column id="31" parent="3" name="id">
         <mandatory>1</mandatory>
-        <data-type>int(11)</data-type>
+        <data-type>int(11)|0</data-type>
         <sequence-identity>1</sequence-identity>
       </column>
       <column id="32" parent="3" name="username">
         <mandatory>1</mandatory>
-        <data-type>varchar(255)</data-type>
+        <data-type>varchar(255)|0</data-type>
       </column>
       <column id="33" parent="3" name="username_canonical">
         <mandatory>1</mandatory>
-        <data-type>varchar(255)</data-type>
+        <data-type>varchar(255)|0</data-type>
       </column>
       <column id="34" parent="3" name="email">
         <mandatory>1</mandatory>
-        <data-type>varchar(255)</data-type>
+        <data-type>varchar(255)|0</data-type>
       </column>
       <column id="35" parent="3" name="email_canonical">
         <mandatory>1</mandatory>
-        <data-type>varchar(255)</data-type>
+        <data-type>varchar(255)|0</data-type>
       </column>
       <column id="36" parent="3" name="enabled">
         <mandatory>1</mandatory>
-        <data-type>tinyint(1)</data-type>
+        <data-type>tinyint(1)|0</data-type>
       </column>
       <column id="37" parent="3" name="salt">
         <mandatory>1</mandatory>
-        <data-type>varchar(255)</data-type>
+        <data-type>varchar(255)|0</data-type>
       </column>
       <column id="38" parent="3" name="password">
         <mandatory>1</mandatory>
-        <data-type>varchar(255)</data-type>
+        <data-type>varchar(255)|0</data-type>
       </column>
       <column id="39" parent="3" name="last_login">
-        <data-type>datetime</data-type>
+        <data-type>datetime|0</data-type>
       </column>
       <column id="40" parent="3" name="locked">
         <mandatory>1</mandatory>
-        <data-type>tinyint(1)</data-type>
+        <data-type>tinyint(1)|0</data-type>
       </column>
       <column id="41" parent="3" name="expired">
         <mandatory>1</mandatory>
-        <data-type>tinyint(1)</data-type>
+        <data-type>tinyint(1)|0</data-type>
       </column>
       <column id="42" parent="3" name="expires_at">
-        <data-type>datetime</data-type>
+        <data-type>datetime|0</data-type>
       </column>
       <column id="43" parent="3" name="confirmation_token">
-        <data-type>varchar(255)</data-type>
+        <data-type>varchar(255)|0</data-type>
       </column>
       <column id="44" parent="3" name="password_requested_at">
-        <data-type>datetime</data-type>
+        <data-type>datetime|0</data-type>
       </column>
       <column id="45" parent="3" name="roles">
         <comment>(DC2Type:array)</comment>
         <mandatory>1</mandatory>
-        <data-type>longtext</data-type>
+        <data-type>longtext|0</data-type>
       </column>
       <column id="46" parent="3" name="credentials_expired">
         <mandatory>1</mandatory>
-        <data-type>tinyint(1)</data-type>
+        <data-type>tinyint(1)|0</data-type>
       </column>
       <column id="47" parent="3" name="credentials_expire_at">
-        <data-type>datetime</data-type>
+        <data-type>datetime|0</data-type>
       </column>
       <index id="48" parent="3" name="UNIQ_1D1C63B392FC23A8">
         <columns>username_canonical</columns>
@@ -185,21 +187,21 @@
       </key>
       <column id="53" parent="4" name="id">
         <mandatory>1</mandatory>
-        <data-type>int(11)</data-type>
+        <data-type>int(11)|0</data-type>
         <sequence-identity>1</sequence-identity>
       </column>
       <column id="54" parent="4" name="image_id">
-        <data-type>int(11)</data-type>
+        <data-type>int(11)|0</data-type>
       </column>
       <column id="55" parent="4" name="name">
         <mandatory>1</mandatory>
-        <data-type>varchar(125)</data-type>
+        <data-type>varchar(125)|0</data-type>
       </column>
       <column id="56" parent="4" name="created_at">
-        <data-type>datetime</data-type>
+        <data-type>datetime|0</data-type>
       </column>
       <column id="57" parent="4" name="updated_at">
-        <data-type>datetime</data-type>
+        <data-type>datetime|0</data-type>
       </column>
       <index id="58" parent="4" name="UNIQ_497DD6343DA5256D">
         <columns>image_id</columns>
@@ -222,50 +224,50 @@
       </foreign-key>
       <column id="62" parent="5" name="id">
         <mandatory>1</mandatory>
-        <data-type>int(11)</data-type>
+        <data-type>int(11)|0</data-type>
         <sequence-identity>1</sequence-identity>
       </column>
       <column id="63" parent="5" name="user_id">
         <mandatory>1</mandatory>
-        <data-type>int(11)</data-type>
+        <data-type>int(11)|0</data-type>
       </column>
       <column id="64" parent="5" name="nom">
         <mandatory>1</mandatory>
-        <data-type>varchar(125)</data-type>
+        <data-type>varchar(125)|0</data-type>
       </column>
       <column id="65" parent="5" name="prenom">
         <mandatory>1</mandatory>
-        <data-type>varchar(125)</data-type>
+        <data-type>varchar(125)|0</data-type>
       </column>
       <column id="66" parent="5" name="telephone">
         <mandatory>1</mandatory>
-        <data-type>varchar(30)</data-type>
+        <data-type>varchar(30)|0</data-type>
       </column>
       <column id="67" parent="5" name="adresse">
         <mandatory>1</mandatory>
-        <data-type>varchar(255)</data-type>
+        <data-type>varchar(255)|0</data-type>
       </column>
       <column id="68" parent="5" name="cp">
         <mandatory>1</mandatory>
-        <data-type>varchar(10)</data-type>
+        <data-type>varchar(10)|0</data-type>
       </column>
       <column id="69" parent="5" name="ville">
         <mandatory>1</mandatory>
-        <data-type>varchar(125)</data-type>
+        <data-type>varchar(125)|0</data-type>
       </column>
       <column id="70" parent="5" name="complement">
         <mandatory>1</mandatory>
-        <data-type>varchar(255)</data-type>
+        <data-type>varchar(255)|0</data-type>
       </column>
       <column id="71" parent="5" name="pays">
         <mandatory>1</mandatory>
-        <data-type>varchar(255)</data-type>
+        <data-type>varchar(255)|0</data-type>
       </column>
       <column id="72" parent="5" name="created_at">
-        <data-type>datetime</data-type>
+        <data-type>datetime|0</data-type>
       </column>
       <column id="73" parent="5" name="updated_at">
-        <data-type>datetime</data-type>
+        <data-type>datetime|0</data-type>
       </column>
       <index id="74" parent="5" name="IDX_C7440455A76ED395">
         <columns>user_id</columns>
@@ -283,35 +285,35 @@
       </foreign-key>
       <column id="77" parent="6" name="id">
         <mandatory>1</mandatory>
-        <data-type>int(11)</data-type>
+        <data-type>int(11)|0</data-type>
         <sequence-identity>1</sequence-identity>
       </column>
       <column id="78" parent="6" name="user_id">
         <mandatory>1</mandatory>
-        <data-type>int(11)</data-type>
+        <data-type>int(11)|0</data-type>
       </column>
       <column id="79" parent="6" name="valid">
         <mandatory>1</mandatory>
-        <data-type>tinyint(1)</data-type>
+        <data-type>tinyint(1)|0</data-type>
       </column>
       <column id="80" parent="6" name="date">
         <mandatory>1</mandatory>
-        <data-type>datetime</data-type>
+        <data-type>datetime|0</data-type>
       </column>
       <column id="81" parent="6" name="reference">
         <mandatory>1</mandatory>
-        <data-type>int(11)</data-type>
+        <data-type>int(11)|0</data-type>
       </column>
       <column id="82" parent="6" name="facture">
         <comment>(DC2Type:array)</comment>
         <mandatory>1</mandatory>
-        <data-type>longtext</data-type>
+        <data-type>longtext|0</data-type>
       </column>
       <column id="83" parent="6" name="created_at">
-        <data-type>datetime</data-type>
+        <data-type>datetime|0</data-type>
       </column>
       <column id="84" parent="6" name="updated_at">
-        <data-type>datetime</data-type>
+        <data-type>datetime|0</data-type>
       </column>
       <index id="85" parent="6" name="IDX_6EEAA67DA76ED395">
         <columns>user_id</columns>
@@ -329,20 +331,20 @@
       </foreign-key>
       <column id="88" parent="7" name="id">
         <mandatory>1</mandatory>
-        <data-type>int(11)</data-type>
+        <data-type>int(11)|0</data-type>
         <sequence-identity>1</sequence-identity>
       </column>
       <column id="89" parent="7" name="name">
-        <data-type>varchar(255)</data-type>
+        <data-type>varchar(255)|0</data-type>
       </column>
       <column id="90" parent="7" name="path">
-        <data-type>varchar(255)</data-type>
+        <data-type>varchar(255)|0</data-type>
       </column>
       <column id="91" parent="7" name="created_at">
-        <data-type>datetime</data-type>
+        <data-type>datetime|0</data-type>
       </column>
       <column id="92" parent="7" name="updated_at">
-        <data-type>datetime</data-type>
+        <data-type>datetime|0</data-type>
       </column>
       <key id="93" parent="7" name="PRIMARY">
         <columns>id</columns>
@@ -350,26 +352,26 @@
       </key>
       <column id="94" parent="8" name="id">
         <mandatory>1</mandatory>
-        <data-type>int(11)</data-type>
+        <data-type>int(11)|0</data-type>
         <sequence-identity>1</sequence-identity>
       </column>
       <column id="95" parent="8" name="multiplicate">
         <mandatory>1</mandatory>
-        <data-type>double</data-type>
+        <data-type>double|0</data-type>
       </column>
       <column id="96" parent="8" name="name">
         <mandatory>1</mandatory>
-        <data-type>varchar(125)</data-type>
+        <data-type>varchar(125)|0</data-type>
       </column>
       <column id="97" parent="8" name="value">
         <mandatory>1</mandatory>
-        <data-type>double</data-type>
+        <data-type>double|0</data-type>
       </column>
       <column id="98" parent="8" name="created_at">
-        <data-type>datetime</data-type>
+        <data-type>datetime|0</data-type>
       </column>
       <column id="99" parent="8" name="updated_at">
-        <data-type>datetime</data-type>
+        <data-type>datetime|0</data-type>
       </column>
       <key id="100" parent="8" name="PRIMARY">
         <columns>id</columns>
@@ -377,32 +379,32 @@
       </key>
       <column id="101" parent="9" name="id">
         <mandatory>1</mandatory>
-        <data-type>int(11)</data-type>
+        <data-type>int(11)|0</data-type>
         <sequence-identity>1</sequence-identity>
       </column>
       <column id="102" parent="9" name="titre">
         <mandatory>1</mandatory>
-        <data-type>varchar(125)</data-type>
+        <data-type>varchar(125)|0</data-type>
       </column>
       <column id="103" parent="9" name="contenu">
         <mandatory>1</mandatory>
-        <data-type>varchar(255)</data-type>
+        <data-type>varchar(255)|0</data-type>
       </column>
       <column id="104" parent="9" name="createdAt">
-        <data-type>datetime</data-type>
+        <data-type>datetime|0</data-type>
       </column>
       <column id="105" parent="9" name="updateAt">
-        <data-type>datetime</data-type>
+        <data-type>datetime|0</data-type>
       </column>
       <column id="106" parent="9" name="deletedAt">
-        <data-type>datetime</data-type>
+        <data-type>datetime|0</data-type>
       </column>
       <column id="107" parent="9" name="title_changed">
-        <data-type>datetime</data-type>
+        <data-type>datetime|0</data-type>
       </column>
       <column id="108" parent="9" name="slug">
         <mandatory>1</mandatory>
-        <data-type>varchar(128)</data-type>
+        <data-type>varchar(128)|0</data-type>
       </column>
       <index id="109" parent="9" name="page_slug">
         <columns>slug</columns>
@@ -419,23 +421,23 @@
       </key>
       <column id="112" parent="10" name="ville_id">
         <mandatory>1</mandatory>
-        <data-type>int(11)</data-type>
+        <data-type>int(11)|0</data-type>
         <sequence-identity>1</sequence-identity>
       </column>
       <column id="113" parent="10" name="ville_departement">
-        <data-type>varchar(3)</data-type>
+        <data-type>varchar(3)|0</data-type>
       </column>
       <column id="114" parent="10" name="ville_slug">
-        <data-type>varchar(255)</data-type>
+        <data-type>varchar(255)|0</data-type>
       </column>
       <column id="115" parent="10" name="ville_nom">
-        <data-type>varchar(45)</data-type>
+        <data-type>varchar(45)|0</data-type>
       </column>
       <column id="116" parent="10" name="ville_code_postal">
-        <data-type>varchar(255)</data-type>
+        <data-type>varchar(255)|0</data-type>
       </column>
       <column id="117" parent="10" name="ville_population">
-        <data-type>int(11)</data-type>
+        <data-type>int(11)|0</data-type>
       </column>
       <index id="118" parent="10" name="ville_departement">
         <columns>ville_departement</columns>
@@ -460,34 +462,34 @@
       </key>
       <column id="123" parent="11" name="id">
         <mandatory>1</mandatory>
-        <data-type>int(11)</data-type>
+        <data-type>int(11)|0</data-type>
         <sequence-identity>1</sequence-identity>
       </column>
       <column id="124" parent="11" name="action">
         <mandatory>1</mandatory>
-        <data-type>varchar(8)</data-type>
+        <data-type>varchar(8)|0</data-type>
       </column>
       <column id="125" parent="11" name="logged_at">
         <mandatory>1</mandatory>
-        <data-type>datetime</data-type>
+        <data-type>datetime|0</data-type>
       </column>
       <column id="126" parent="11" name="object_id">
-        <data-type>varchar(64)</data-type>
+        <data-type>varchar(64)|0</data-type>
       </column>
       <column id="127" parent="11" name="object_class">
         <mandatory>1</mandatory>
-        <data-type>varchar(255)</data-type>
+        <data-type>varchar(255)|0</data-type>
       </column>
       <column id="128" parent="11" name="version">
         <mandatory>1</mandatory>
-        <data-type>int(11)</data-type>
+        <data-type>int(11)|0</data-type>
       </column>
       <column id="129" parent="11" name="data">
         <comment>(DC2Type:array)</comment>
-        <data-type>longtext</data-type>
+        <data-type>longtext|0</data-type>
       </column>
       <column id="130" parent="11" name="username">
-        <data-type>varchar(255)</data-type>
+        <data-type>varchar(255)|0</data-type>
       </column>
       <index id="131" parent="11" name="log_class_lookup_idx">
         <columns>object_class</columns>
@@ -513,27 +515,27 @@ version</columns>
       </key>
       <column id="136" parent="12" name="id">
         <mandatory>1</mandatory>
-        <data-type>int(11)</data-type>
+        <data-type>int(11)|0</data-type>
         <sequence-identity>1</sequence-identity>
       </column>
       <column id="137" parent="12" name="locale">
         <mandatory>1</mandatory>
-        <data-type>varchar(8)</data-type>
+        <data-type>varchar(8)|0</data-type>
       </column>
       <column id="138" parent="12" name="object_class">
         <mandatory>1</mandatory>
-        <data-type>varchar(255)</data-type>
+        <data-type>varchar(255)|0</data-type>
       </column>
       <column id="139" parent="12" name="field">
         <mandatory>1</mandatory>
-        <data-type>varchar(32)</data-type>
+        <data-type>varchar(32)|0</data-type>
       </column>
       <column id="140" parent="12" name="foreign_key">
         <mandatory>1</mandatory>
-        <data-type>varchar(64)</data-type>
+        <data-type>varchar(64)|0</data-type>
       </column>
       <column id="141" parent="12" name="content">
-        <data-type>longtext</data-type>
+        <data-type>longtext|0</data-type>
       </column>
       <index id="142" parent="12" name="lookup_unique_idx">
         <columns>locale
@@ -568,8 +570,10 @@ foreign_key</columns>
       <identifier-quote-string>`</identifier-quote-string>
     </database-info>
     <case-sensitivity plain-identifiers="exact" quoted-identifiers="exact"/>
-    <database-model serializer="dbm" rdbms="MYSQL" format-version="2.5">
-      <schema id="1" name="testecommerce"/>
+    <database-model serializer="dbm" rdbms="MYSQL" format-version="2.6">
+      <schema id="1" name="testecommerce">
+        <visible>1</visible>
+      </schema>
       <table id="2" parent="1" name="categorie"/>
       <table id="3" parent="1" name="client"/>
       <table id="4" parent="1" name="commande"/>
@@ -583,20 +587,20 @@ foreign_key</columns>
       <table id="12" parent="1" name="ville"/>
       <column id="13" parent="2" name="id">
         <mandatory>1</mandatory>
-        <data-type>int(11)</data-type>
+        <data-type>int(11)|0</data-type>
       </column>
       <column id="14" parent="2" name="image_id">
-        <data-type>int(11)</data-type>
+        <data-type>int(11)|0</data-type>
       </column>
       <column id="15" parent="2" name="name">
         <mandatory>1</mandatory>
-        <data-type>varchar(125)</data-type>
+        <data-type>varchar(125)|0</data-type>
       </column>
       <column id="16" parent="2" name="created_at">
-        <data-type>datetime</data-type>
+        <data-type>datetime|0</data-type>
       </column>
       <column id="17" parent="2" name="updated_at">
-        <data-type>datetime</data-type>
+        <data-type>datetime|0</data-type>
       </column>
       <index id="18" parent="2" name="UNIQ_497DD6343DA5256D">
         <columns>image_id</columns>
@@ -619,49 +623,49 @@ foreign_key</columns>
       </foreign-key>
       <column id="22" parent="3" name="id">
         <mandatory>1</mandatory>
-        <data-type>int(11)</data-type>
+        <data-type>int(11)|0</data-type>
       </column>
       <column id="23" parent="3" name="user_id">
         <mandatory>1</mandatory>
-        <data-type>int(11)</data-type>
+        <data-type>int(11)|0</data-type>
       </column>
       <column id="24" parent="3" name="nom">
         <mandatory>1</mandatory>
-        <data-type>varchar(125)</data-type>
+        <data-type>varchar(125)|0</data-type>
       </column>
       <column id="25" parent="3" name="prenom">
         <mandatory>1</mandatory>
-        <data-type>varchar(125)</data-type>
+        <data-type>varchar(125)|0</data-type>
       </column>
       <column id="26" parent="3" name="telephone">
         <mandatory>1</mandatory>
-        <data-type>varchar(30)</data-type>
+        <data-type>varchar(30)|0</data-type>
       </column>
       <column id="27" parent="3" name="adresse">
         <mandatory>1</mandatory>
-        <data-type>varchar(255)</data-type>
+        <data-type>varchar(255)|0</data-type>
       </column>
       <column id="28" parent="3" name="cp">
         <mandatory>1</mandatory>
-        <data-type>varchar(10)</data-type>
+        <data-type>varchar(10)|0</data-type>
       </column>
       <column id="29" parent="3" name="ville">
         <mandatory>1</mandatory>
-        <data-type>varchar(125)</data-type>
+        <data-type>varchar(125)|0</data-type>
       </column>
       <column id="30" parent="3" name="complement">
         <mandatory>1</mandatory>
-        <data-type>varchar(255)</data-type>
+        <data-type>varchar(255)|0</data-type>
       </column>
       <column id="31" parent="3" name="pays">
         <mandatory>1</mandatory>
-        <data-type>varchar(255)</data-type>
+        <data-type>varchar(255)|0</data-type>
       </column>
       <column id="32" parent="3" name="created_at">
-        <data-type>datetime</data-type>
+        <data-type>datetime|0</data-type>
       </column>
       <column id="33" parent="3" name="updated_at">
-        <data-type>datetime</data-type>
+        <data-type>datetime|0</data-type>
       </column>
       <index id="34" parent="3" name="IDX_C7440455A76ED395">
         <columns>user_id</columns>
@@ -679,34 +683,34 @@ foreign_key</columns>
       </foreign-key>
       <column id="37" parent="4" name="id">
         <mandatory>1</mandatory>
-        <data-type>int(11)</data-type>
+        <data-type>int(11)|0</data-type>
       </column>
       <column id="38" parent="4" name="user_id">
         <mandatory>1</mandatory>
-        <data-type>int(11)</data-type>
+        <data-type>int(11)|0</data-type>
       </column>
       <column id="39" parent="4" name="valid">
         <mandatory>1</mandatory>
-        <data-type>tinyint(1)</data-type>
+        <data-type>tinyint(1)|0</data-type>
       </column>
       <column id="40" parent="4" name="date">
         <mandatory>1</mandatory>
-        <data-type>datetime</data-type>
+        <data-type>datetime|0</data-type>
       </column>
       <column id="41" parent="4" name="reference">
         <mandatory>1</mandatory>
-        <data-type>int(11)</data-type>
+        <data-type>int(11)|0</data-type>
       </column>
       <column id="42" parent="4" name="facture">
         <comment>(DC2Type:array)</comment>
         <mandatory>1</mandatory>
-        <data-type>longtext</data-type>
+        <data-type>longtext|0</data-type>
       </column>
       <column id="43" parent="4" name="created_at">
-        <data-type>datetime</data-type>
+        <data-type>datetime|0</data-type>
       </column>
       <column id="44" parent="4" name="updated_at">
-        <data-type>datetime</data-type>
+        <data-type>datetime|0</data-type>
       </column>
       <index id="45" parent="4" name="IDX_6EEAA67DA76ED395">
         <columns>user_id</columns>
@@ -724,33 +728,33 @@ foreign_key</columns>
       </foreign-key>
       <column id="48" parent="5" name="id">
         <mandatory>1</mandatory>
-        <data-type>int(11)</data-type>
+        <data-type>int(11)|0</data-type>
       </column>
       <column id="49" parent="5" name="action">
         <mandatory>1</mandatory>
-        <data-type>varchar(8)</data-type>
+        <data-type>varchar(8)|0</data-type>
       </column>
       <column id="50" parent="5" name="logged_at">
         <mandatory>1</mandatory>
-        <data-type>datetime</data-type>
+        <data-type>datetime|0</data-type>
       </column>
       <column id="51" parent="5" name="object_id">
-        <data-type>varchar(64)</data-type>
+        <data-type>varchar(64)|0</data-type>
       </column>
       <column id="52" parent="5" name="object_class">
         <mandatory>1</mandatory>
-        <data-type>varchar(255)</data-type>
+        <data-type>varchar(255)|0</data-type>
       </column>
       <column id="53" parent="5" name="version">
         <mandatory>1</mandatory>
-        <data-type>int(11)</data-type>
+        <data-type>int(11)|0</data-type>
       </column>
       <column id="54" parent="5" name="data">
         <comment>(DC2Type:array)</comment>
-        <data-type>longtext</data-type>
+        <data-type>longtext|0</data-type>
       </column>
       <column id="55" parent="5" name="username">
-        <data-type>varchar(255)</data-type>
+        <data-type>varchar(255)|0</data-type>
       </column>
       <index id="56" parent="5" name="log_class_lookup_idx">
         <columns>object_class</columns>
@@ -776,26 +780,26 @@ version</columns>
       </key>
       <column id="61" parent="6" name="id">
         <mandatory>1</mandatory>
-        <data-type>int(11)</data-type>
+        <data-type>int(11)|0</data-type>
       </column>
       <column id="62" parent="6" name="locale">
         <mandatory>1</mandatory>
-        <data-type>varchar(8)</data-type>
+        <data-type>varchar(8)|0</data-type>
       </column>
       <column id="63" parent="6" name="object_class">
         <mandatory>1</mandatory>
-        <data-type>varchar(255)</data-type>
+        <data-type>varchar(255)|0</data-type>
       </column>
       <column id="64" parent="6" name="field">
         <mandatory>1</mandatory>
-        <data-type>varchar(32)</data-type>
+        <data-type>varchar(32)|0</data-type>
       </column>
       <column id="65" parent="6" name="foreign_key">
         <mandatory>1</mandatory>
-        <data-type>varchar(64)</data-type>
+        <data-type>varchar(64)|0</data-type>
       </column>
       <column id="66" parent="6" name="content">
-        <data-type>longtext</data-type>
+        <data-type>longtext|0</data-type>
       </column>
       <index id="67" parent="6" name="lookup_unique_idx">
         <columns>locale
@@ -824,20 +828,20 @@ foreign_key</columns>
       </key>
       <column id="71" parent="7" name="id">
         <mandatory>1</mandatory>
-        <data-type>int(11)</data-type>
+        <data-type>int(11)|0</data-type>
       </column>
       <column id="72" parent="7" name="name">
         <mandatory>1</mandatory>
-        <data-type>varchar(255)</data-type>
+        <data-type>varchar(255)|0</data-type>
       </column>
       <column id="73" parent="7" name="path">
-        <data-type>varchar(255)</data-type>
+        <data-type>varchar(255)|0</data-type>
       </column>
       <column id="74" parent="7" name="created_at">
-        <data-type>datetime</data-type>
+        <data-type>datetime|0</data-type>
       </column>
       <column id="75" parent="7" name="updated_at">
-        <data-type>datetime</data-type>
+        <data-type>datetime|0</data-type>
       </column>
       <key id="76" parent="7" name="PRIMARY">
         <columns>id</columns>
@@ -845,31 +849,31 @@ foreign_key</columns>
       </key>
       <column id="77" parent="8" name="id">
         <mandatory>1</mandatory>
-        <data-type>int(11)</data-type>
+        <data-type>int(11)|0</data-type>
       </column>
       <column id="78" parent="8" name="titre">
         <mandatory>1</mandatory>
-        <data-type>varchar(125)</data-type>
+        <data-type>varchar(125)|0</data-type>
       </column>
       <column id="79" parent="8" name="contenu">
         <mandatory>1</mandatory>
-        <data-type>varchar(255)</data-type>
+        <data-type>varchar(255)|0</data-type>
       </column>
       <column id="80" parent="8" name="createdAt">
-        <data-type>datetime</data-type>
+        <data-type>datetime|0</data-type>
       </column>
       <column id="81" parent="8" name="updateAt">
-        <data-type>datetime</data-type>
+        <data-type>datetime|0</data-type>
       </column>
       <column id="82" parent="8" name="deletedAt">
-        <data-type>datetime</data-type>
+        <data-type>datetime|0</data-type>
       </column>
       <column id="83" parent="8" name="title_changed">
-        <data-type>datetime</data-type>
+        <data-type>datetime|0</data-type>
       </column>
       <column id="84" parent="8" name="slug">
         <mandatory>1</mandatory>
-        <data-type>varchar(128)</data-type>
+        <data-type>varchar(128)|0</data-type>
       </column>
       <index id="85" parent="8" name="page_slug">
         <columns>slug</columns>
@@ -886,40 +890,40 @@ foreign_key</columns>
       </key>
       <column id="88" parent="9" name="id">
         <mandatory>1</mandatory>
-        <data-type>int(11)</data-type>
+        <data-type>int(11)|0</data-type>
       </column>
       <column id="89" parent="9" name="image_id">
         <mandatory>1</mandatory>
-        <data-type>int(11)</data-type>
+        <data-type>int(11)|0</data-type>
       </column>
       <column id="90" parent="9" name="tva_id">
         <mandatory>1</mandatory>
-        <data-type>int(11)</data-type>
+        <data-type>int(11)|0</data-type>
       </column>
       <column id="91" parent="9" name="categorie_id">
         <mandatory>1</mandatory>
-        <data-type>int(11)</data-type>
+        <data-type>int(11)|0</data-type>
       </column>
       <column id="92" parent="9" name="name">
         <mandatory>1</mandatory>
-        <data-type>varchar(255)</data-type>
+        <data-type>varchar(255)|0</data-type>
       </column>
       <column id="93" parent="9" name="description">
-        <data-type>varchar(255)</data-type>
+        <data-type>varchar(255)|0</data-type>
       </column>
       <column id="94" parent="9" name="price">
         <mandatory>1</mandatory>
-        <data-type>double</data-type>
+        <data-type>double|0</data-type>
       </column>
       <column id="95" parent="9" name="available">
         <mandatory>1</mandatory>
-        <data-type>tinyint(1)</data-type>
+        <data-type>tinyint(1)|0</data-type>
       </column>
       <column id="96" parent="9" name="created_at">
-        <data-type>datetime</data-type>
+        <data-type>datetime|0</data-type>
       </column>
       <column id="97" parent="9" name="updated_at">
-        <data-type>datetime</data-type>
+        <data-type>datetime|0</data-type>
       </column>
       <index id="98" parent="9" name="IDX_29A5EC274D79775F">
         <columns>tva_id</columns>
@@ -962,25 +966,25 @@ foreign_key</columns>
       </foreign-key>
       <column id="106" parent="10" name="id">
         <mandatory>1</mandatory>
-        <data-type>int(11)</data-type>
+        <data-type>int(11)|0</data-type>
       </column>
       <column id="107" parent="10" name="multiplicate">
         <mandatory>1</mandatory>
-        <data-type>double</data-type>
+        <data-type>double|0</data-type>
       </column>
       <column id="108" parent="10" name="name">
         <mandatory>1</mandatory>
-        <data-type>varchar(125)</data-type>
+        <data-type>varchar(125)|0</data-type>
       </column>
       <column id="109" parent="10" name="value">
         <mandatory>1</mandatory>
-        <data-type>double</data-type>
+        <data-type>double|0</data-type>
       </column>
       <column id="110" parent="10" name="created_at">
-        <data-type>datetime</data-type>
+        <data-type>datetime|0</data-type>
       </column>
       <column id="111" parent="10" name="updated_at">
-        <data-type>datetime</data-type>
+        <data-type>datetime|0</data-type>
       </column>
       <key id="112" parent="10" name="PRIMARY">
         <columns>id</columns>
@@ -988,67 +992,67 @@ foreign_key</columns>
       </key>
       <column id="113" parent="11" name="id">
         <mandatory>1</mandatory>
-        <data-type>int(11)</data-type>
+        <data-type>int(11)|0</data-type>
       </column>
       <column id="114" parent="11" name="username">
         <mandatory>1</mandatory>
-        <data-type>varchar(255)</data-type>
+        <data-type>varchar(255)|0</data-type>
       </column>
       <column id="115" parent="11" name="username_canonical">
         <mandatory>1</mandatory>
-        <data-type>varchar(255)</data-type>
+        <data-type>varchar(255)|0</data-type>
       </column>
       <column id="116" parent="11" name="email">
         <mandatory>1</mandatory>
-        <data-type>varchar(255)</data-type>
+        <data-type>varchar(255)|0</data-type>
       </column>
       <column id="117" parent="11" name="email_canonical">
         <mandatory>1</mandatory>
-        <data-type>varchar(255)</data-type>
+        <data-type>varchar(255)|0</data-type>
       </column>
       <column id="118" parent="11" name="enabled">
         <mandatory>1</mandatory>
-        <data-type>tinyint(1)</data-type>
+        <data-type>tinyint(1)|0</data-type>
       </column>
       <column id="119" parent="11" name="salt">
         <mandatory>1</mandatory>
-        <data-type>varchar(255)</data-type>
+        <data-type>varchar(255)|0</data-type>
       </column>
       <column id="120" parent="11" name="password">
         <mandatory>1</mandatory>
-        <data-type>varchar(255)</data-type>
+        <data-type>varchar(255)|0</data-type>
       </column>
       <column id="121" parent="11" name="last_login">
-        <data-type>datetime</data-type>
+        <data-type>datetime|0</data-type>
       </column>
       <column id="122" parent="11" name="locked">
         <mandatory>1</mandatory>
-        <data-type>tinyint(1)</data-type>
+        <data-type>tinyint(1)|0</data-type>
       </column>
       <column id="123" parent="11" name="expired">
         <mandatory>1</mandatory>
-        <data-type>tinyint(1)</data-type>
+        <data-type>tinyint(1)|0</data-type>
       </column>
       <column id="124" parent="11" name="expires_at">
-        <data-type>datetime</data-type>
+        <data-type>datetime|0</data-type>
       </column>
       <column id="125" parent="11" name="confirmation_token">
-        <data-type>varchar(255)</data-type>
+        <data-type>varchar(255)|0</data-type>
       </column>
       <column id="126" parent="11" name="password_requested_at">
-        <data-type>datetime</data-type>
+        <data-type>datetime|0</data-type>
       </column>
       <column id="127" parent="11" name="roles">
         <comment>(DC2Type:array)</comment>
         <mandatory>1</mandatory>
-        <data-type>longtext</data-type>
+        <data-type>longtext|0</data-type>
       </column>
       <column id="128" parent="11" name="credentials_expired">
         <mandatory>1</mandatory>
-        <data-type>tinyint(1)</data-type>
+        <data-type>tinyint(1)|0</data-type>
       </column>
       <column id="129" parent="11" name="credentials_expire_at">
-        <data-type>datetime</data-type>
+        <data-type>datetime|0</data-type>
       </column>
       <index id="130" parent="11" name="UNIQ_1D1C63B392FC23A8">
         <columns>username_canonical</columns>
@@ -1074,22 +1078,22 @@ foreign_key</columns>
       </key>
       <column id="135" parent="12" name="ville_id">
         <mandatory>1</mandatory>
-        <data-type>int(11)</data-type>
+        <data-type>int(11)|0</data-type>
       </column>
       <column id="136" parent="12" name="ville_departement">
-        <data-type>varchar(3)</data-type>
+        <data-type>varchar(3)|0</data-type>
       </column>
       <column id="137" parent="12" name="ville_slug">
-        <data-type>varchar(255)</data-type>
+        <data-type>varchar(255)|0</data-type>
       </column>
       <column id="138" parent="12" name="ville_nom">
-        <data-type>varchar(45)</data-type>
+        <data-type>varchar(45)|0</data-type>
       </column>
       <column id="139" parent="12" name="ville_code_postal">
-        <data-type>varchar(255)</data-type>
+        <data-type>varchar(255)|0</data-type>
       </column>
       <column id="140" parent="12" name="ville_population">
-        <data-type>int(11)</data-type>
+        <data-type>int(11)|0</data-type>
       </column>
       <index id="141" parent="12" name="ville_departement">
         <columns>ville_departement</columns>

@@ -78,8 +78,39 @@ module.exports = function (grunt) {
             web: ["web/*.php"]
         },
 
+        imagemin: {                          // Task
+            dist: {                         // Another target
+                files: [{
+                    expand: true,                       // Enable dynamic expansion
+                    cwd: 'web/',                        // Src matches are relative to this path
+                    src: ['**/*.{png,jpg,gif}'],        // Actual patterns to match
+                    dest: 'web/tmp/min/'                  // Destination path prefix
+                }]
+            }
+        },
+        // text replace
+        replace: {
+            dist: {
+                src: ['src/**/*.html.twig'],
+                overwrite: true,                 // overwrite matched source files
+                replacements: [{
+                    from: "/upload/",
+                    to: "/tmp/min/upload"
+                }]
+            }
+        },
+
     });
 
     // Définition de nouvelles tâches
-    grunt.registerTask('default', ['jshint', 'concat', 'uglify', 'cssmin', 'phplint']);
+
+    grunt.registerTask('default', [
+        'jshint',
+        'concat',
+        'uglify',
+        'cssmin',
+        'phplint',
+        'imagemin',
+        'replace'
+    ]);
 }

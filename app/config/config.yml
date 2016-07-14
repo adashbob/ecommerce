@@ -7,6 +7,7 @@ imports:
     - { resource: "@UserBundle/Resources/config/services.yml" }
     - { resource: "@EcommerceBackBundle/Resources/config/services.yml" }
 
+
 # Put parameters here that don't need to change on each machine where the app is deployed
 # http://symfony.com/doc/current/best_practices/configuration.html#application-related-configuration
 parameters:
@@ -23,7 +24,6 @@ framework:
     form:            ~
     csrf_protection: ~
     validation:      { enable_annotations: true }
-    #serializer:      { enable_annotations: true }
     templating:
         engines: ['twig']
     default_locale:  "%locale%"
@@ -36,6 +36,7 @@ framework:
     fragments:       ~
     http_method_override: true
     assets: ~
+
 
 #AsseticBundle configuration & filtres (jsqueeze, scssphp)
 #assetic:
@@ -152,3 +153,4 @@ sonata_block:
         # enable the SonataAdminBundle block
         sonata.admin.block.admin_list:
             contexts: [admin]
+

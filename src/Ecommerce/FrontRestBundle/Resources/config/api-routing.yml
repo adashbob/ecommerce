@@ -1,0 +1,5 @@
+produits:
+    type: rest
+    resource: "@EcommerceFrontRestBundle/Controller/ProduitController.php"
+    name_prefix:  api_
+    prefix: /produit

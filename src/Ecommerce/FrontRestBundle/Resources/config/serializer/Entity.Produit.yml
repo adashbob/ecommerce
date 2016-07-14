@@ -1,0 +1,11 @@
+Ecommerce\FrontBundle\Entity\Produit:
+    exclusion_policy: ALL
+        properties:
+            id:
+                expose: true
+            name:
+                expose: true
+            tva:
+                expose: true
+            price:
+                expose: true

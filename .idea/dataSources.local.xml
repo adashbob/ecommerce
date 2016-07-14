@@ -4,14 +4,14 @@
     <data-source name="ecommerce" uuid="8267c229-df05-4fbd-9572-e821b0bf68d2">
       <secret-storage>master_key</secret-storage>
       <user-name>root</user-name>
-      <schema-pattern>ecommerce.*</schema-pattern>
-      <default-schemas>ecommerce.*</default-schemas>
+      <introspection-scope>ecommerce:*</introspection-scope>
+      <resolve-scope>ecommerce:*</resolve-scope>
     </data-source>
     <data-source name="testecommerce" uuid="1211f69d-ee23-40e0-9342-5f787d4f4783">
       <secret-storage>master_key</secret-storage>
       <user-name>root</user-name>
-      <schema-pattern>testecommerce.*</schema-pattern>
-      <default-schemas>testecommerce.*</default-schemas>
+      <introspection-scope>testecommerce:*</introspection-scope>
+      <resolve-scope>testecommerce:*</resolve-scope>
     </data-source>
   </component>
 </project>

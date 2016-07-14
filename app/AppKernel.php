@@ -46,6 +46,11 @@ class AppKernel extends Kernel
            new Sonata\BlockBundle\SonataBlockBundle(),
            new Sonata\DoctrineORMAdminBundle\SonataDoctrineORMAdminBundle(),
            new Sonata\AdminBundle\SonataAdminBundle(),
+
+		   // API REST
+           new Ecommerce\FrontRestBundle\EcommerceFrontRestBundle(),
+		   new FOS\RestBundle\FOSRestBundle(),
+           new JMS\SerializerBundle\JMSSerializerBundle()
         ];
 
         if (in_array($this->getEnvironment(), ['dev', 'test'], true)) {

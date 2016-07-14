@@ -4,9 +4,6 @@ namespace Ecommerce\FrontBundle\Controller;
 
 use Ecommerce\FrontBundle\Form\Type\RechercheType;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
-use Symfony\Component\Console\ConsoleEvents;
-use Symfony\Component\Console\Input\InputOption;
-use Symfony\Component\DependencyInjection\Compiler\PassConfig;
 use Symfony\Component\HttpFoundation\Request;
 
 class ProduitController extends Controller
@@ -17,7 +14,7 @@ class ProduitController extends Controller
     public function produitsAction()
     {
         $produits = $this->get('produit_manager')->getAvailableProducts();
-
+        
         return $this->render('@EcommerceFront/Produit/produits.html.twig', array(
             'produits' => $this->get('ecommerce_pagination')->doPagination($produits),
             'panier' => $this->get('panier_session')->has('panier')

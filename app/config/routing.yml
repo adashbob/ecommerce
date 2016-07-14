@@ -1,3 +1,8 @@
+#rest:
+#    type: rest
+#    resource: "@EcommerceFrontRestBundle/Resources/config/api-routing.yml"
+#    prefix:   /api
+
 ecommerce_back:
     resource: "@EcommerceBackBundle/Resources/config/routing.yml"
     prefix:   /
