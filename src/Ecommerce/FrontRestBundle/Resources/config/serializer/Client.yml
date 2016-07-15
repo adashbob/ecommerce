@@ -1,0 +1,15 @@
+Ecommerce\FrontBundle\Entity\Client:
+    exclusion_policy: all
+    properties:
+        id:
+            expose: true
+        nom:
+            expose: true
+        prenom:
+            expose: true
+        telephone:
+            expose: true
+        adresse:
+            expose: true
+        user:
+            expose: true

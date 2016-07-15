@@ -1,0 +1,10 @@
+Ecommerce\FrontBundle\Entity\Categorie:
+    exclusion_policy: all
+    properties:
+        id:
+            expose: true
+        name:
+            expose: true
+        image:
+            expose: true
+

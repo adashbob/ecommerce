@@ -1,0 +1,10 @@
+Ecommerce\FrontBundle\Entity\Media:
+    exclusion_policy: all
+    properties:
+        id:
+            expose: true
+        name:
+            expose: true
+        path:
+            expose: true
+

@@ -1,0 +1,10 @@
+Ecommerce\FrontBundle\Entity\Tva:
+    exclusion_policy: all
+    properties:
+        id:
+            expose: true
+        name:
+            expose: true
+        value:
+            expose: true
+

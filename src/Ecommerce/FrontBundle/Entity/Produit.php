@@ -3,12 +3,7 @@
 namespace Ecommerce\FrontBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
-use JMS\Serializer\Annotation as Serializer;
 use Symfony\Component\Validator\Constraints as Assert;
-use JMS\Serializer\Annotation\ExclusionPolicy;
-use JMS\Serializer\Annotation\Expose;
-use JMS\Serializer\Annotation\Groups;
-use JMS\Serializer\Annotation\VirtualProperty;
 
 /**
  * Produit
@@ -17,7 +12,6 @@ use JMS\Serializer\Annotation\VirtualProperty;
  * @ORM\Entity(repositoryClass="Ecommerce\FrontBundle\Repository\ProduitRepository")
  * @ORM\HasLifecycleCallbacks()
  *
- * @ExclusionPolicy("all")
  */
 class Produit extends BaseEntity
 {
@@ -28,7 +22,6 @@ class Produit extends BaseEntity
      * @ORM\Id
      * @ORM\GeneratedValue(strategy="AUTO")
      *
-     * @Expose()
      */
     private $id;
 
@@ -41,7 +34,7 @@ class Produit extends BaseEntity
     /**
      * @ORM\ManyToOne(targetEntity="Ecommerce\FrontBundle\Entity\Tva")
      * @ORM\JoinColumn(nullable=false)
-     * @Expose()
+     * 
      */
     private $tva;
 
@@ -57,7 +50,7 @@ class Produit extends BaseEntity
      * @ORM\Column(name="name", type="string", length=255)
      * @Assert\NotBlank(message="Le nom du produit doit être renseigné")
      * @Assert\Length(min="2", max="20")
-     * @Expose()
+     * 
      */
     private $name;
 
@@ -73,7 +66,7 @@ class Produit extends BaseEntity
      *
      * @ORM\Column(name="price", type="float")
      * @Assert\Type(type="int")
-     * @Expose()
+     * 
      */
     private $price;
 
@@ -81,7 +74,7 @@ class Produit extends BaseEntity
      * @var bool
      *
      * @ORM\Column(name="available", type="boolean")
-     * @Expose()
+     * 
      */
     private $available;
 
@@ -114,7 +107,6 @@ class Produit extends BaseEntity
      * Get name
      *
      * @return string
-     * @VirtualProperty()
      */
     public function getName()
     {

@@ -1,0 +1,10 @@
+Ecommerce\FrontBundle\Entity\Commande:
+    exclusion_policy: all
+    properties:
+        id:
+            expose: true
+        date:
+            expose: true
+        user:
+            expose: true
+
