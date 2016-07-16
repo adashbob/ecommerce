@@ -1,0 +1,7 @@
+# Serialisation des entites
+jms_serializer:
+    metadata:
+        directories:
+            EcommerceRest:
+                namespace_prefix: Ecommerce\FrontBundle\Entity
+                path: "@EcommerceFrontRestBundle/Resources/config/serializer"

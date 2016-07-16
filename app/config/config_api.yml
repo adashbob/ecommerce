@@ -1,5 +1,8 @@
 imports:
     - { resource: config.yml }
+    - { resource: bundles/nelmio_api_doc.yml }
+    - { resource: bundles/jms_serializer.yml }
+    - { resource: bundles/fos_rest.yml }
 
 framework:
     router:
@@ -7,32 +10,3 @@ framework:
     serializer:
         enabled: true
 
-# Serialisation des entites
-jms_serializer:
-    metadata:
-        directories:
-            EcommerceRest:
-                namespace_prefix: Ecommerce\FrontBundle\Entity
-                path: "@EcommerceFrontRestBundle/Resources/config/serializer"
-
-## FostRestBundle
-fos_rest:
-    param_fetcher_listener: true
-    body_listener: true
-    format_listener: true
-    view:
-        view_response_listener: 'force'
-        formats:
-            xml: true
-            json : true
-        templating_formats:
-            html: true
-        force_redirects:
-            html: true
-        failed_validation: HTTP_BAD_REQUEST
-        default_engine: twig
-    routing_loader:
-        default_format: json
-
-# nelmio
-nelmio_api_doc: ~
