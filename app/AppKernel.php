@@ -50,7 +50,9 @@ class AppKernel extends Kernel
 		   // API REST
            new Ecommerce\FrontRestBundle\EcommerceFrontRestBundle(),
 		   new FOS\RestBundle\FOSRestBundle(),
-           new JMS\SerializerBundle\JMSSerializerBundle()
+           new JMS\SerializerBundle\JMSSerializerBundle(),
+           new Bazinga\Bundle\HateoasBundle\BazingaHateoasBundle(),
+           new Nelmio\ApiDocBundle\NelmioApiDocBundle(),
         ];
 
         if (in_array($this->getEnvironment(), ['dev', 'test', 'api'], true)) {

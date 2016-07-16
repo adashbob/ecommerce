@@ -9,17 +9,21 @@ use Sonata\AdminBundle\Datagrid\DatagridMapper;
 use Sonata\AdminBundle\Datagrid\ListMapper;
 use Sonata\AdminBundle\Form\FormMapper;
 
-class CategorieAdmin extends AbstractAdmin
+class CommandeAdmin extends AbstractAdmin
 {
-
     /**
      * Configure les champs à ajouter pour l'ajout et la modification
      * @param FormMapper $formMapper
      */
     protected function configureFormFields(FormMapper $formMapper)
     {
-        $formMapper->add('name', 'text');
+        $formMapper
+            ->add('reference')
+            ->add('date')
+            ->add('valid')
+            ->add('user');
     }
+
 
     /**
      * Configure les champs à trier
@@ -27,11 +31,33 @@ class CategorieAdmin extends AbstractAdmin
      */
     protected function configureDatagridFilters(DatagridMapper $datagridMapper)
     {
-        $datagridMapper->add('name');
+        $datagridMapper
+            ->add('reference')
+            ->add('date')
+            ->add('valid')
+            ->add('user')
+        ;
     }
 
     protected function configureListFields(ListMapper $listMapper)
     {
-        $listMapper->addIdentifier('name');
+        $listMapper
+            ->addIdentifier('reference')
+            ->add('date')
+            ->add('valid')
+            ->add('user');
+    }
+
+    /**
+     * Personnalisation du dashboard
+     * @return array
+     */
+    public function getDashboardActions()
+    {
+        $actions = parent::getDashboardActions();
+
+        unset($actions['create']);
+
+        return $actions;
     }
 }

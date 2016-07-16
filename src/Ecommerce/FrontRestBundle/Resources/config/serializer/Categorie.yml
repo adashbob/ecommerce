@@ -5,6 +5,10 @@ Ecommerce\FrontBundle\Entity\Categorie:
             expose: true
         name:
             expose: true
-        image:
-            expose: true
-
+    relations:
+        -
+            rel: self
+            href: "expr('/app_api.php/api/categories/' ~ object.getId())"
+        -
+            rel: produits
+            href: "expr('/app_api.php/api/categories/' ~ object.getId() ~ '/produits')"

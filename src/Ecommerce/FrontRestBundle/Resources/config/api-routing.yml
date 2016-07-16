@@ -2,4 +2,16 @@ produits:
     type: rest
     resource: "@EcommerceFrontRestBundle/Controller/ProduitController.php"
     name_prefix:  api_
-    prefix: /produit
+    prefix: /
+
+categories:
+    type: rest
+    resource: "@EcommerceFrontRestBundle/Controller/CategorieController.php"
+    name_prefix:  api_
+    prefix: /
+
+
+admin_rest:
+    type: annotation
+    resource: "@EcommerceFrontRestBundle/Controller/AdminController.php"
+    prefix: /

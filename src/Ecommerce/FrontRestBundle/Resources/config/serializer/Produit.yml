@@ -8,3 +8,14 @@ Ecommerce\FrontBundle\Entity\Produit:
         price:
             expose: true
 
+    relations:
+        -
+            rel: self
+            href: "expr('/app_api.php/api/produits/' ~ object.getId())"
+        -
+            rel: categorie
+            href: "expr('/app_api.php/api/categories/' ~ object.getCategorie().getId())"
+#            href:
+#                route: api_get_produits
+#                parameters:
+#                    id: "expr(object.getId())"

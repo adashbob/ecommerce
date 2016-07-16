@@ -24,13 +24,13 @@ class ProduitAdmin extends AbstractAdmin
     protected function configureFormFields(FormMapper $formMapper)
     {
         $formMapper
-            ->with('Content', array('class' => 'col-md-6'))
-                ->add('name', TextType::class)
+            ->with('Info Produit    ', array('class' => 'col-md-6'))
+                ->add('name', TextType::class, array('help' => 'Entrez le nom du produit'))
                 ->add('description', TextareaType::class)
                 ->add('price')
                 ->add('categorie')
             ->end()
-            ->with('Meta data', array('class' => 'col-md-6'))
+            ->with('Plus d\'info', array('class' => 'col-md-6'))
                 ->add('pays', CountryType::class, array('mapped' => false))
                 ->add('client', EntityType::class, array(
                     'class'   => 'UserBundle\Entity\User',
@@ -53,7 +53,6 @@ class ProduitAdmin extends AbstractAdmin
             ->add('name')
             ->add('description')
             ->add('price')
-            ->add('categorie')
             ->add('available');
 
     }
@@ -68,7 +67,7 @@ class ProduitAdmin extends AbstractAdmin
             ->addIdentifier('name') // contient le lien de modification de l'entité
             ->add('price')
             ->add('categorie')
-            ->add('client')
+            ->add('tva')
             ->add('available');
     }
 }

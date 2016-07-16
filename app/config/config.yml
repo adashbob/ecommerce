@@ -154,3 +154,35 @@ sonata_block:
         sonata.admin.block.admin_list:
             contexts: [admin]
 
+sonata_admin:
+    templates:
+        dashboard: SonataAdminBundle:Core:dashboard.html.twig
+
+    # Configuration du dashboard
+    dashboard:
+        groups:
+            admin_group_content:
+                label: Liste des éléments
+                label_catalogue: Ecommerce\FrontBundle
+                items:
+                    - admin.produit
+                    - admin.categorie
+                    - admin.commande
+            admin_group_client:
+                label: Liste clients
+                label_catalogue: Ecommerce\FrontBundle
+                items:
+                    - admin.client
+                    - admin.tva
+            app.admin.group.misc:
+        blocks:
+            -
+                position: left
+                type: sonata.admin.block.admin_list
+                settings:
+                    groups: [admin_group_content]
+            -
+                position: right
+                type: sonata.admin.block.admin_list
+                settings:
+                    groups: [admin_group_client]

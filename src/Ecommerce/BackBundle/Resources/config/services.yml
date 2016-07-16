@@ -11,14 +11,55 @@ services:
             - { name: kernel.event_listener, event: kernel.request, method: process }
 
     ###################### SonataAdminBundle ########################
-    admin.category:
-        class: Ecommerce\BackBundle\Admin\CategorieAdmin
-        arguments: [~, Ecommerce\FrontBundle\Entity\Categorie, ~]
-        tags:
-            - { name: sonata.admin, manager_type: orm, label: Categorie }
 
+    # Configuration admin list
+
+    # produit
     admin.produit:
         class: Ecommerce\BackBundle\Admin\ProduitAdmin
-        arguments: [~, Ecommerce\FrontBundle\Entity\Produit, ~]
         tags:
-            - { name: sonata.admin, manager_type: orm, label: Produit }
+            - name: sonata.admin
+              manager_type: orm
+              group: "Content"
+              label: "Produit"
+        arguments: [~, Ecommerce\FrontBundle\Entity\Produit, ~]
+
+    # categorie
+    admin.categorie:
+        class: Ecommerce\BackBundle\Admin\CategorieAdmin
+        tags:
+            - name: sonata.admin
+              manager_type: orm
+              group: "Content"
+              label: "Categorie"
+        arguments: [~, Ecommerce\FrontBundle\Entity\Categorie, ~]
+
+    # client
+    admin.client:
+        class: Ecommerce\BackBundle\Admin\ClientAdmin
+        tags:
+            - name: sonata.admin
+              manager_type: orm
+              group: "Content"
+              label: "Client"
+        arguments: [~, Ecommerce\FrontBundle\Entity\Client, ~]
+
+    # tva
+    admin.tva:
+        class: Ecommerce\BackBundle\Admin\TvaAdmin
+        tags:
+            - name: sonata.admin
+              manager_type: orm
+              group: "Content"
+              label: "Tva"
+        arguments: [~, Ecommerce\FrontBundle\Entity\Tva, ~ ]
+
+    # commande
+    admin.commande:
+        class: Ecommerce\BackBundle\Admin\CommandeAdmin
+        tags:
+            - name: sonata.admin
+              manager_type: orm
+              group: "Content"
+              label: "Commande"
+        arguments: [~, Ecommerce\FrontBundle\Entity\Commande, ~ ]

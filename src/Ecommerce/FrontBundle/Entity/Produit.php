@@ -4,6 +4,7 @@ namespace Ecommerce\FrontBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Validator\Constraints as Assert;
+use Hateoas\Configuration\Annotation as Hateoas;
 
 /**
  * Produit
@@ -11,6 +12,8 @@ use Symfony\Component\Validator\Constraints as Assert;
  * @ORM\Table(name="produit")
  * @ORM\Entity(repositoryClass="Ecommerce\FrontBundle\Repository\ProduitRepository")
  * @ORM\HasLifecycleCallbacks()
+ *
+ * @Hateoas\Relation(name="self", href="expr('/api/produits/' ~ object.getId())")
  *
  */
 class Produit extends BaseEntity

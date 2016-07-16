@@ -1,5 +1,9 @@
 rest:
     type: rest
     resource: "@EcommerceFrontRestBundle/Resources/config/api-routing.yml"
-    prefix:   /
+    prefix:   /api
+
+NelmioApiDocBundle:
+    resource: "@NelmioApiDocBundle/Resources/config/routing.yml"
+    prefix:   /api/doc
 
