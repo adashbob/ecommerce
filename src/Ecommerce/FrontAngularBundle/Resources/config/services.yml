@@ -1,0 +1,4 @@
+services:
+#    ecommerce_front_angular.example:
+#        class: Ecommerce\FrontAngularBundle\Example
+#        arguments: ["@service_id", "plain_value", %parameter%]
