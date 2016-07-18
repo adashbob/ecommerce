@@ -1,7 +1,7 @@
 'use strict'
 
 app.controller('filterCatCtr', function ($scope, $http) {
-    $scope.categories = [];
+    $scope.categories = []; 
     $http
         .get(Routing.generate('api_get_categories'))
         .then(function (response) {
