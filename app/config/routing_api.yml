@@ -3,7 +3,29 @@ rest:
     resource: "@EcommerceFrontRestBundle/Resources/config/api-routing.yml"
     prefix:   /api
 
+ecommerce_front_angular:
+        resource: "@EcommerceFrontAngularBundle/Resources/config/routing.yml"
+        prefix:   /
+
+user:
+    resource: "@UserBundle/Resources/config/routing.yml"
+    prefix:   /
+
+ecommerce:
+    resource: "@EcommerceFrontBundle/Resources/config/routing.yml"
+    prefix:   /
+
+for_user:
+    resource: "@FOSUserBundle/Resources/config/routing/all.xml"
+
+# Documentation des uri de l'api
 NelmioApiDocBundle:
     resource: "@NelmioApiDocBundle/Resources/config/routing.yml"
     prefix:   /api/doc
 
+client_rest:
+    resource: "@EcommerceFrontRestBundle/Resources/config/routing.yml"
+    prefix: /
+
+fos_js_routing:
+    resource: "@FOSJsRoutingBundle/Resources/config/routing/routing.xml"

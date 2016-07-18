@@ -9,7 +9,7 @@ module.exports = function (grunt) {
     grunt.initConfig({
         // Validate javascript file
         jshint: {
-            all: ['web/js/ajax.js', 'web/bundles/*/js/*.js', '!web/bundles/fosjsrouting/**/*.js']
+            all: ['web/js/ajax.js', '!web/bundles/*/js/*.js', '!web/bundles/fosjsrouting/**/*.js']
         },
         // contact file
         concat: {
@@ -30,7 +30,10 @@ module.exports = function (grunt) {
             },
             dist: {
                 files: {
-                    'web/tmp/js/min.js': ['web/tmp/js/built.js']
+                    'web/tmp/js/bundles/fosjsrouting/js/router-min.js': ['web/bundles/fosjsrouting/js/router.js'],
+                    'web/tmp/js/jquery-min.js': ['web/js/jquery*.js'],
+                    'web/tmp/js/bootstrap-min.js': ['web/js/bootstrap.js'],
+                    'web/tmp/js/ajax-min.js': ['web/js/ajax.js'],
                 }
             }
         },
@@ -40,7 +43,9 @@ module.exports = function (grunt) {
                 files: {
                     'web/tmp/css/min.css': [
                         'web/css/bootstrap.css',
-                        'web/css/bootstrap-responsive.css',
+                        'web/css/bootstrap-responsive.css'
+                    ],
+                    'web/tmp/css/style-min.css': [
                         'web/css/style.css'
                     ]
                 }
@@ -106,11 +111,11 @@ module.exports = function (grunt) {
 
     grunt.registerTask('default', [
         'jshint',
-        'concat',
+        // 'concat',
         'uglify',
         'cssmin',
         'phplint',
-        'imagemin',
+        // 'imagemin',
         'replace'
     ]);
 }

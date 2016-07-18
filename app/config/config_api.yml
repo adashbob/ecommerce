@@ -1,8 +1,9 @@
 imports:
     - { resource: config.yml }
-    - { resource: bundles/nelmio_api_doc.yml }
     - { resource: bundles/jms_serializer.yml }
     - { resource: bundles/fos_rest.yml }
+    - { resource: bundles/nelmio_api_doc.yml }
+    - { resource: bundles/nelmio_cors.yml }
 
 framework:
     router:

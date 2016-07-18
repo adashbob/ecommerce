@@ -19,5 +19,9 @@
     "ng-admin": "^0.9.1",
     "jquery": "^3.1.0",
     "angular": "^1.5.7"
+  },
+  "dependencies": {
+    "angular-route": "^1.5.7",
+    "restangular": "^1.5.2"
   }
 }

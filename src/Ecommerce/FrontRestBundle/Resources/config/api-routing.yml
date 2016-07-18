@@ -2,13 +2,15 @@ produits:
     type: rest
     resource: "@EcommerceFrontRestBundle/Controller/ProduitController.php"
     name_prefix:  api_
-    prefix: /
+    options:
+        expose: true
 
 categories:
     type: rest
     resource: "@EcommerceFrontRestBundle/Controller/CategorieController.php"
     name_prefix:  api_
-    prefix: /
+    options:
+        expose: true
 
 
 admin_rest:

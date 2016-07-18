@@ -19,10 +19,6 @@ class AppKernel extends Kernel
            new Doctrine\Bundle\DoctrineBundle\DoctrineBundle(),
            new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
 
-           // owner bundle
-           new Ecommerce\BackBundle\EcommerceBackBundle(),
-           new Ecommerce\FrontBundle\EcommerceFrontBundle(),
-           new Pages\PagesBundle\PagesBundle(),
 
            // paginator
            new Knp\Bundle\PaginatorBundle\KnpPaginatorBundle(),
@@ -48,12 +44,21 @@ class AppKernel extends Kernel
            new Sonata\AdminBundle\SonataAdminBundle(),
 
 		   // API REST
-           new Ecommerce\FrontRestBundle\EcommerceFrontRestBundle(),
-		   new FOS\RestBundle\FOSRestBundle(),
+           new FOS\RestBundle\FOSRestBundle(),
            new JMS\SerializerBundle\JMSSerializerBundle(),
            new Bazinga\Bundle\HateoasBundle\BazingaHateoasBundle(),
            new Nelmio\ApiDocBundle\NelmioApiDocBundle(),
-        ];
+           new Nelmio\CorsBundle\NelmioCorsBundle(),
+
+           // Ecommerce Bundle
+           new Ecommerce\BackBundle\EcommerceBackBundle(),
+           new Ecommerce\FrontBundle\EcommerceFrontBundle(),
+           new Pages\PagesBundle\PagesBundle(),
+           new Ecommerce\FrontRestBundle\EcommerceFrontRestBundle(),
+           new Ecommerce\FrontAngularBundle\EcommerceFrontAngularBundle(),
+
+
+       ];
 
         if (in_array($this->getEnvironment(), ['dev', 'test', 'api'], true)) {
             $bundles[] = new Symfony\Bundle\DebugBundle\DebugBundle();

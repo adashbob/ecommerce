@@ -9,17 +9,15 @@
     <link rel="stylesheet" href="{{ asset('css/font-awesome.css') }}">
     <link rel="stylesheet" href="{{ asset('tmp/css/min.css') }}">
     <link rel="stylesheet" href="{{ asset('tmp/css/style-min.css') }}">
-    {#{% stylesheets filter="scssphp" output="css/app.css"
-        'css/bootstrap.css'
-        'css/bootstrap-responsive.css'
-        'css/style.css'
-        'css/font-awesome.css'
-        %}
-        <link rel="stylesheet" href="{{ asset_url }}" type="text/css" />
-    {% endstylesheets %}#}
     <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+
+    <script src="{{ asset('bower_components/jquery/dist/jquery.min.js') }}"></script>
+    <script src="{{ asset('bower_components/angular/angular.min.js') }}"></script>
+    <script src="{{ asset('bower_components/angular-route/angular-route.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('tmp/js/bootstrap-min.js') }}"></script>
+
 </head>
-<body>
+<body ng-app="appEcommerce">
 <div class="navbar navbar-inverse navbar-fixed-top">
     <div class="navbar-inner">
         <div class="container">
@@ -28,14 +26,33 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="brand" href="{{ path('produit_produits') }}">Ecommerce</a>
+            <a class="brand" href="{#{{ path('produit_produits') }}#}">Ecommerce</a>
             <div class="nav-collapse collapse">
-                {{ render(controller('EcommerceFrontBundle:Produit:recherche')) }}
+                {# Recherche #}
+                <filter-Produit></filter-Produit>
             </div>
         </div>
     </div>
 </div>
-{% block body %}{% endblock %}
+<div>
+    <div class="container">
+        <div class="row">
+
+            <div class="span3">
+                <filter-By-Categorie></filter-By-Categorie>
+            </div>
+            <div class="span9">
+                {#{% for flashMessage in app.session.flashbag.get('success') %}#}
+                    {#<div class="alert alert-success">#}
+                        {#{{ flashMessage }}#}
+                    {#</div>#}
+                {#{% endfor %}#}
+                <div ng-view></div>
+            </div>
+        </div>
+    </div>
+
+</div>
 <hr />
 <footer id="footer" class="vspace20">
     <div class="container">
@@ -43,7 +60,7 @@
             <div class="span4 offset1">
                 <h4>Informations</h4>
                 <ul class="nav nav-stacked">
-                    {{ render(controller('PagesBundle:Pages:menu')) }}
+                    {#{{ render(controller('PagesBundle:Pages:menu')) }}#}
                 </ul>
             </div>
 
@@ -68,18 +85,12 @@
 </footer>
 
 
-<script type="text/javascript" src="{{ asset('tmp/js/jquery-min.js') }}"></script>
-<script type="text/javascript" src="{{ asset('tmp/js/bootstrap-min.js') }}"></script>
-<script type="text/javascript" src="{{ asset('tmp/js/ajax-min.js') }}"></script>
+<script src="{{ asset('bundles/ecommercefrontangular/web/app.js') }}"></script>
+<script src="{{ asset('bundles/ecommercefrontangular/web/js/controller/ProduitCtr.js') }}"></script>
+<script src="{{ asset('bundles/ecommercefrontangular/web/js/controller/CategorieCtr.js') }}"></script>
+<script src="{{ asset('bundles/ecommercefrontangular/web/js/directive/filterProduit.js') }}"></script>
+<script src="{{ asset('bundles/ecommercefrontangular/web/js/directive/filterCategorie.js') }}"></script>
 <script type="text/javascript" src="{{ asset('tmp/js/bundles/fosjsrouting/js/router-min.js') }}"></script>
-{#{% javascripts filter="?jsqueeze" output="js/app.js"
-    'js/jquery-1.10.0.min.js'
-    'js/bootstrap.js'
-    'js/ajax.js'
-    'bundles/fosjsrouting/js/router.js'
-    %}
-    <script src="{{ asset_url }}"></script>
-{% endjavascripts %}#}
 <script src="{{ path('fos_js_routing_js', {"callback": "fos.Router.setData"}) }}"></script>
 {% block javascripts %}{% endblock %}
 </body>
