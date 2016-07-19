@@ -14,7 +14,7 @@ class CategorieController extends Controller
      */
     public function getCategoriesAction()
     {
-        return $this->get('categorie_manager')->getAll();
+        return array('categories' => $this->get('categorie_manager')->getAll());
     }
 
     /**
@@ -48,9 +48,18 @@ class CategorieController extends Controller
 
     public function getCategorieAction($id)
     {
-        $categorie =  $this->get('categorie_manager')->getCategorie($id);
+        $id = (int) $id;
+        $categorie = $this->get('categorie_manager')->getCategorie($id);
 
-        return $categorie ? $categorie : array('error' => 'La catégorie n\'existe pas');
+        if(!$categorie){
+            array('error' => 'La catégorie n\'existe pas');
+        }
+
+        return array(
+            'produits' => $categorie->getProduits(),
+            'categorieName' => $categorie->getName(),
+            'panier' => $this->get('panier_session')->has('panier')
+        );
     }
 
     /**

@@ -15,7 +15,29 @@ class ProduitController extends Controller
      */
     public function getProduitsAction()
     {
-        return $this->get('produit_manager')->getAll();
+        return array(
+            'produits' => $this->get('produit_manager')->getAvailableProducts(),
+            'panier'   =>  $this->get('panier_session')->has('panier')
+        );
+
+    }
+
+
+    /**
+     * @ApiDoc(resource=true, description="Obtenir un produit par son id")
+     */
+    public function getProduitAction($id)
+    {
+        $id = (int) $id;
+
+        $produit = $this->get('produit_manager')->getProduit($id);
+        if(!$produit){
+            return array('error' => 'Le produit n\'existe pas');
+        }
+        return array(
+            'produit' => $produit,
+            'panier' => $this->get('panier_session')->has('panier')
+        );
     }
 
     /**
@@ -26,31 +48,8 @@ class ProduitController extends Controller
     {
     }
 
-    /**
-     * @ApiDoc(resource=true, description="Obtenir un produit par son id")
-     */
-    public function getProduitAction($id)
-    {
-        $produit =  $this->get('produit_manager')->getProduit($id);
-
-        return $produit ? $produit : array('error' => 'Le produit n\'existe pas');
-    }
-
     public function commentProduitAction($slug)
     {
     }
-    /*public function findAction($id){
-        $produit =  $this->get('produit_manager')->getProduit($id);
-        if(!$produit){
-            return array('Response' => 'Le produit n\'existe pas');
-        }
-        return $produit;
-    }
 
-    public function getLimitAction($limit)
-    {
-        return $this->getDoctrine()
-            ->getRepository('EcommerceFrontBundle:Produit')
-            ->findBy(array(), null, $limit);
-    }*/
 }

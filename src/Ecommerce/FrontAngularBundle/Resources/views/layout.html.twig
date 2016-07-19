@@ -26,10 +26,10 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="brand" href="{#{{ path('produit_produits') }}#}">Ecommerce</a>
+            <a class="brand" href="#/">Ecommerce</a>
             <div class="nav-collapse collapse">
                 {# Recherche #}
-                <filter-Produit></filter-Produit>
+                <filter-produit></filter-produit>
             </div>
         </div>
     </div>
@@ -39,7 +39,7 @@
         <div class="row">
 
             <div class="span3">
-                <filter-By-Categorie></filter-By-Categorie>
+                <filter-by-categorie></filter-by-categorie>
             </div>
             <div class="span9">
                 {#{% for flashMessage in app.session.flashbag.get('success') %}#}
@@ -85,11 +85,11 @@
 </footer>
 
 
-<script src="{{ asset('bundles/ecommercefrontangular/web/app.js') }}"></script>
-<script src="{{ asset('bundles/ecommercefrontangular/web/js/controller/ProduitCtr.js') }}"></script>
-<script src="{{ asset('bundles/ecommercefrontangular/web/js/controller/CategorieCtr.js') }}"></script>
-<script src="{{ asset('bundles/ecommercefrontangular/web/js/directive/filterProduit.js') }}"></script>
-<script src="{{ asset('bundles/ecommercefrontangular/web/js/directive/filterCategorie.js') }}"></script>
+<script src="{{ asset('bundles/ecommercefrontangular/js/app.js') }}"></script>
+<script src="{{ asset('bundles/ecommercefrontangular/js/controller/ProduitCtr.js') }}"></script>
+<script src="{{ asset('bundles/ecommercefrontangular/js/controller/CategorieCtr.js') }}"></script>
+<script src="{{ asset('bundles/ecommercefrontangular/js/directive/filterProduit.js') }}"></script>
+<script src="{{ asset('bundles/ecommercefrontangular/js/directive/filterCategorie.js') }}"></script>
 <script type="text/javascript" src="{{ asset('tmp/js/bundles/fosjsrouting/js/router-min.js') }}"></script>
 <script src="{{ path('fos_js_routing_js', {"callback": "fos.Router.setData"}) }}"></script>
 {% block javascripts %}{% endblock %}

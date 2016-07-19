@@ -3,7 +3,7 @@
 app.directive('filterByCategorie', function () {
     return {
         controller: 'filterCatCtr',
-        templateUrl : baseView + 'Produits/_filterCategorie.html.twig',
+        templateUrl : baseView + 'Produits/_filterCategorie.html',
         restrict : 'E'
     }
 });

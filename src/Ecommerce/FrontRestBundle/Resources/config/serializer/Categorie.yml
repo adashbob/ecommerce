@@ -5,6 +5,7 @@ Ecommerce\FrontBundle\Entity\Categorie:
             expose: true
         name:
             expose: true
+
     relations:
         -
             rel: self

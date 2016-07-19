@@ -1,0 +1,28 @@
+<!-- Details d'un produit -->
+    <div class="row">
+        <div class="span5">
+            <img src="{{ baseImage + produit.image.path }}" alt="{{ produit.image.name }}" width="470" height="310">
+        </div>
+
+        <div class="span4">
+            <h4>{{ produit.name }}</h4>
+            <h5>{{ produit.categorie.name }}</h5>
+            <p>{{ produit.description }}</p>
+            <h4>{{ produit.price }} €</h4>
+            <!--{% if panier[produit.id] is not defined %}-->
+                <form action="#" method="get">
+                    <select name="qte" class="span1">
+                        <option ng-repeat=" i in [1,2,3,4,5,6,7,8,9,10]" value="{{ i }}">{{ i }}</option>
+                    </select>
+
+                    <div>
+                        <button class="btn btn-primary">Ajouter au panier</button>
+                    </div>
+                </form>
+            <!--{% else %}
+                <div>
+                    <a href="{{ path('panier_index') }}" class="btn btn-primary">Le produit est déjà dans votre panier</a>
+                </div>
+            {% endif %}-->
+        </div>
+    </div>
