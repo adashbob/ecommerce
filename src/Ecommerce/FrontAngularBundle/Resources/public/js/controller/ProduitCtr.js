@@ -1,35 +1,22 @@
 app
     // get all produits
-    .controller('allProduitsCtr', function ($scope, $http) {
+    .controller('allProduitsCtr', function ($scope, ProduitFactory) {
         $scope.produits = [];
-        $scope.baseImage = baseImage;
-        $http({
-            method: 'GET',
-            url: Routing.generate('api_get_produits')
-        }).then(
-            function success(response) {
-                $scope.produits = response.data.produits;
-                $scope.panier = response.data.panier;
-                console.log(response.data.panier);
-            },
-            function error(response) {
-                console.log("Erreur statut="+response.statusText);
-            });
+        $scope.produits = ProduitFactory.get().then(function (response) {
+            $scope.produits = response;
+        });
     })
 
     // get produit by id
-    .controller('oneProduitCtr', function ($scope, $http, $routeParams) {
-        $scope.produit = null;
-        $http
-            .get(Routing.generate('api_get_produit', {id : $routeParams.id}))
-            .then(
-                function success(response){
-                    $scope.produit = response.data.produit;
-                    $scope.panier = response.data.panier;
-                    console.log($scope.produit);
-                },
-                function error (response){
-                    $scope.error = response.data.error;
-                });
+    .controller('oneProduitCtr', function ($scope, $routeParams, ProduitFactory) {
+        $scope.produit = {};
+        $scope.produit = ProduitFactory.find($routeParams.id).then(
+            function (produit) {
+               $scope.produit = produit;
+            },
+            function (msg) {
+                console.log(msg);
+            })
+
     })
 

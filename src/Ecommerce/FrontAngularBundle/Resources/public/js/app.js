@@ -2,13 +2,12 @@
 
 var app = angular.module('appEcommerce', ['ngRoute']);
 
-app.run(function ($rootScope) {
-    $rootScope.baseView = '/bundles/ecommercefrontangular/web/js/views/';
-    $rootScope.baseImage = '/upload/';
-});
+var baseView = '/bundles/ecommercefrontangular/js/views/';
 
-var baseView = '/bundles/ecommercefrontangular/web/js/views/';
-var baseImage = '/upload/';
+app.run(function ($rootScope) {
+    $rootScope.baseImage = '/upload/';
+
+});
 
 app.config(function ($routeProvider) {
     $routeProvider
@@ -25,7 +24,6 @@ app.config(function ($routeProvider) {
             templateUrl: baseView + 'Produits/index.html'
         })
         .otherwise({redirect : '/'})
-
 
 });
 

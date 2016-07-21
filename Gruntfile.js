@@ -115,7 +115,7 @@ module.exports = function (grunt) {
         'uglify',
         'cssmin',
         'phplint',
-        // 'imagemin',
-        'replace'
+        //'imagemin',
+        //'replace'
     ]);
 }

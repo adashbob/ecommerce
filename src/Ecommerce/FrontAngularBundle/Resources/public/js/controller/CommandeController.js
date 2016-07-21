@@ -1,3 +1,1 @@
-/**
- * Created by bobo on 17/07/16.
- */
+'use strict';

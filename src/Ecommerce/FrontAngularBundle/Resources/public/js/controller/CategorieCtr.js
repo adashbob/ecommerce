@@ -1,28 +1,29 @@
-'use strict'
+'use strict';
 
 app
     // Menu
-    .controller('filterCatCtr', function ($scope, $http) {
+    .controller('filterCatCtr', function ($scope, CategorieFactory) {
         $scope.categories = [];
-        $http
-            .get(Routing.generate('api_get_categories'))
-            .then(function (response) {
-                $scope.categories = response.data.categories;
-            })
+        $scope.categories  = CategorieFactory.get().then(
+            function (categories) {
+                $scope.categories = categories;
+            },
+            function (msg) {
+                console.log(msg);
+            }
+        )
     })
 
     // Produits d'une même catégorie
-    .controller('produitsOfCatCtr', function ($scope, $http, $routeParams) {
+    .controller('produitsOfCatCtr', function ($scope, $routeParams, CategorieFactory) {
         $scope.produits = [];
         $scope.categorieName = null;
-
-        $http
-            .get(Routing.generate('api_get_categorie', {id : $routeParams.id}))
-            .then(
-                function success(response){
-                    $scope.produits = response.data.produits;
-                    $scope.categorieName = response.data.categorieName;
-                },
-                function error(response) {}
-            )
+        $scope.produits = CategorieFactory.findProduits($routeParams.id).then(
+            function (produits) {
+                $scope.produits = produits;
+            },
+            function (msg) {
+                console.log(msg);
+            }
+        )
     })

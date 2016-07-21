@@ -5,6 +5,8 @@ Ecommerce\FrontBundle\Entity\Categorie:
             expose: true
         name:
             expose: true
+        produits:
+            expose: true
 
     relations:
         -
