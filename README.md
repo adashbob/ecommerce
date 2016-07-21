@@ -5,6 +5,7 @@ E-commerce application in Symfony 3
 The project is a simple APIRestFul E-Commerce in symfony 3 and angularjs. To build the whole project, just run :
  - `clone https://github.com/adashbob/ecommerce.git`
  - `php composer.phar install`
+ - `php bin/console asset:install --symlink`
  - `bower install`
  - `grunt install ; grunt` (before install grunt-cli by: `sudo npm install -g grunt-cli`)
  
