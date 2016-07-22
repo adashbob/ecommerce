@@ -8,11 +8,12 @@ app
     })
 
     // get produit by id
-    .controller('oneProduitCtr', function ($scope, $routeParams, ProduitFactory) {
+    .controller('oneProduitCtr', function ($scope, $routeParams, ProduitFactory, $resource) {
         $scope.produit = {};
         $scope.produit = ProduitFactory.find($routeParams.id).then(
             function (produit) {
-               $scope.produit = produit;
+                $scope.produit = produit;
+
             },
             function (msg) {
                 console.log(msg);

@@ -1,6 +1,6 @@
 <!--Liste des produits -->
 <ul class="thumbnails">
-    <li class="span3" ng-repeat="produit in produits | filter : query track by produit.id">
+    <li class="span3" ng-repeat="produit in produits | filter : query ">
         <div class="thumbnail">
             <img src="{{ baseImage + produit.image.path }}" alt="{{ produit.image.name }}"  width="300" height="150">
             <div class="caption">

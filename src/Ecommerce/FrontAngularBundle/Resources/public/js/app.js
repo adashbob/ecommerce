@@ -1,6 +1,6 @@
 'use strict';
 
-var app = angular.module('appEcommerce', ['ngRoute']);
+var app = angular.module('appEcommerce', ['ngRoute', 'ngResource']);
 
 var baseView = '/bundles/ecommercefrontangular/js/views/';
 
