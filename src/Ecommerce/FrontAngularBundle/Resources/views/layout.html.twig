@@ -85,14 +85,22 @@
     </div>
 </footer>
 
-
-<script src="{{ asset('bundles/ecommercefrontangular/js/app.js') }}"></script>
-<script src="{{ asset('bundles/ecommercefrontangular/js/controller/ProduitCtr.js') }}"></script>
-<script src="{{ asset('bundles/ecommercefrontangular/js/controller/CategorieCtr.js') }}"></script>
-<script src="{{ asset('bundles/ecommercefrontangular/js/directive/filterProduit.js') }}"></script>
-<script src="{{ asset('bundles/ecommercefrontangular/js/directive/filterCategorie.js') }}"></script>
-<script src="{{ asset('bundles/ecommercefrontangular/js/service/produit.js') }}"></script>
-<script src="{{ asset('bundles/ecommercefrontangular/js/service/categorie.js') }}"></script>
+{# app.js #}
+<script src="{{ asset('bundles/ecommercefrontangular/app/app.js') }}"></script>
+{# controller #}
+<script src="{{ asset('bundles/ecommercefrontangular/app/Produit/controllers/allProduitsCtr.js') }}"></script>
+<script src="{{ asset('bundles/ecommercefrontangular/app/Produit/controllers/oneProduitCtr.js') }}"></script>
+<script src="{{ asset('bundles/ecommercefrontangular/app/Categorie/controllers/filterCatCtr.js') }}"></script>
+<script src="{{ asset('bundles/ecommercefrontangular/app/Categorie/controllers/produitsOfCatCtr.js') }}"></script>
+{# directive #}
+<script src="{{ asset('bundles/ecommercefrontangular/app/Categorie/directives/filterCategorie.js') }}"></script>
+<script src="{{ asset('bundles/ecommercefrontangular/app/Produit/directives/addPanierFrom.js') }}"></script>
+<script src="{{ asset('bundles/ecommercefrontangular/app/Produit/directives/addProduitInPanierFrom.js') }}"></script>
+<script src="{{ asset('bundles/ecommercefrontangular/app/Produit/directives/filterProduit.js') }}"></script>
+{# service #}
+<script src="{{ asset('bundles/ecommercefrontangular/app/Produit/services/produit.js') }}"></script>
+<script src="{{ asset('bundles/ecommercefrontangular/app/Categorie/services/categorie.js') }}"></script>
+{# other#}
 <script type="text/javascript" src="{{ asset('tmp/js/bundles/fosjsrouting/js/router-min.js') }}"></script>
 <script src="{{ path('fos_js_routing_js', {"callback": "fos.Router.setData"}) }}"></script>
 {% block javascripts %}{% endblock %}

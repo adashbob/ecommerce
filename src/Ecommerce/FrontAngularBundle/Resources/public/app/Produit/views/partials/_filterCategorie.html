@@ -1,0 +1,13 @@
+<!-- Menu liste des catégories-->
+<div class="well">
+    <ul class="nav nav-list" ng-model="order">
+        <li class="nav-header">Nos produits</li>
+            <li ng-repeat="categorie in categories ">
+                <a href="#/categories/{{ categorie.id }}">{{ categorie.name }}</a>
+            </li>
+        <li>
+            <a href="#/">Tout</a>
+        </li>
+    </ul>
+</div>
+

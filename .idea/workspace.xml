@@ -2,11 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1b0872b5-5230-426d-974e-68202ff690f3" name="Default" comment="APIRest: Implementation ProduitFactory">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Resources/public/app/Categorie/controllers/produitsOfCatCtr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Resources/public/app/Produit/controllers/allProduitsCtr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Resources/public/app/Produit/controllers/oneProduitCtr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Resources/public/app/Produit/directives/addPanierFrom.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Resources/public/app/Produit/directives/addProduitInPanierFrom.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Resources/public/app/Produit/views/partials/_addPanierForm.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Resources/public/app/Produit/views/partials/_addProduitInPanierForm.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Resources/public/app/Produit/views/partials/_filterCategorie.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Resources/public/app/Produit/views/partials/_filterCategorie2.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Resources/public/app/Produit/views/vide.html" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Resources/public/js/controller/CommandeController.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Resources/public/js/controller/ProduitCtr.js" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Resources/public/js/app.js" afterPath="$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Resources/public/app/app.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Resources/public/js/controller/CategorieCtr.js" afterPath="$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Resources/public/app/Categorie/controllers/filterCatCtr.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Resources/public/js/directive/filterCategorie.js" afterPath="$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Resources/public/app/Categorie/directives/filterCategorie.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Resources/public/js/directive/filterProduit.js" afterPath="$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Resources/public/app/Produit/directives/filterProduit.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Resources/public/js/service/categorie.js" afterPath="$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Resources/public/app/Categorie/services/categorie.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Resources/public/js/service/produit.js" afterPath="$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Resources/public/app/Produit/services/produit.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Resources/public/js/views/Produits/_filterCategorie.html" afterPath="$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Resources/public/app/Categorie/views/partials/_filterCategorie.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Resources/public/js/views/Produits/_filterProduit.html" afterPath="$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Resources/public/app/Produit/views/partials/_filterProduit.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Resources/public/js/views/Produits/index.html" afterPath="$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Resources/public/app/Produit/views/index.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Resources/public/js/views/Produits/produit.html" afterPath="$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Resources/public/app/Produit/views/produit.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower.json" afterPath="$PROJECT_DIR$/bower.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Resources/public/js/app.js" afterPath="$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Resources/public/js/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Resources/public/js/controller/ProduitCtr.js" afterPath="$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Resources/public/js/controller/ProduitCtr.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Resources/public/js/views/Produits/index.html" afterPath="$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Resources/public/js/views/Produits/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Resources/views/layout.html.twig" afterPath="$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Resources/views/layout.html.twig" />
     </list>
     <ignored path="ecommerce.iws" />
@@ -40,8 +58,60 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Resources/public/app/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="24">
+              <caret line="13" column="27" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
+              <folding>
+                <element signature="e#234#340#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="produit.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Resources/public/app/Produit/services/produit.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="13" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="filterProduit.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Resources/public/app/Produit/directives/filterProduit.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="161">
+              <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="layout.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Resources/views/layout.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="101" column="88" selection-start-line="101" selection-start-column="88" selection-end-line="101" selection-end-column="88" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="produitsOfCatCtr.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Resources/public/app/Categorie/controllers/produitsOfCatCtr.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="299">
+              <caret line="13" column="3" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="3" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="_filterCategorie.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Resources/public/js/views/Produits/_filterCategorie.html">
+        <entry file="file://$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Resources/public/app/Categorie/views/partials/_filterCategorie.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="299">
               <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
@@ -50,97 +120,41 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_filterProduit.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Resources/public/js/views/Produits/_filterProduit.html">
+      <file leaf-file-name="categorie.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Resources/public/app/Categorie/services/categorie.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="46">
-              <caret line="2" column="74" selection-start-line="2" selection-start-column="74" selection-end-line="2" selection-end-column="74" />
+            <state relative-caret-position="276">
+              <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ProduitCtr.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Resources/public/js/controller/ProduitCtr.js">
+      <file leaf-file-name="filterCatCtr.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Resources/public/app/Categorie/controllers/filterCatCtr.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="322">
+              <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="produit.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Resources/public/js/service/produit.js">
+      <file leaf-file-name="filterCategorie.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Resources/public/app/Categorie/directives/filterCategorie.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="184">
+              <caret line="8" column="3" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="MarkdownFxPreviewEditor">
-            <state />
-          </provider>
-          <provider editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-            <state split_layout="FIRST">
-              <first_editor relative-caret-position="161">
-                <caret line="7" column="43" selection-start-line="7" selection-start-column="43" selection-end-line="7" selection-end-column="43" />
-                <folding />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Controller.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/jsrouting-bundle/Controller/Controller.php">
+      <file leaf-file-name="addPanierFrom.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Resources/public/app/Produit/directives/addPanierFrom.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="53" column="6" selection-start-line="53" selection-start-column="6" selection-end-line="53" selection-end-column="6" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ProduitManager.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Ecommerce/FrontBundle/Services/ProduitManager.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="produit.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Resources/public/js/views/Produits/produit.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="26" selection-start-line="0" selection-start-column="26" selection-end-line="0" selection-end-column="26" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Resources/public/js/views/Produits/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="46">
-              <caret line="2" column="70" selection-start-line="2" selection-start-column="70" selection-end-line="2" selection-end-column="70" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="bower.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bower.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="552">
-              <caret line="24" column="4" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="4" />
+            <state relative-caret-position="230">
+              <caret line="10" column="45" selection-start-line="10" selection-start-column="45" selection-end-line="10" selection-end-column="45" />
               <folding />
             </state>
           </provider>
@@ -166,24 +180,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/web/app_api.php" />
-        <option value="$PROJECT_DIR$/app/config/config_api.yml" />
-        <option value="$PROJECT_DIR$/app/AppKernel.php" />
-        <option value="$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Resources/public/web/controller/app.js" />
-        <option value="$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Resources/public/web/js/controller/ProduitController.js" />
-        <option value="$PROJECT_DIR$/app/config/bundles/nelmio_cors.yml" />
-        <option value="$PROJECT_DIR$/app/Resources/views/layout/layout.html.twig" />
-        <option value="$PROJECT_DIR$/web/js/fos_js_routes.js" />
-        <option value="$PROJECT_DIR$/app/config/routing.yml" />
-        <option value="$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Resources/views/Default/index.html.twig" />
-        <option value="$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Controller/DefaultController.php" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/8267c229-df05-4fbd-9572-e821b0bf68d2/console.sql" />
-        <option value="$PROJECT_DIR$/web/bundles/ecommercefrontangular/web/js/controller/ProduitCtr.js" />
-        <option value="$PROJECT_DIR$/web/bundles/ecommercefrontangular/web/app.js" />
-        <option value="$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Resources/public/web/js/views/Produits/_filterProduits.html.twig" />
-        <option value="$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Resources/public/web/js/directive/filterPorduit.js" />
-        <option value="$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Resources/public/web/js/views/Produits/_filterProduit.html.twig" />
-        <option value="$PROJECT_DIR$/app/config/routing_api.yml" />
         <option value="$PROJECT_DIR$/app/Resources/views/includes/navigation.html.twig" />
         <option value="$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Resources/public/web/js/controller/CategorieController.js" />
         <option value="$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Resources/public/web/js/directive/filterProduit.js" />
@@ -204,19 +200,37 @@
         <option value="$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Resources/public/web/js/views/Produits/_filterCategorie.html" />
         <option value="$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Resources/public/js/controller/CommandeController.js" />
         <option value="$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Resources/public/js/service/produits.js" />
-        <option value="$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Resources/public/js/directive/filterProduit.js" />
         <option value="$PROJECT_DIR$/Gruntfile.js" />
         <option value="$PROJECT_DIR$/src/Ecommerce/FrontRestBundle/Resources/config/serializer/Categorie.yml" />
         <option value="$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Resources/public/js/service/categorie.js" />
         <option value="$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Resources/public/js/controller/CategorieCtr.js" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Resources/public/js/service/produit.js" />
         <option value="$PROJECT_DIR$/bower.json" />
-        <option value="$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Resources/public/js/app.js" />
-        <option value="$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Resources/views/layout.html.twig" />
-        <option value="$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Resources/public/js/views/Produits/index.html" />
         <option value="$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Resources/public/js/views/Produits/_filterProduit.html" />
+        <option value="$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Resources/public/js/service/produit.js" />
+        <option value="$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Resources/public/js/views/Produits/_filterCategorie2.html" />
+        <option value="$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Resources/public/js/views/Produits/_addPanierForm.html" />
+        <option value="$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Resources/public/js/views/Produits/index.html" />
+        <option value="$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Resources/public/js/views/Produits/vide.html" />
         <option value="$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Resources/public/js/controller/ProduitCtr.js" />
+        <option value="$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Resources/public/js/views/Produits/produit.html" />
+        <option value="$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Resources/public/js/views/Produits/_addProduitInPanierForm.html" />
+        <option value="$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Resources/public/js/directive/addPanierFrom.js" />
+        <option value="$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Resources/public/js/directive/addProduitInPanierFrom.js" />
+        <option value="$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Resources/public/js/directive/filterCategorie.js" />
+        <option value="$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Resources/public/js/directive/filterProduit.js" />
+        <option value="$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Resources/public/js/Produit/controllers/oneProduitCtr.js" />
+        <option value="$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Resources/public/js/Produit/controllers/allProduitsCtr.js" />
+        <option value="$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Resources/public/js/app.js" />
+        <option value="$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Resources/public/app/Produit/directives/addPanierFrom.js" />
+        <option value="$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Resources/public/app/Produit/directives/addProduitInPanierFrom.js" />
+        <option value="$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Resources/public/app/Produit/directives/filterCategorie.js" />
+        <option value="$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Resources/public/app/Produit/directives/filterProduit.js" />
+        <option value="$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Resources/public/app/Categorie/controllers/filterCatCtr.js" />
+        <option value="$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Resources/public/app/Categorie/controllers/produitsOfCatCtr.js" />
+        <option value="$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Resources/public/app/Categorie/directives/filterCategorie.js" />
+        <option value="$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Resources/views/layout.html.twig" />
+        <option value="$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Resources/public/app/app.js" />
       </list>
     </option>
   </component>
@@ -307,7 +321,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -592,7 +605,7 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
+              <option name="myItemId" value="app" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -626,49 +639,11 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
+              <option name="myItemId" value="app" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Produits" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ecommerce" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ecommerce" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Ecommerce" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FrontAngularBundle" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
+              <option name="myItemId" value="Produit" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -706,49 +681,15 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
+              <option name="myItemId" value="app" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="service" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ecommerce" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ecommerce" />
+              <option name="myItemId" value="Produit" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Ecommerce" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FrontAngularBundle" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="directive" />
+              <option name="myItemId" value="services" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -782,11 +723,221 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
+              <option name="myItemId" value="app" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="controller" />
+              <option name="myItemId" value="Produit" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="directives" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ecommerce" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ecommerce" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Ecommerce" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FrontAngularBundle" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Produit" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ecommerce" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ecommerce" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Ecommerce" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FrontAngularBundle" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Categorie" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ecommerce" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ecommerce" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Ecommerce" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FrontAngularBundle" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Categorie" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="services" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ecommerce" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ecommerce" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Ecommerce" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FrontAngularBundle" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Categorie" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="directives" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ecommerce" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ecommerce" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Ecommerce" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FrontAngularBundle" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Categorie" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -818,12 +969,13 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Ecommerce/EcommerceBundle/Controller/PanierController.php" />
-    <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/src/Ecommerce/EcommerceBundle/Controller/PanierController.php" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Resources/public/js/controller/ProduitCtr.js" />
+    <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Resources/public/js/controller/ProduitCtr.js" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="settings.editor.splitter.proportion" value="0.27149758" />
     <property name="js-jscs-nodeInterpreter" value="/usr/bin/node" />
@@ -834,18 +986,18 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Resources/public/js/service" />
-      <recent name="$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Resources/public/web/js/views/Produits" />
-      <recent name="$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Resources/public/web/js/directive" />
-      <recent name="$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Resources/public/web/js/controller" />
-      <recent name="$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Resources/public/web/js" />
+      <recent name="$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Resources/public/app/Categorie/controllers" />
+      <recent name="$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Resources/public/js/Produit/controllers" />
+      <recent name="$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Resources/public/js" />
+      <recent name="$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Resources/public/js/views/Produits" />
+      <recent name="$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Resources/public/js/directive" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Resources/public/js" />
-      <recent name="$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Resources/public" />
-      <recent name="$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Resources/public/web/js/views" />
-      <recent name="$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Resources/views/Default/Produits" />
-      <recent name="$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Resources/views" />
+      <recent name="$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Resources/public/app/Categorie/views" />
+      <recent name="$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Resources/public/app/Categorie/views/Categories" />
+      <recent name="$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Resources/public/js/Produit/views" />
+      <recent name="$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Resources/public/js/Produit" />
+      <recent name="$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Resources/public/js/views/Produits/partials" />
     </key>
   </component>
   <component name="RunManager">
@@ -952,12 +1104,22 @@
       <workItem from="1469105291631" duration="5300000" />
       <workItem from="1469119480162" duration="8170000" />
       <workItem from="1469178938887" duration="42000" />
-      <workItem from="1469178995401" duration="499000" />
+      <workItem from="1469178995401" duration="2386000" />
+      <workItem from="1469208991470" duration="13472000" />
+      <workItem from="1469267644817" duration="1733000" />
     </task>
+    <task id="LOCAL-00001" summary="APIRest: Implementation ProduitFactory">
+      <created>1469179505375</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1469179505375</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="243121000" />
+    <option name="totallyTimeSpent" value="260213000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -970,11 +1132,11 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="53" y="24" width="1313" height="744" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3041765" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3136328" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32923076" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32923076" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3276923" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3276923" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22379826" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32872504" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -988,7 +1150,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32615384" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32923076" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1053,86 +1215,6 @@
     </PATH>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/js/ajax.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" column="67" selection-start-line="5" selection-start-column="38" selection-end-line="5" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/fos_js_routes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="420" selection-start-line="0" selection-start-column="420" selection-end-line="0" selection-end-column="420" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Resources/views/layout.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Controller/DefaultController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="10" column="75" selection-start-line="10" selection-start-column="75" selection-end-line="10" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/8267c229-df05-4fbd-9572-e821b0bf68d2/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="1" column="11" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/bundles/ecommercefrontangular/web/js/controller/ProduitCtr.js" />
-    <entry file="file://$PROJECT_DIR$/web/bundles/ecommercefrontangular/web/app.js" />
-    <entry file="file://$PROJECT_DIR$/src/Ecommerce/FrontBundle/Resources/views/Produit/_recherche.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" column="7" selection-start-line="0" selection-start-column="0" selection-end-line="4" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/bower_components/slimScroll/examples/navigation.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/routing.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="41" column="23" selection-start-line="41" selection-start-column="23" selection-end-line="41" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/routing_api.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/UserBundle/Resources/config/routing.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/hautelook/alice-bundle/tests/SymfonyApp/TestBundle/DataFixtures/ODM/product.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1165,13 +1247,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="550">
           <caret line="70" column="6" selection-start-line="70" selection-start-column="6" selection-end-line="70" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Ecommerce/FrontBundle/Resources/views/Produit/produits.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="30" selection-start-line="0" selection-start-column="30" selection-end-line="0" selection-end-column="30" />
         </state>
       </provider>
     </entry>
@@ -1231,13 +1306,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Ecommerce/FrontBundle/Resources/views/Produit/presentation.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="35" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Ecommerce/FrontRestBundle/Resources/config/serializer/Produit.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="230">
@@ -1252,24 +1320,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Resources/public/js/controller/CommandeController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="13" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Resources/public/js/Produit/controllers/CommandeController.js" />
     <entry file="file://$PROJECT_DIR$/Gruntfile.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1242">
           <caret line="54" column="10" selection-start-line="54" selection-start-column="10" selection-end-line="54" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Resources/public/js/directive/filterProduit.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" column="62" selection-start-line="4" selection-start-column="62" selection-end-line="4" selection-end-column="62" />
         </state>
       </provider>
     </entry>
@@ -1294,103 +1349,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Resources/public/js/controller/CategorieCtr.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="621">
-          <caret line="27" column="9" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Resources/public/js/directive/filterCategorie.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" column="3" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Resources/public/js/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" column="64" selection-start-line="2" selection-start-column="64" selection-end-line="2" selection-end-column="64" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Resources/views/layout.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="16" column="84" selection-start-line="16" selection-start-column="84" selection-end-line="16" selection-end-column="84" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Resources/public/js/service/categorie.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Resources/public/js/views/Produits/_filterCategorie.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Resources/public/js/views/Produits/_filterProduit.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" column="74" selection-start-line="2" selection-start-column="74" selection-end-line="2" selection-end-column="74" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Resources/public/js/views/Produits/produit.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="26" selection-start-line="0" selection-start-column="26" selection-end-line="0" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Resources/public/js/views/Produits/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" column="70" selection-start-line="2" selection-start-column="70" selection-end-line="2" selection-end-column="70" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bower.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="552">
           <caret line="24" column="4" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="MarkdownFxPreviewEditor">
-        <state />
-      </provider>
       <provider editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="FIRST">
           <first_editor relative-caret-position="161">
             <caret line="7" column="43" selection-start-line="7" selection-start-column="43" selection-end-line="7" selection-end-column="43" />
-            <folding />
           </first_editor>
           <second_editor />
         </state>
       </provider>
+      <provider selected="true" editor-type-id="MarkdownFxPreviewEditor">
+        <state />
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/jsrouting-bundle/Controller/Controller.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
+        <state relative-caret-position="874">
           <caret line="53" column="6" selection-start-line="53" selection-start-column="6" selection-end-line="53" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1398,11 +1380,49 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="115">
           <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Ecommerce/FrontBundle/Resources/views/Produit/presentation.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Ecommerce/FrontBundle/Resources/views/Produit/produits.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="30" selection-start-line="0" selection-start-column="30" selection-end-line="0" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Resources/public/app/Produit/views/partials/_filterCategorie.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" column="58" selection-start-line="5" selection-start-column="58" selection-end-line="5" selection-end-column="58" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Resources/public/js/service/produit.js">
+    <entry file="file://$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Resources/public/app/Produit/views/partials/_filterCategorie2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" column="24" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Resources/public/js/Produit/controllers/CategorieCtr.js" />
+    <entry file="file://$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Resources/public/app/Produit/views/partials/_filterProduit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" column="7" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Resources/public/app/Produit/views/vide.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1410,11 +1430,146 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Resources/public/js/controller/ProduitCtr.js">
+    <entry file="file://$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Resources/public/app/Produit/views/partials/_addPanierForm.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="0" column="57" selection-start-line="0" selection-start-column="57" selection-end-line="0" selection-end-column="57" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Resources/public/app/Produit/views/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="9" column="33" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Resources/public/app/Produit/views/produit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="274">
+          <caret line="12" column="40" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Resources/public/app/Produit/views/partials/_addProduitInPanierForm.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="6" column="8" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Resources/public/app/Categorie/views/Categories/partials/_addPanierForm.html" />
+    <entry file="file://$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Resources/public/js/Produit/services/categorie.js" />
+    <entry file="file://$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Resources/public/app/Produit/controllers/allProduitsCtr.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Resources/public/app/Produit/controllers/oneProduitCtr.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Resources/public/app/Produit/directives/addProduitInPanierFrom.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" column="37" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="37" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Resources/public/app/Produit/directives/filterCategorie.js" />
+    <entry file="file://$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Resources/public/app/Produit/services/produit.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="13" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Resources/public/app/Categorie/controllers/filterCatCtr.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Resources/public/app/Produit/directives/filterProduit.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Resources/public/app/Categorie/controllers/produitsOfCatCtr.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="13" column="3" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Resources/views/layout.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="101" column="88" selection-start-line="101" selection-start-column="88" selection-end-line="101" selection-end-column="88" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Resources/public/app/Produit/directives/addPanierFrom.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" column="45" selection-start-line="10" selection-start-column="45" selection-end-line="10" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Resources/public/app/Categorie/directives/filterCategorie.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" column="3" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Resources/public/app/Categorie/views/partials/_filterCategorie.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Resources/public/app/Categorie/services/categorie.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Ecommerce/FrontAngularBundle/Resources/public/app/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="13" column="27" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
+          <folding>
+            <element signature="e#234#340#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
