@@ -23,7 +23,7 @@ module.exports = function (grunt) {
     require('./grunt/replace')(grunt);
     require('./grunt/watch')(grunt);
     require('./grunt/shell')(grunt);
-    require('./grunt/connect')(grunt);
+    require('./grunt/connect')(grunt);  
 
 
 }
