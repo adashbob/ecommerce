@@ -11,14 +11,14 @@
     <link rel="stylesheet" href="{{ asset('tmp/css/style-min.css') }}">
     <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
 
-    <script src="{{ asset('bower_components/jquery/dist/jquery.min.js') }}"></script>
+    {#<script src="{{ asset('bower_components/jquery/dist/jquery.min.js') }}"></script>
     <script src="{{ asset('bower_components/angular/angular.min.js') }}"></script>
     <script src="{{ asset('bower_components/angular-route/angular-route.min.js') }}"></script>
     <script src="{{ asset('bower_components/angular-resource/angular-resource.min.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('tmp/js/bootstrap-min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('tmp/js/bootstrap-min.js') }}"></script>#}
 
 </head>
-<body ng-app="appEcommerce">
+    <body ng-app="app">
 <div class="navbar navbar-inverse navbar-fixed-top">
     <div class="navbar-inner">
         <div class="container">
@@ -61,6 +61,9 @@
             <div class="span4 offset1">
                 <h4>Informations</h4>
                 <ul class="nav nav-stacked">
+                    {% verbatim %}
+                        <h1>{{ baseImage }}</h1>
+                    {% endverbatim %}
                     {#{{ render(controller('PagesBundle:Pages:menu')) }}#}
                 </ul>
             </div>
@@ -86,21 +89,22 @@
 </footer>
 
 {# app.js #}
-<script src="{{ asset('bundles/ecommercefrontangular/app/app.js') }}"></script>
+{#<script src="{{ asset('bundles/ecommercefrontangular/app/app.js') }}"></script>#}
 {# controller #}
-<script src="{{ asset('bundles/ecommercefrontangular/app/Produit/controllers/allProduitsCtr.js') }}"></script>
-<script src="{{ asset('bundles/ecommercefrontangular/app/Produit/controllers/oneProduitCtr.js') }}"></script>
-<script src="{{ asset('bundles/ecommercefrontangular/app/Categorie/controllers/filterCatCtr.js') }}"></script>
-<script src="{{ asset('bundles/ecommercefrontangular/app/Categorie/controllers/produitsOfCatCtr.js') }}"></script>
+{#<script src="{{ asset('bundles/ecommercefrontangular/app/Produit/controllers/allProduitsCtr.js') }}"></script>#}
+{#<script src="{{ asset('bundles/ecommercefrontangular/app/Produit/controllers/oneProduitCtr.js') }}"></script>#}
+{#<script src="{{ asset('bundles/ecommercefrontangular/app/Categorie/controllers/filterCatCtr.js') }}"></script>#}
+{#<script src="{{ asset('bundles/ecommercefrontangular/app/Categorie/controllers/produitsOfCatCtr.js') }}"></script>#}
 {# directive #}
-<script src="{{ asset('bundles/ecommercefrontangular/app/Categorie/directives/filterCategorie.js') }}"></script>
-<script src="{{ asset('bundles/ecommercefrontangular/app/Produit/directives/addPanierFrom.js') }}"></script>
-<script src="{{ asset('bundles/ecommercefrontangular/app/Produit/directives/addProduitInPanierFrom.js') }}"></script>
-<script src="{{ asset('bundles/ecommercefrontangular/app/Produit/directives/filterProduit.js') }}"></script>
+{#<script src="{{ asset('bundles/ecommercefrontangular/app/Categorie/directives/filterCategorie.js') }}"></script>#}
+{#<script src="{{ asset('bundles/ecommercefrontangular/app/Produit/directives/addPanierFrom.js') }}"></script>#}
+{#<script src="{{ asset('bundles/ecommercefrontangular/app/Produit/directives/addProduitInPanierFrom.js') }}"></script>#}
+{#<script src="{{ asset('bundles/ecommercefrontangular/app/Produit/directives/filterProduit.js') }}"></script>#}
 {# service #}
-<script src="{{ asset('bundles/ecommercefrontangular/app/Produit/services/produit.js') }}"></script>
-<script src="{{ asset('bundles/ecommercefrontangular/app/Categorie/services/categorie.js') }}"></script>
+{#<script src="{{ asset('bundles/ecommercefrontangular/app/Produit/services/produit.js') }}"></script>#}
+{#<script src="{{ asset('bundles/ecommercefrontangular/app/Categorie/services/categorie.js') }}"></script>#}
 {# other#}
+<script src="{{ asset('lib/requirejs/require.js') }}" data-main="{{ asset('bundles/ecommercefrontangular/app/main.js') }}"></script>
 <script type="text/javascript" src="{{ asset('tmp/js/bundles/fosjsrouting/js/router-min.js') }}"></script>
 <script src="{{ path('fos_js_routing_js', {"callback": "fos.Router.setData"}) }}"></script>
 {% block javascripts %}{% endblock %}

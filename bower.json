@@ -23,6 +23,7 @@
   "dependencies": {
     "angular-route": "^1.5.7",
     "restangular": "^1.5.2",
-    "angular-resource": "^1.5.7"
+    "angular-resource": "^1.5.7",
+    "requirejs": "^2.2.0"
   }
 }

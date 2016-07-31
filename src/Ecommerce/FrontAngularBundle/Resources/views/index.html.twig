@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>{% block titre %}Ecommerce Fruits & légumes{% endblock %}</title>
+    <meta name="keywords" content="{% block motsCles %}{% endblock %}" />
+    <meta name="description" content="{% block description %}{% endblock %}" />
+    {% block stylesheets %}{% endblock %}
+    <link rel="stylesheet" href="{{ asset('css/font-awesome.css') }}">
+    <link rel="stylesheet" href="{{ asset('tmp/css/min.css') }}">
+    <link rel="stylesheet" href="{{ asset('tmp/css/style-min.css') }}">
+    <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+
+</head>
+<body>
+<h1>AngularJs & Requirejs</h1>
+    <div class="main-viewer" ng-view></div>
+
+    <script src="{{ asset('lib/requirejs/require.js') }}" data-main="{{ asset('bundles/ecommercefrontangular/app/main.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('tmp/js/bundles/fosjsrouting/js/router-min.js') }}"></script>
+    <script src="{{ path('fos_js_routing_js', {"callback": "fos.Router.setData"}) }}"></script>
+    {% block javascripts %}{% endblock %}
+</body>
+</html>
