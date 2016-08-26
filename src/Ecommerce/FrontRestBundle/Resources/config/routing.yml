@@ -1,0 +1,7 @@
+backbone_client_rest:
+    path:     /backbone
+    defaults: { _controller: EcommerceFrontRestBundle:Todo:backbone }
+
+angularjs_client_rest:
+    path:     /angularjs
+    defaults: { _controller: EcommerceFrontRestBundle:Todo:angularjs}
