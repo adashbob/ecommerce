@@ -40,7 +40,15 @@ class ProduitType extends AbstractType
     public function configureOptions(OptionsResolver $resolver)
     {
         $resolver->setDefaults(array(
-            'data_class' => 'Ecommerce\FrontBundle\Entity\Produit'
+            'data_class' => 'Ecommerce\FrontBundle\Entity\Produit',
         ));
+    }
+
+    public function getName(){
+        'bobobobo';
+    }
+    public function getBlockPrefix()
+    {
+        return $this->getName();
     }
 }

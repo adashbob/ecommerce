@@ -1,5 +1,3 @@
-
-
 #rest:
 #    type: rest
 #    resource: "@EcommerceFrontRestBundle/Resources/config/api-routing.yml"

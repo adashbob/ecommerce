@@ -20,5 +20,5 @@
 /bower_components
 
 /web/lib
-
+/.idea
 web/tmp/

@@ -9,3 +9,9 @@ produit_presentation:
 produit_recherche:
     path:     /traiterRecherche/
     defaults: { _controller: EcommerceFrontBundle:Produit:traiterRecherche }
+
+
+produit_testjson:
+    path:     /json/
+    defaults: { _controller: EcommerceFrontBundle:Produit:json }
+

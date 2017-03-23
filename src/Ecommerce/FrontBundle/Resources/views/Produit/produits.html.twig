@@ -2,6 +2,12 @@
 
 {% block body_content %}
     {% if produits|length != 0 %}
+            {% set foo  %}
+                {% verbatim %}
+                 <!--{{ hhh }}-->
+            {% endverbatim %}
+            {% endset %}
+        {{  foo }}
         <ul class="thumbnails">
             {% for produit in produits %}
                 <li class="span3">
@@ -27,4 +33,6 @@
     {% else %}
         Aucun produit
     {% endif %}
+
 {% endblock %}
+

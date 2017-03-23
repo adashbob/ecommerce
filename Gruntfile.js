@@ -1,4 +1,4 @@
-'use stric t';
+'use strict';
 
 module.exports = function (grunt) {
     // Définition des tâches exécutés par default

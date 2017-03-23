@@ -4,6 +4,9 @@ namespace Ecommerce\BackBundle\Controller;
 
 use Ecommerce\FrontBundle\Entity\Produit;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\HttpFoundation\Response;
+
 
 class ProduitController extends Controller
 {
@@ -16,6 +19,7 @@ class ProduitController extends Controller
         return $this->render('@EcommerceBack/Produit/index.html.twig', array(
             'entities' => $this->get('produit_manager')->getAll(),
         ));
+
     }
 
     /**

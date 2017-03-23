@@ -30,6 +30,11 @@ class ProduitRepository extends \Doctrine\ORM\EntityRepository
             ->setParameter('array', $array);
 
         return $qb->getQuery()->getResult();
-        ;
+    }
+
+    public function getAllWithIndex(){
+        $qb = $this->createQueryBuilder('p');
+
+        return $qb->getQuery()->getResult();
     }
 }

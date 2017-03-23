@@ -2,9 +2,12 @@
 
 namespace Ecommerce\FrontBundle\Controller;
 
+use Ecommerce\FrontBundle\Entity\Produit;
 use Ecommerce\FrontBundle\Form\Type\RechercheType;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\HttpFoundation\Response;
 
 class ProduitController extends Controller
 {
@@ -14,7 +17,7 @@ class ProduitController extends Controller
     public function produitsAction()
     {
         $produits = $this->get('produit_manager')->getAvailableProducts();
-        
+
         return $this->render('@EcommerceFront/Produit/produits.html.twig', array(
             'produits' => $this->get('ecommerce_pagination')->doPagination($produits),
             'panier' => $this->get('panier_session')->has('panier')
@@ -80,5 +83,29 @@ class ProduitController extends Controller
     }
 
 
+    public function jsonAction(Request $request)
+    {
+        $produit = new Produit();
+        $produit->setName('patate');
+        $produit->setPrice(2);
+        $p = new Produit();
+
+        $a1 = (array)$produit;
+        $a2 = (array)$p;
+
+        $data = array(
+            'nom' => 'diallo',
+            'prenom' => 'bobo',
+            'adresse' => 'fass',
+            'produit' => $produit,
+            'iscom' => (array) $produit == (array) $p
+        );
+        /*$data = json_encode($data);
+        $response = new Response($data);
+        $response->headers->set('Context-Type', 'application/json');*/
+        return new JsonResponse($data);
+
+
+    }
 
 }
