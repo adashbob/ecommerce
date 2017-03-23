@@ -16,3 +16,6 @@ Refer to app/config/parameters.yml.dist to configure a database and run :
 Run the app:
 - `php bin/console server:run`
 
+If installation of package or you have error to running project try:
+`sudo chmod -R 777 var/*`
+
